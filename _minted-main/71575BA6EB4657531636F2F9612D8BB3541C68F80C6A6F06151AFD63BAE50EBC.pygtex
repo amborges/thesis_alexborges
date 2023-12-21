@@ -1,0 +1,145 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}Definindo os particionamentos permitidos para cada profundidade}
+\PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}128} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}none\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}b\PYGZsq{}}\PYG{p}{,}
+                      \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}b\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}split\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}64}  \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}none\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}b\PYGZsq{}}\PYG{p}{,}
+                      \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}b\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}4\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}4\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}split\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}32}  \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}none\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}b\PYGZsq{}}\PYG{p}{,}
+                      \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}b\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}4\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}4\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}split\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}16}  \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}none\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}b\PYGZsq{}}\PYG{p}{,}
+                      \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}b\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}4\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}4\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}split\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}8}   \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}none\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}split\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}4}   \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}none\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{}unificando todas as profundidades}
+\PYG{n}{ptypes\PYGZus{}allowed} \PYG{o}{=} \PYG{p}{[}\PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}128}\PYG{p}{,} \PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}64}\PYG{p}{,}
+                  \PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}32}\PYG{p}{,} \PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}16}\PYG{p}{,}
+                  \PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}8}\PYG{p}{,} \PYG{n}{allow\PYGZus{}on\PYGZus{}depth\PYGZus{}4}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{}definindo os particionamentos proibidos nas 3 combinações abaixo}
+\PYG{n}{rule\PYGZus{}rect} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}horz\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}b\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}b\PYGZsq{}}\PYG{p}{,}
+             \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}4\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}4\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{rule\PYGZus{}ab}   \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}b\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}a\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}b\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{rule\PYGZus{}1TO4} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}horz\PYGZus{}4\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}vert\PYGZus{}4\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{}dict que traduz o tamanho do bloco em profundidade}
+\PYG{n}{dpt\PYGZus{}translator} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+m+mi}{128}\PYG{p}{:}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{64}\PYG{p}{:}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{32}\PYG{p}{:}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{16}\PYG{p}{:}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{:}\PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{:}\PYG{l+m+mi}{5}\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{\PYGZsh{}função que calcula o máximo de combinações de árvores possível}
+\PYG{k}{def} \PYG{n+nf}{original\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth}\PYG{p}{):}
+ \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}
+ \PYG{k}{for} \PYG{n}{ptype} \PYG{o+ow}{in} \PYG{n}{Node}\PYG{p}{[}\PYG{n}{depth}\PYG{p}{]:}
+   \PYG{k}{if} \PYG{n}{ptype} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}split\PYGZsq{}}\PYG{p}{:}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{n}{original\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{n}{original\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{n}{original\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{n}{original\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)}
+   \PYG{k}{else}\PYG{p}{:}
+       \PYG{n}{i} \PYG{o}{+=} \PYG{l+m+mi}{1}
+ \PYG{k}{return} \PYG{n}{i}
+
+\PYG{c+c1}{\PYGZsh{}função que calcula o máximo de combinações de árvores possível,}
+\PYG{c+c1}{\PYGZsh{}excluíndo os ptypes proibidos}
+\PYG{k}{def} \PYG{n+nf}{limit\PYGZus{}ptype\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth}\PYG{p}{,} \PYG{n}{forbid}\PYG{p}{):}
+ \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}
+ \PYG{k}{for} \PYG{n}{ptype} \PYG{o+ow}{in} \PYG{n}{Node}\PYG{p}{[}\PYG{n}{depth}\PYG{p}{]:}
+   \PYG{k}{if} \PYG{n}{ptype} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}split\PYGZsq{}}\PYG{p}{:}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}ptype\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{forbid}\PYG{p}{)}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}ptype\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{forbid}\PYG{p}{)}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}ptype\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{forbid}\PYG{p}{)}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}ptype\PYGZus{}tree}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{forbid}\PYG{p}{)}
+   \PYG{k}{elif} \PYG{o+ow}{not} \PYG{p}{(}\PYG{n}{ptype} \PYG{o+ow}{in} \PYG{n}{forbid}\PYG{p}{):}
+     \PYG{n}{i} \PYG{o}{+=} \PYG{l+m+mi}{1}
+ \PYG{k}{return} \PYG{n}{i}
+
+\PYG{c+c1}{\PYGZsh{}função que calcula o máximo de combinações de árvores possível,}
+\PYG{c+c1}{\PYGZsh{}evitando as profundidades proibidas}
+\PYG{k}{def} \PYG{n+nf}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{):}
+ \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}
+ \PYG{k}{if} \PYG{n}{depth} \PYG{o}{\PYGZlt{}} \PYG{n+nb}{max}\PYG{p}{:}
+   \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{)}
+   \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{)}
+   \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{)}
+   \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{)}
+ \PYG{k}{elif} \PYG{n}{depth} \PYG{o}{\PYGZgt{}} \PYG{n+nb}{min}\PYG{p}{:}
+   \PYG{k}{return} \PYG{n}{i}
+ \PYG{k}{else}\PYG{p}{:}
+   \PYG{k}{for} \PYG{n}{ptype} \PYG{o+ow}{in} \PYG{n}{Node}\PYG{p}{[}\PYG{n}{depth}\PYG{p}{]:}
+     \PYG{k}{if} \PYG{n}{ptype} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}split\PYGZsq{}}\PYG{p}{:}
+       \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{)}
+       \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{)}
+       \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{)}
+       \PYG{n}{i} \PYG{o}{+=} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{Node}\PYG{p}{,} \PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{)}
+     \PYG{k}{else}\PYG{p}{:}
+         \PYG{n}{i} \PYG{o}{+=} \PYG{l+m+mi}{1}
+ \PYG{k}{return} \PYG{n}{i}
+
+\PYG{c+c1}{\PYGZsh{}Saída de todos os casos}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}original\PYGZdq{}}\PYG{p}{,} \PYG{n}{original\PYGZus{}tree}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}rect    \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}ptype\PYGZus{}tree}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{rule\PYGZus{}01}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}ab      \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}ptype\PYGZus{}tree}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{rule\PYGZus{}02}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}1TO4    \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}ptype\PYGZus{}tree}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{rule\PYGZus{}03}\PYG{p}{))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}128\PYGZhy{}64  \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{128}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{64}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}128\PYGZhy{}32  \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{128}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{32}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}128\PYGZhy{}16  \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{128}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{16}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}128\PYGZhy{}8   \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{128}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{8}\PYG{p}{]))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}64\PYGZhy{}32   \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{64}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{32}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}64\PYGZhy{}16   \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{64}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{16}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}64\PYGZhy{}8    \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{64}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{8}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}64\PYGZhy{}4    \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{64}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{]))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}32\PYGZhy{}16   \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{32}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{16}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}32\PYGZhy{}8    \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{32}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{8}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}32\PYGZhy{}4    \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{32}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{]))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}16\PYGZhy{}8    \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{16}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{8}\PYG{p}{]))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}16\PYGZhy{}4    \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{16}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{]))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}8\PYGZhy{}4     \PYGZdq{}}\PYG{p}{,} \PYG{n}{limit\PYGZus{}tree\PYGZus{}depth}\PYG{p}{(}\PYG{n}{ptypes\PYGZus{}allowed}\PYG{p}{,}
+                                   \PYG{l+m+mi}{0}\PYG{p}{,}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{8}\PYG{p}{],}
+                                   \PYG{n}{dpt\PYGZus{}translator}\PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{]))}
+
+\end{Verbatim}

@@ -1,0 +1,55 @@
+\chapter{Conceitos Básicos}
+\label{cap:2}
+
+Reproduzir uma sequência de imagens similares para criar uma ilusão de movimento é uma prática existente desde o final do século XIX, tal como consta em \cite{bib:sciam_firstmotion}, publicação científica mais antiga sobre o tema. Cada nova imagem (denominada quadro) é sutilmente diferente da anterior, sendo que esta sutileza cresce à medida que aumenta a velocidade de captação entre essas imagens. Ao compararmos dois quadros próximos, constatamos que a diferença entre eles tende a ser mínima, ainda mais quando se tratam de vídeos com alta taxa de transição de imagem para cada unidade de tempo considerado, normalmente um segundo. 
+
+Em um vídeo digital, cada quadro é composto por partes menores, denominadas pixels. Sendo o pixel o menor elemento de uma imagem digital, este é, por sua vez, o elemento que informa a cor de cada ponto daquela imagem. Os pixels representam valores em um padrão de cores. Normalmente, três valores inteiros, chamados de amostras, são utilizados para representar a intensidade de vermelho, verde e azul, no caso do sistema de cores RGB, ou de luminância, crominância azul e crominância vermelha, no caso do sistema de cores YCbCr \cite{bib:sistema_cores}.
+
+No caso de vídeos armazenados digitalmente, observamos que a maior parte de um vídeo sem compressão conterá dados redundantes. Para possibilitar a redução desses dados, a codificação de vídeos deve ser especializada em identificar e explorar três tipos de redundância, conforme afirma \cite{bib:tese_agostini_2007}. As redundâncias que o codificador de vídeo busca identificar são: 
+
+\begin{enumerate}[a)]
+    \item \textbf{Redundância Temporal}: manifesta-se através da existência de dados repetidos entre dois quadros vizinhos;
+
+    \item \textbf{Redundância Espacial}: manifesta-se através da existência de dados repetidos dentro de um mesmo quadro;
+
+    \item \textbf{Redundância Entrópica}: manifesta-se através da distribuição dos símbolos, ou probabilidade de ocorrência de símbolos, em um vídeo.
+\end{enumerate}
+
+Apesar de haver diversos codificadores de vídeo desenvolvidos para determinados fins, em geral os formatos e padrões lançados nas últimas duas décadas são classificados como formatos de codificação de vídeo híbrida \cite{bib:richardson_2002}, ou seja, combina diversas técnicas de codificação visando alcançar o melhor resultado possível em termos de eficiência de compressão. Essa codificação híbrida é baseada em blocos, onde cada bloco é composto por um conjunto de pixels, também denominados de amostras. Eles recebem essa classificação por explorarem diversos tipos de redundâncias a fim de atingir altas taxas de compressão \cite{bib:tese_agostini_2007}. Apesar dos formatos possuírem diferenças pontuais, é possível resumir o fluxo de execução de um codificador de vídeo híbrido baseado em blocos conforme a Figura \ref{fig:2}. Todas essas etapas são executadas ou associadas ao nível de bloco e, apesar dos codificadores modernos já serem mais complexos do que o explicado aqui, o resumo dessas etapas segue conforme listado abaixo:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{FIGURES/fig_2.png}
+    \caption{Representação em alto nível de um codificador de vídeo híbrido. Fonte: Elaborada pelo autor.}
+    \label{fig:2}
+\end{figure}
+
+
+\begin{itemize}
+    \item \textbf{Predição Intraquadro}: responsável por predizer os valores das amostras do bloco que se está processando apenas utilizando informações do próprio quadro de origem do bloco, de forma a reduzir a redundância espacial. Para tanto, são usados modos de predição que indicam ao codificador/decodificador em qual direção está a amostra que contém o valor que deve ser copiado. O primeiro quadro de cada vídeo codificado, atualmente, é somente processado por esse tipo de predição, já que não há dependência de dados anteriores para sua funcionalidade. Além disso, esse tipo de quadro exclusivo de predição intraquadro também é utilizado, por exemplo, para sincronização durante transmissões ao vivo;
+
+    \item \textbf{Predição Interquadros}: responsável por reduzir a redundância temporal, é uma predição dependente de quadros vizinhos para ser executada. Seu funcionamento consiste em varrer blocos de amostras do quadro de referência (localizados anteriormente ou posteriormente ao quadro atual) buscando um bloco que seja igual ou similar ao bloco de amostras sob codificação no momento. O resultado dessa predição é um vetor de movimento que aponta o deslocamento que deve ser realizado, a partir da posição do bloco sob codificação, para encontrar o bloco de referência;
+
+    \item \textbf{Transformada}: da subtração do bloco predito com o bloco original, obtém-se um bloco residual. Este bloco é importante pois define diferença entre os blocos original e predito, ou seja, define o erro de predição (seja intraquadro ou interquadros). Entretanto, ele representa informações no domínio espacial, no qual as amostras ainda estão correlacionados entre si, o que leva a um baixo desempenho da codificação de entropia. Para possibilitar uma decorrelação da informação residual e concentrá-la em um pequeno número de coeficientes, os blocos residuais são submetidos a um processo de transformação do domínio de representação, passando-os do domínio espacial para o domínio de frequências;
+
+    \item \textbf{Quantização}: com os dados representados no domínio das frequências e considerando o funcionamento do sistema visual humano, é possível atenuar, ou mesmo eliminar, frequências mais elevadas que pouco contribuem para a formação da imagem pelo olho humano. Esse processo de atenuação/eliminação é feito nesta etapa de codificação, na qual ocorre a aplicação de um parâmetro de quantização sobre os coeficientes transformados, gerando um bloco quantizado. Até esta etapa, ao menos para os formatos publicados nas últimas duas décadas, todos os processos realizados são totalmente reversíveis, no entanto, após a aplicação da quantização, informações são irreversivelmente descartadas e, portanto, perdas na qualidade da imagem são geradas;
+
+    \item \textbf{Codificação de Entropia}: responsável pela compressão propriamente dita. A codificação de entropia processa os dados transformados e quantizados, assim como as informações laterais (modos decididos, tamanhos de blocos, etc.). Todos os estágios de codificação servem para tornar este estágio mais eficiente, pois quanto menores são os resíduos e, consequentemente, mais concentrados são os coeficientes transformados e quantizados, maior é a taxa de compressão obtida pela codificação de entropia. Ao final desta etapa, é gerado um \textit{bitstream} compatível com o formato de vídeo utilizado durante a codificação;
+
+    \item \textbf{Filtros}: responsável por reduzir, ou mesmo eliminar, artefatos de compressão causados pela etapa de quantização. Há diversos artefatos de compressão, apresentados em \citet{bib:quantization_artifacts}, como o efeito de bloco, de borramento, entre outros. A aplicação desta etapa de codificação implica na suavização das diferenças entre o vídeo codificado com o vídeo original.
+
+\end{itemize}
+
+Além desses seis estágios de codificação, dentro do próprio codificador inclui-se parte do decodificador, com a quantização inversa e a transformada inversa, com o objetivo de reconstruir o quadro a fim de ser utilizado como referência pelos estágios de predição. Isso serve para garantir que as referências de predições sejam as mesmas no codificador e no decodificador. Apesar de os seis estágios de codificação de vídeo apresentados acima serem similares entre os codificadores de vídeo da atualidade, eles se diferem quanto à forma de executar as operações ou quanto às variações de decisões disponíveis para serem escolhidas. Por exemplo, enquanto o codificador H.264/AVC possui nove modos diferentes de predição intraquadro, o H.266/VVC dispõe 72 modos distintos \cite{bib:vvc_intra_modes}, provendo uma maior flexibilidade para que o codificador possa se adaptar a características específicas do vídeo que está sendo codificado. Outro exemplo é a quantidade de tamanhos de blocos disponíveis no formato VP9, que é de 13, enquanto seu sucessor direto, o AV1, dispõe de 22 \cite{bib:av1_overview_2021}. Com isso, fica compreensível o elevado custo computacional de codificadores modernos em relação aos lançados anteriormente, pois, além de aumentar o número de opções disponíveis para escolha em cada etapa de codificação, o próprio processo de escolher uma dessas opções é deveras custoso, computacionalmente falando. Para finalizar esta breve explicação do funcionamento de um codificador híbrido, destaca-se esse processo decisório que avalia as diversas variações disponíveis em cada um dos estágios citados, indicando qual deve ser utilizado. Cada software de codificação implementa um algoritmo próprio para identificar a melhor decisão a ser tomada, e esses algoritmos são evoluções do trabalho de \citet{bib:rdo_sullivan}, tipificados como algoritmos de otimização da taxa-distorção (do inglês \textit{Rate-Distortion Optimization}, RDO).
+
+Além disso, é relevante para o escopo desta tese discutir o percentual de representatividade de informação que cada tamanho de bloco apresenta em relação às diversas resoluções de vídeo disponíveis. Quanto menor o tamanho N$\times$N de um bloco, menor é a proporção de dados que este apresenta em relação ao quadro; da mesma forma, quanto maior a resolução de um vídeo, menor é a proporção de dados que um bloco de tamanho N$\times$N apresenta em relação ao quadro. Por exemplo, considerando um bloco de tamanho 128$\times$128, ora esse bloco pode representar um rosto inteiro (em vídeos de baixa resolução), ora apenas um pequeno detalhe do rosto (em vídeos de alta resolução). 
+
+A Tabela \ref{tab:I} apresenta a relação entre os tamanhos quadráticos de blocos comuns entre os formatos de codificação de vídeo atuais e seu percentual de representatividade de informação para diferentes resoluções de vídeo. Com essa tabela, é possível perceber que a predição dos pixels de um bloco de tamanho 128$\times$128 em um vídeo de resolução 176$\times$144 (também identificada como QCIF) é uma tarefa difícil, tornando escassas as probabilidades de que uma predição a ser realizada neste bloco retorne bons resultados. Neste caso, o bloco representa 64\% do quadro todo e uma má predição no bloco afeta 64\% da área visível para o usuário. Por outro lado, esse mesmo tamanho de bloco representa apenas 0,79\% de um quadro em resolução 1920$\times$1080 (HD 1080). Logo, menor será a probabilidade de más predições ocasionarem impacto significativo na qualidade da imagem ou na eficiência de codificação.
+
+\input{TABLES/tab_i.tex}
+
+\input{ChapterTWO/cap2.1.tex}
+\input{ChapterTWO/cap2.2.tex}
+\input{ChapterTWO/cap2.3.tex}
+\input{ChapterTWO/cap2.4.tex}
+\input{ChapterTWO/cap2.5.tex}

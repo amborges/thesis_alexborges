@@ -1,0 +1,44 @@
+\section{Transcodificador VP9 para AV1}
+\label{cap:6.2}
+
+No segundo trabalho desenvolvido no contexto desta tese, propusemos um transcodificador rápido de VP9 para AV1, ainda inédito na literatura. Neste trabalho, limitamos os tipos de particionamentos permitidos para serem testados no AV1 de acordo com o observado durante a decodificação do VP9, dependendo da profundidade atual da árvore no codificador AV1. A Figura \ref{fig:14}, apresentada no capítulo \ref{cap:4}, descreve os tipos de particionamentos que o formato AV1 permite, sendo eles: um quadrático (\textit{NONE}), dois binários retangulares (\textit{RECT}), quatro ternários mistos (\textit{AB}) e dois quaternários retangulares (\textit{1TO4}). Note que os tipos não-quadráticos possuem orientação horizontal e vertical. 
+
+Como dito anteriormente, o AV1 é a evolução do formato de codificação de vídeo VP9. Portanto, herda deste diversas ferramentas de codificação. Enquanto o AV1 possui nove tipos de particionamento (capítulo \ref{cap:4}), o VP9 possui apenas três: quadrático, retangular orientado na vertical e retangular orientado na horizontal. Inclusive, há menos tamanhos quadráticos no VP9 (64$\times$64, 32$\times$32, 16$\times$16 e 8$\times$8), não sendo permitidos modos retangulares no menor tamanho. 
+
+Com essas considerações, nesta proposta de transcodificador rápido de VP9 para AV1, avaliamos a correlação entre as orientações dos particionamentos aplicados no VP9 e as orientações dos particionamentos do AV1, para cada nível de profundidade e sob diferentes níveis de quantização.
+
+\subsection{Metodologia}
+\label{cap:6.2.1}
+
+O primeiro passo deste trabalho foi correlacionar as orientações de particionamentos realizados pelos codificadores VP9 e AV1, considerando os quatro níveis de quantização utilizados pelas recomendações do AV1 \citet{bib:ietfnetvct}. Considerando quatro vídeos HD1080, foi possível obter as Tabelas \ref{tab:XI}, \ref{tab:XII}, \ref{tab:XIII} e \ref{tab:XIV}, que mostram essa correlação para os CQs 20, 32, 43 e 55, respectivamente, onde cada coluna totaliza 100\%. Como o AV1 possui mais tipos de particionamentos que o VP9, consideramos apenas as orientações horizontais ou verticais dos tipos \textit{AB} e \textit{1TO4}. As células em destaque nessas tabelas indicam quando os codificadores AV1 e VP9 escolhem a mesma profundidade e a mesma orientação de particionamento.
+
+\input{TABLES/tab_xi.tex}
+\input{TABLES/tab_xii.tex}
+\input{TABLES/tab_xiii.tex}
+\input{TABLES/tab_xiv.tex}
+
+Considerando essas tabelas, torna-se possível identificar qual é a maior probabilidade de ocorrer alguma orientação de particionamento no transcodificador para AV1, dadas as observações no decodificador VP9. Essas orientações mais comuns são mostradas para cada uma das profundidades disponíveis no AV1 e para todos os níveis de quantização utilizados. É possível compreender melhor essas tabelas através do seguinte exemplo: em uma determinada região do vídeo, identifiquemos que o codificador VP9 optou por utilizar o segundo nível de profundidade, havendo dois blocos 32$\times$16, ou seja, com orientação vertical. Ao observarmos a codificação do AV1 no CQ 43 (Tabela \ref{tab:XIII}), há uma probabilidade inferior a 2\% de que o codificador AV1 opte por utilizar uma profundidade 0 com orientação quadrática (bloco 128$\times$128) nessa mesma região do vídeo. Contudo, no terceiro nível de profundidade, o codificador AV1 vai optar por utilizar a orientação quadrática em 28\% das vezes e, em seguida, a orientação vertical em 16\% das vezes. Observações semelhantes podem ser feitas para as quatro tabelas de correlação apresentadas.
+
+Com essas correlações estabelecidas, determinamos que o codificador AV1 somente pode testar blocos orientados de acordo com as maiores probabilidades de orientação observadas nas Tabelas \ref{tab:XI}, \ref{tab:XII}, \ref{tab:XIII} e \ref{tab:XIV}. É possível resumir essas tabelas através da Tabela \ref{tab:XV}, onde destacam-se as únicas orientações autorizadas a serem testadas no codificador AV1, dadas a profundidade atual na codificação e a orientação observada no formato VP9. Note que a profundidade 5 do AV1 possui apenas orientação quadrática, razão pela qual ela não está presente na Tabela \ref{tab:XV}. Como podemos observar, quase todas as probabilidades de escolha do codificador AV1 tendem para a orientação quadrática. Dessa forma, é possível definir um pseudocódigo que simplifica a Tabela \ref{tab:XV}, como apresentado na Figura \ref{fig:23}. Através desse pseudocódigo, podemos apresentar a proposta de transcodificador rápido do formato VP9 para AV1, como consta na Figura \ref{fig:24}.
+
+\input{TABLES/tab_xv.tex}
+
+\input{FIGURES/fig_23.tex}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{FIGURES/fig_24.png}
+    \caption{Proposta de transcodificação rápida do formato VP9 para AV1 baseada em análises estatísticas. Fonte: Elaborada pelo autor.}
+    \label{fig:24}
+\end{figure}
+
+O algoritmo representado no fluxograma da Figura \ref{fig:24} tem como entrada informações do decodificador, indicando as profundidades e orientações de cada árvore de particionamentos decodificada. Durante a execução do codificador, informações sobre o nível de quantização utilizado e o nível atual da árvore são utilizados para avaliar a correta orientação a ser utilizada naquele ponto do vídeo. A única exceção é caso a profundidade atual seja igual a cinco, como representado no primeiro condicional da Figura \ref{fig:24}. 
+
+\subsection{Resultados}
+\label{cap:6.2.2}
+
+Para possibilitar a realização dos experimentos de avaliação deste transcodificador rápido, foram utilizados 60 quadros de 20 sequências de vídeos em diversas resoluções, separadas em categorias de resolução. Com isso, foi possível obter os resultados apresentados na Tabela \ref{tab:XVI}, onde se observa uma redução média de 28,16\% do tempo total da transcodificação em relação à transcodificação original, a um custo de elevar o BD-rate em 4,34\%.
+
+\input{TABLES/tab_xvi.tex}
+
+Cabe destacar que esta é a primeira solução desenvolvida para acelerar a transcodificação de VP9 para AV1. Conforme pode ser visto na Tabela \ref{tab:XVI}, a técnica proposta se mostrou mais eficiente para vídeos abaixo da categoria de alta resolução, em especial nos vídeos de 640$\times$360 pixels, apresentando um BD-rate médio de 2,5\%. O vídeo de maior destaque na codificação, com base no valor Razão, foi \textit{snow\_mnt\_640x360\_120f}, cuja transcodificação foi acelerada em 33\% a um custo de elevar o BD-rate em apenas 1,65\%. Por outro lado, o vídeo \textit{wikipedia\_420}, de resolução HD1080+SCC, apresentou o pior desempenho: acelerou apenas 11\% da transcodificação a um custo de 8\% em BD-rate. 

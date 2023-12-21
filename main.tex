@@ -1,0 +1,227 @@
+\documentclass[tese,capa]{texufpel}
+
+\usepackage[utf8]{inputenc} % acentuacao
+\usepackage{graphicx} % para inserir figuras
+\usepackage[T1]{fontenc}
+
+\usepackage[shortlabels]{enumitem} %possibilita enumerates personalizados
+\usepackage[table,xcdraw]{xcolor}  %possibilita colorir linhas e colunas de tabelas
+
+\usepackage{minted}                %possibilita importar o código python sem tratamentos extras
+\usepackage{pdflscape}             %possibilita o uso de paginas viradas em 90%
+\usepackage{afterpage}             %possibilita que o texto contorne as páginas com lanscape
+\usepackage{multirow}              %possibilita merge nas tabelas
+\usepackage{makecell}              %possibilita que se rotacione texto dentro de células de tabelas
+
+\usepackage{tabularray}            %possibilita criação de tabelas longas em várias páginas
+\DefTblrTemplate{contfoot-text}{normal}{Continua na próxima página}
+\SetTblrTemplate{contfoot-text}{normal}
+\DefTblrTemplate{conthead-text}{normal}{(Continuação)}
+\SetTblrTemplate{conthead-text}{normal}
+
+
+\usepackage{pdfpages} %pra importar a ficha catalografica
+
+%\usepackage{tocloft}
+%\renewcommand{\cfttabpresnum}{\tablename\space}
+%\addtolength{\cfttabnumwidth}{5ex}
+
+\hypersetup{
+    hidelinks, % Remove coloração e caixas
+    unicode=true,   %Permite acentuação no bookmark
+    linktoc=all %Habilita link no nome e página do sumário
+}
+
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\tikzstyle{yearblock} = [rectangle, rounded corners, minimum width=1cm, minimum height=0.5cm,text centered, draw=black, fill=white]
+\tikzstyle{nameblock} = [rectangle]
+
+
+
+\unidade{Centro de Desenvolvimento Tecnológico}
+\programa{Programa de Pós-Gradua\-ção em Computação}
+\curso{Ciência da Computação}
+
+\unidadeeng{Technology Development Center}
+\programaeng{Postgraduate Program in Computing}
+\cursoeng{Computer Science}
+
+\title{Desenvolvimento de Soluções Baseadas em Aprendizado de Máquina para Transcodificação Rápida de Vídeo ao Formato AOMedia Video 1}
+
+\author{Borges}{Alex Machado}
+\advisor[Prof.~Dr.]{Correa}{Guilherme Ribeiro}
+\coadvisor[Prof.~Dr.]{Zatt}{Bruno}
+\coadvisor[Prof.~Dr.]{Porto}{Marcelo Schiavon}
+
+%Palavras-chave em PT_BR
+\keyword{Formato AV1}
+\keyword{Redução de Complexidade}
+\keyword{Codificação de Vídeo}
+\keyword{Transcodificação de Vídeo}
+\keyword{Aprendizado de Máquina}
+
+%Palavras-chave em EN_US
+\keywordeng{AV1 Format}
+\keywordeng{Complexity Reduction}
+\keywordeng{Video Coding}
+\keywordeng{Video Transcoding}
+\keywordeng{Machine Learning}
+
+\begin{document}
+
+%\renewcommand{\advisorname}{Orientadora}           %descomente caso tenhas orientadora
+%\renewcommand{\coadvisorname}{Coorientadora}      %descomente caso tenhas coorientadora
+
+
+\maketitle 
+
+\sloppy
+
+
+\includepdf[fitpaper=true, pages=-]{FIGURES/ficha_catalografica.pdf}
+%\begin{figure}
+%    \includegraphics{FIGURES/ficha_catalografica.pdf}
+%\end{figure}
+%\fichacatalografica
+
+%Composição da Banca Examinadora
+\begin{aprovacao}{15 de março de 2023} %data da banca por extenso
+\noindent Prof. Dr. Guilherme Ribeiro Corrêa (orientador)\\
+Doutor em Engenharia Electrotécnica e de Computadores pela Universidade de Coimbra, Portugal.\\[1cm]
+
+\noindent Prof. Dr. Eduardo Peixoto Fernandes da Silva\\
+Doutor em Engenharia Eletrônica pela Queen Mary University of London, Reino Unido.\\[1cm]
+
+\noindent Prof. Dr. Mateus Grellert da Silva\\
+Doutor em Computação pela Universidade Federal do Rio Grande do Sul.\\[1cm]
+
+\noindent Prof. Dr. Luciano Volcan Agostini\\
+Doutor em Computação pela Universidade Federal do Rio Grande do Sul.
+\end{aprovacao}
+
+%Opcional
+%\begin{dedicatoria}
+%  Dedico\ldots 
+%\end{dedicatoria}
+
+%Opcional
+\begin{agradecimentos}
+Este texto e todo o trabalho oculto atrás das palavras aqui escritas só foram possíveis graças a algumas pessoas que estiveram ao meu lado ao longo dos últimos anos. Neste fim de uma era cheia de estudos e fortes labutas, torna-se impossível agradecer a todos. Principalmente tendo em vista a trágica fase da educação e ciência que o nosso país tem vivenciado. No entanto, algumas pessoas precisam ser citadas:
+  
+Em primeiro lugar, ao amor de minha vida, \textbf{Janaína Araujo}. Obrigado por ser o meu porto seguro, mesmo nas horas mais sombrias. Sem ti, desde os mínimos detalhes, nada nesta vida faria sentido.
+  
+Em segundo lugar, aos meus pais, \textbf{Ceni Alaniz e Paulo Borges}, que, desde o começo dessa minha jornada na academia, tornaram tudo possível. Sem vocês, eu nada seria.
+
+Em terceiro lugar, ao meu orientador \textbf{Guilherme Corrêa}, pela paciência e o estímulo. Sei bem que não sou o ideal de orientando: teimoso, confuso e insistente. Obrigado pelos aprendizados e oportunidades. Espero, sinceramente, que este não seja o fim desta amizade. A boa notícia é que se tu conseguiste sobreviver à minha orientação, irás sobreviver a tudo! haha
+  
+Em quarto lugar, aos \textbf{meus colegas} mais próximos: Bianca da Silveira, Isis Bender, Marcel Moscarelli, Rafael Ferreira, Renira Soares e Roberta Palau. As nossas intensas trocas de ideias, principalmente no começo do doutorado, serviram muito como uma quase via dupla de co-orientação. Acredito que muitos dos nossos trabalhos evoluíram graças aos nossos papos. Obrigado por dividirem comigo essa longa trilha que é ser pesquisador no Brasil.
+  
+Em quinto lugar, à minha orientanda \textbf{Caroline Camargo}, que me auxiliou na habilidade de ensinar e me encantou na arte de aprender com os mais novos. Foi com essa nossa relação que aprendi a cobrar e ser cobrado. Meu muito obrigado. Continue sendo essa pesquisadora maravilhosa.
+
+Em sexto lugar, um agradecimento especial para mim mesmo e todas as \textbf{vozes da minha cabeça}. Nada teria saído do papel sem os longos e intensos debates que tivemos.
+
+Em sétimo lugar, à \textbf{Aline Duvoisin}, um muitíssimo obrigado por ter sido a minha primeira leitora da tese. Tuas observações e correções auxiliaram imensamente para tornar este texto compreensível para grande parte das pessoas fora da área da Computação. 
+
+Em oitavo lugar, à \textbf{Patrícia Borba}, pois há dez anos fostes tu quem primeiro me direcionou ao universo acadêmico de pesquisas. Só então eu comecei a descobrir o prazer da área, apesar de todos os perrengues. Meu eterno muitíssimo obrigado!
+  
+Também devo meu muito obrigado a todos os que colaboraram com a minha caminhada até este momento: amigos antigos e novos, colegas de várias jornadas, professores e família. As coisas só fazem sentido quando olhamos para trás e apreciamos a jornada. Inenarrável é o prazer de fazer parte da vida de vocês! 
+
+Por fim, não posso deixar de mencionar o clássico agradecimento que tem me acompanhado na última década de vida como pesquisador. Mesmo considerando a gestão que acompanhou o meu caminho neste doutorado, sem esse especial agradecimento provavelmente não haveria tanta ciência de ponta sendo feita neste país. Por isso, pela última vez como aluno, digo: \texttt{This study was financed in part by the \textit{Coordenação de Aperfeiçoamento de Pessoal de Nível Superior} – Brasil (CAPES) – Finance Code 001, Foundation for Research Support of the State of Rio Grande do Sul (FAPERGS), and National Council for Scientific and Technological Development (CNPq)}.
+
+\end{agradecimentos}
+
+
+%Opcional
+\begin{epigrafe}
+Traidor da Constituição é traidor da Pátria. Conhecemos o caminho maldito. Rasgar a Constituição, trancar as portas do Parlamento, garrotear a liberdade, mandar os patriotas para a cadeia, o exílio e o cemitério. \\
+Quando, após tantos anos de lutas e sacrifícios, promulgamos o Estatuto do Homem, da Liberdade e da Democracia, bradamos por imposição de sua honra. \\
+Temos ódio à ditadura. \\
+\\
+ÓDIO E NOJO. \\
+\\
+{\sc --- Ulisses Guimarães\\
+(5 de outubro de 1988)}
+\end{epigrafe}
+
+%Resumo em Portugues (no maximo 500 palavras)
+\begin{abstract}
+Codificadores de vídeo são ferramentas importantíssimas atualmente para a viabilização de aplicações comuns no nosso cotidiano, seja em aplicativos dedicados à transmissão de vídeo para entretenimento, como YouTube e Netflix, seja em redes sociais, como Instagram ou TikTok, ou ainda para comunicação privada, como em chamadas de vídeo. Não à toa, mesmo com uso de codificadores de vídeo eficientes, conteúdos de vídeo representam uma parcela considerável do tráfego de dados mundial pela internet. Por este motivo, esta é uma área de relevância ímpar na comunidade científica e a definição de novos padrões e formatos de compressão de vídeo cada vez mais eficientes tem sido uma constante. Considerando o grande número de formatos e padrões de codificação, a modificação de arquivos de vídeo para diversos fins é uma prática comum, seja para prover compatibilidade entre dispositivos ou ainda para adequar um vídeo codificado a situações adversas, como adaptação de taxa de bits e resolução. Essa modificação é chamada de transcodificação de vídeo e possui diversas aplicações. Uma das aplicações, denominada transcodificação heterogênea, tipicamente envolve a atualização de vídeos codificados em um formato mais antigo para outro mais recente e com maior eficiência de compressão. Contudo, essa tarefa exige um significativo esforço computacional, pois envolve uma decodificação e uma nova codificação em sequência. Por isso, parte da comunidade científica atuante na área de codificação de vídeo vem buscando soluções para acelerar o processo de transcodificação de vídeo. Esta tese está centrada neste objetivo. A tese apresenta inicialmente o estado da arte em transcodificação de vídeo, suas aplicações e técnicas. Nesta tese, são apresentadas sete propostas de transcodificadores rápidos para o formato AOMedia Video 1 (AV1), partindo de outros formatos largamente utilizados pela indústria de \textit{streaming} de vídeo. Dentre as propostas realizadas, destacam-se aquelas que empregam modelos preditivos treinados por algoritmos de aprendizado de máquina para acelerar as decisões de particionamento do codificador. De forma a possibilitar o desenvolvimento ágil de transcodificadores rápidos, esta tese também propõe um \textit{pipeline} de processamento, que permite, dentre outras coisas, a automatização do treinamento de modelos preditivos e o escalonamento de experimentos para testá-los. Como prova de conceito a essa proposta metodológica, cinco transcodificadores de vídeo rápidos foram desenvolvidos com o \textit{pipeline}, todos eles empregando modelos preditivos do tipo árvore de decisão. Os resultados obtidos indicam que é possível acelerar o processo de transcodificação para o formato AV1 entre 12\% e 55\%, com perdas em eficiência de codificação que variam entre 1,6\% e 12,8\%, dependendo do formato de origem.
+\end{abstract}
+
+%Resumo em Inglês (no maximo 500 palavras)
+\begin{englishabstract}{Development of Machine Learning-Based Solutions for Fast Video Transcoding to the Format AOMedia Video 1}
+Video encoders are currently very important tools for enabling common applications in our daily lives, whether in applications dedicated to video transmission for entertainment, such as YouTube and Netflix, or in social networks, such as Instagram or TikTok, or even for private communication, such as on video calls. Even with the use of efficient video encoders, video content represents a considerable portion of the world's data traffic over the Internet. For this reason, this is an area of unique relevance in the scientific community and the definition of new standards and video compression formats has been a constant. Considering the large number of video formats and standards, modifying encoded video files for different purposes is a common practice, whether to provide compatibility between devices or even to adapt a coded video to different situations, such as bit rate adaptation and resolution change. This modification is called video transcoding and has several applications. One of the applications, called heterogeneous transcoding, tipically involves updating videos encoded in an older format to a more recent one with greater compression efficiency. However, this task requires a significant computational effort, as it involves decoding and re-encoding the video in sequence. Therefore, part of the scientific community active in the video coding field has been looking for solutions to speed up the video transcoding process. This thesis is focused on this goal. The thesis initially presents the state of the art in video transcoding, its applications and techniques. In this thesis, seven fast transcoders are proposed for the AOMedia Video 1 (AV1) format, based on other formats widely used by the video \textit{streaming} industry. Among the proposals, those that employ predictive models trained by machine learning algorithms to accelerate the encoder partitioning decisions stand out. In order to enable the agile development of fast transcoders, this thesis also proposes a processing pipeline, which allows, among other things, the automation of training predictive models and the scheduling of experiments to test them. As a proof of concept for this methodological proposal, five fast video transcoders were developed with the pipeline, all of them employing decision tree models. The obtained results indicate that it is possible to accelerate the transcoding process for the AV1 format between 12\% and 55\%, with losses in coding efficiency that vary between 0.96\% and 12.85\%, depending on the source format.
+\end{englishabstract}
+
+%Lista de Figuras
+\listoffigures
+
+%Lista de Tabelas
+\listoftables
+
+%lista de abreviaturas e siglas
+\begin{listofabbrv}{BD-rate}%coloque aqui a maior sigla para ajustar a distância
+        \item[ACM] Association for Computing Machinery
+        \item[AI] inteligência artificial
+        \item[AV1] AOMedia Video 1
+        \item[AVC] Advanced Video Coding
+        \item[AVS] Audio Video Standard
+        \item[AUC] Area Under the Curve ROC
+        \item[BD-rate] Bj{\o}ntegaard Delta-rate
+        \item[CART] Classification and Regression Trees
+        \item[CNN] Convolutional Neural Network
+        \item[CQ] nível de Constrained Quality
+        \item[CTU] Coding Tree Units
+        \item[CU] Coding Unit
+        \item[DOI] Digital Object Identifier
+        \item[HD720] Vídeos de Alta Resolução, com 1280$\times$720 pixels
+        \item[HD1080] Vídeos de Alta Resolução, com 1920$\times$1080 pixels
+        \item[HDR] High Dynamic Range
+        \item[HEVC] High Efficiency Video Coding
+        \item[HRSCV] \textit{Halving Random Search with Cross Validation}
+        \item[LDF] Linear Discriminant Functions
+        \item[LSTM] Long Short-Term Memory
+        \item[ML] Aprendizado de Máquina
+        \item[MLR] Multiple Linear Regression
+        \item[MPEG] Moving Picture Experts Group
+        \item[PSNR] Peak Signal-to-Noise Ratio
+        \item[PU] Prediction Unit
+        \item[QP] nível de Quantization Parameter level
+        \item[rd-cost] custo taxa-distorção
+        \item[RDO] Rate-Distortion Optimization 
+        \item[RGS] Random Grid Search
+        \item[ROC] Receiver Operating Characteristics
+        \item[SB] Superbloco
+        \item[SCC] Screen Content Coding
+        \item[SVM] Support Vector Machine
+        \item[TS] Redução de Tempo da Transcodificação
+        \item[UHD4K] Vídeos de Ultra-Alta Resolução, com 4196$\times$2160 pixels
+        \item[VMAF] Video Multi-Method Assessment Fusion
+        \item[VVC] Versatile Video Coding
+\end{listofabbrv}
+
+%Sumario
+\tableofcontents
+
+\input{ChapterONE/cap1.tex}
+\input{ChapterTWO/cap2.tex}
+\input{ChapterTHREE/cap3.tex}
+\input{ChapterFOUR/cap4.tex}
+\input{ChapterFIVE/cap5.tex}
+\input{ChapterSIX/cap6.tex}
+\input{ChapterSEVEN/cap7.tex}
+\input{ChapterEND/conclusao.tex}
+
+\bibliographystyle{abnt}
+\bibliography{bibliografia} 
+
+% Apêndices (Opcional) - Material produzido pelo autor
+\apendices
+
+\input{APPENDIX/apx1.tex}
+\input{APPENDIX/apx2.tex}
+\input{APPENDIX/apx3.tex}
+
+\end{document}

@@ -1,0 +1,150 @@
+\chapter{Cálculo das combinações de árvores do AV1}
+\label{apx:B}
+
+Neste apêndice encontra-se o código utilizado para obter o número de arranjos de árvores de particionamento disponíveis para uso pelo software de referência do AV1, considerando alguns parâmetros conhecidos. Este código foi utilizado no capítulo \ref{cap:5}
+
+\begin{minted}[linenos]{python}
+#Definindo os particionamentos permitidos para cada profundidade
+allow_on_depth_128 = ['none', 'horz', 'vert', 'horz_a', 'horz_b', 
+                      'vert_a', 'vert_b', 'split']
+allow_on_depth_64  = ['none', 'horz', 'vert', 'horz_a', 'horz_b', 
+                      'vert_a', 'vert_b', 'horz_4', 'vert_4', 'split']
+allow_on_depth_32  = ['none', 'horz', 'vert', 'horz_a', 'horz_b', 
+                      'vert_a', 'vert_b', 'horz_4', 'vert_4', 'split']
+allow_on_depth_16  = ['none', 'horz', 'vert', 'horz_a', 'horz_b', 
+                      'vert_a', 'vert_b', 'horz_4', 'vert_4', 'split']
+allow_on_depth_8   = ['none', 'horz', 'vert', 'split']
+allow_on_depth_4   = ['none']
+ 
+#unificando todas as profundidades
+ptypes_allowed = [allow_on_depth_128, allow_on_depth_64, 
+                  allow_on_depth_32, allow_on_depth_16, 
+                  allow_on_depth_8, allow_on_depth_4]
+ 
+#definindo os particionamentos proibidos nas 3 combinações abaixo
+rule_rect = ['horz', 'vert', 'horz_a', 'horz_b', 'vert_a', 'vert_b', 
+             'horz_4', 'vert_4']
+rule_ab   = ['horz_a', 'horz_b', 'vert_a', 'vert_b']
+rule_1TO4 = ['horz_4', 'vert_4']
+ 
+#dict que traduz o tamanho do bloco em profundidade
+dpt_translator = {128:0, 64:1, 32:2, 16:3, 8:4, 4:5}
+
+#função que calcula o máximo de combinações de árvores possível
+def original_tree(Node, depth):
+ i = 0
+ for ptype in Node[depth]:
+   if ptype == 'split':
+     i += original_tree(Node, depth + 1)
+     i += original_tree(Node, depth + 1)
+     i += original_tree(Node, depth + 1)
+     i += original_tree(Node, depth + 1)
+   else:
+       i += 1
+ return i
+ 
+#função que calcula o máximo de combinações de árvores possível,
+#excluíndo os ptypes proibidos
+def limit_ptype_tree(Node, depth, forbid):
+ i = 0
+ for ptype in Node[depth]:
+   if ptype == 'split':
+     i += limit_ptype_tree(Node, depth + 1, forbid)
+     i += limit_ptype_tree(Node, depth + 1, forbid)
+     i += limit_ptype_tree(Node, depth + 1, forbid)
+     i += limit_ptype_tree(Node, depth + 1, forbid)
+   elif not (ptype in forbid):
+     i += 1
+ return i
+ 
+#função que calcula o máximo de combinações de árvores possível, 
+#evitando as profundidades proibidas
+def limit_tree_depth(Node, depth, max, min):
+ i = 0
+ if depth < max:
+   i += limit_tree_depth(Node, depth + 1, max, min)
+   i += limit_tree_depth(Node, depth + 1, max, min)
+   i += limit_tree_depth(Node, depth + 1, max, min)
+   i += limit_tree_depth(Node, depth + 1, max, min)
+ elif depth > min:
+   return i
+ else:
+   for ptype in Node[depth]:
+     if ptype == 'split':
+       i += limit_tree_depth(Node, depth + 1, max, min)
+       i += limit_tree_depth(Node, depth + 1, max, min)
+       i += limit_tree_depth(Node, depth + 1, max, min)
+       i += limit_tree_depth(Node, depth + 1, max, min)
+     else:
+         i += 1
+ return i
+
+#Saída de todos os casos
+print("original", original_tree(ptypes_allowed, 0))
+ 
+print("rect    ", limit_ptype_tree(ptypes_allowed, 0, rule_01))
+print("ab      ", limit_ptype_tree(ptypes_allowed, 0, rule_02))
+print("1TO4    ", limit_ptype_tree(ptypes_allowed, 0, rule_03))
+ 
+print("128-64  ", limit_tree_depth(ptypes_allowed, 
+                                   0,
+                                   dpt_translator[128], 
+                                   dpt_translator[64]))
+print("128-32  ", limit_tree_depth(ptypes_allowed,
+                                   0, 
+                                   dpt_translator[128], 
+                                   dpt_translator[32]))
+print("128-16  ", limit_tree_depth(ptypes_allowed, 
+                                   0, 
+                                   dpt_translator[128], 
+                                   dpt_translator[16]))
+print("128-8   ", limit_tree_depth(ptypes_allowed, 
+                                   0, 
+                                   dpt_translator[128], 
+                                   dpt_translator[8]))
+ 
+print("64-32   ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[64], 
+                                   dpt_translator[32]))
+print("64-16   ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[64], 
+                                   dpt_translator[16]))
+print("64-8    ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[64], 
+                                   dpt_translator[8]))
+print("64-4    ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[64], 
+                                   dpt_translator[4]))
+ 
+print("32-16   ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[32], 
+                                   dpt_translator[16]))
+print("32-8    ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[32], 
+                                   dpt_translator[8]))
+print("32-4    ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[32], 
+                                   dpt_translator[4]))
+ 
+print("16-8    ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[16], 
+                                   dpt_translator[8]))
+print("16-4    ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[16], 
+                                   dpt_translator[4]))
+ 
+print("8-4     ", limit_tree_depth(ptypes_allowed, 
+                                   0,  
+                                   dpt_translator[8], 
+                                   dpt_translator[4]))
+
+\end{minted}

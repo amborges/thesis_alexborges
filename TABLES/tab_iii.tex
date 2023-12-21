@@ -1,0 +1,71 @@
+\afterpage{
+\clearpage
+
+\begin{landscape}
+{\footnotesize
+\begin{longtblr}[
+    caption = {Resumo dos artigos presentes na revisão sistemática da literatura sobre transcodificação rápida de vídeo, publicados entre os anos de 2011 e 2022.},
+    label = {tab:III},
+    note{1} = {Valor adaptado da métrica ``número de vezes mais rápido que'' (do inglês, \textit{speed-up}) para percentual TS.}
+]{
+    colspec = {p{5cm}|p{2.2cm}|p{2.2cm}|p{4cm}|c|c|c},
+    rowhead = 1,
+    hlines,
+    row{even} = {gray9}
+}
+\hline
+\textbf{Autor} & \textbf{Formato de Origem} & \textbf{Formato de Destino} & \textbf{Estágios Envolvidos} & \textbf{BD-rate (\%)} & \textbf{TS (\%)} & \textbf{Razão ($\frac{BD-rate}{TS}$)} \\
+\citet{bib:leuven_2011} & H.264/AVC & H.264/AVC & particionamento de blocos, predição intraquadro & 7,33 & 95,73 & 0,077 \\
+\citet{bib:wang_2012} & H.264/AVC & H.264/AVC & predição interquadros & 3,53 & 90,62 & 0,039 \\
+\citet{bib:aminlou_2016} & H.264/AVC & H.264/AVC & predição interquadros & 6,60 & 6,80 & 0,971 \\
+\SetCell[c=4]{r}\textit{Média de H.264/AVC-to-H.264/AVC} &&&& \textit{5.82} & \textit{64.38} & \\
+\SetCell[c=4]{r}\textit{Desvio Padrão de H.264/AVC-to-H.264/AVC} &&&& \textit{2,02} & \textit{49,93} & \\
+
+\citet{bib:zhang_2012} & H.264/AVC & H.265/HEVC & particionamento de blocos, predição intraquadro e predição interquadros & 30,00 & 80,00 & 0,375 \\
+\citet{bib:peixoto_2012} & H.264/AVC & H.265/HEVC & predição interquadros & 5,49 & 52,74 & 0,104 \\
+\citet{bib:jiang_2013} & H.264/AVC & H.265/HEVC & predição interquadros & 1,45 & 30,50 & 0,048 \\
+\citet{bib:peixoto_2014} & H.264/AVC & H.265/HEVC & predição interquadros & 3,87 & 63,06 & 0,061 \\
+\citet{bib:peixoto2_2014} & H.264/AVC & H.265/HEVC & particionamento de blocos & 8,41 & 70,54 & 0,119 \\
+\citet{bib:honrubia_2014} & H.264/AVC & H.265/HEVC & particionamento de blocos & 4,80 & 64,29 & 0,075 \\
+\citet{bib:peixoto3_2014} & H.264/AVC & H.265/HEVC & particionamento de blocos, predição intraquadro e predição interquadros & 3,32 & 49,75\TblrNote{1} & 0,067 \\
+\citet{bib:nagaraghatta_2015} & H.264/AVC & H.265/HEVC & predição interquadros & 4,20 & 50,33 & 0,083 \\
+\citet{bib:franche_2015} & H.264/AVC & H.265/HEVC & BP. predição interquadros & 3,28 & 87,32 & 0,038 \\
+\citet{bib:honrubia_2015} & H.264/AVC & H.265/HEVC & particionamento de blocos & 5,20 & 60,00\TblrNote{1} & 0,087 \\
+\citet{bib:honrubia_2016} & H.264/AVC & H.265/HEVC & particionamento de blocos & 2,20 & 57,37 & 0,038 \\
+\citet{bib:correa_2016} & H.264/AVC & H.265/HEVC & particionamento de blocos & 1,67 & 44,10 & 0,038 \\
+\citet{bib:franche_2017} & H.264/AVC & H.265/HEVC & predição interquadros & 10,13 & 67,90 & 0,149 \\
+\citet{bib:liu_2018} & H.264/AVC & H.265/HEVC & particionamento de blocos & 1,83 & 53,71 & 0,034 \\
+\citet{bib:xu_2019} & H.264/AVC & H.265/HEVC & particionamento de blocos & 1,16 & 59,60 & 0,019 \\
+\citet{bib:soares_2019} & H.264/AVC & H.265/HEVC & particionamento de blocos & 0,75 & 24,28 & 0,031 \\
+\citet{bib:xin_2022} & H.264/AVC & H.265/HEVC & particionamento de blocos & 0,60 & 38,40 & 0,015 \\
+\SetCell[c=4]{r}\textit{Média de H.264/AVC-to-H.265/HEVC} &&&& \textit{5,20} & \textit{56,11} \\
+\SetCell[c=4]{r}\textit{Desvio Padrão de H.264/AVC-to-H.265/HEVC} &&&& \textit{2,71} & \textit{15,59} \\
+
+\citet{bib:sung_2014} & H.265/HEVC & H.265/HEVC & particionamento de blocos & 1,46 & 51,02 & 0,029 \\
+\citet{bib:nguyen_2015} & H.265/HEVC & H.265/HEVC & particionamento de blocos & 0,88 & 40,50 & 0,022 \\
+\citet{bib:grellert_2018} & H.265/HEVC & H.265/HEVC & particionamento de blocos & 0,29 & 41,81 & 0,007 \\
+\citet{bib:lindino_2021} & H.265/HEVC & H.265/HEVC & particionamento de blocos & 0,54 & 42,00 & 0,013 \\
+\citet{bib:xin_2022} & H.265/HEVC & H.265/HEVC & particionamento de blocos & 0,60 & 38,40 & 0,015 \\
+\SetCell[c=4]{r}\textit{Média de H.265/HEVC-to-H.265/HEVC} &&&& \textit{5.20} & \textit{56,11} \\
+\SetCell[c=4]{r}\textit{Desvio Padrão de H.265/HEVC-to-H.265/HEVC} &&&& \textit{2,71} & \textit{15,59} \\
+
+\citet{bib:borges_2019} & H.265/HEVC & AV1 & particionamento de blocos & 4,55 & 35,41 & 0,128 \\
+\citet{bib:borges2_2019} & H.265/HEVC & AV1 & particionamento de blocos & 4,94 & 35,43 & 0,139 \\
+\citet{bib:chen_2019} & H.265/HEVC & AV1 & particionamento de blocos & 0,79 & 37,80 & 0,021 \\
+\citet{bib:borges2_2021} & H.265/HEVC & AV1 & particionamento de blocos & 5,38 & 34,06 & 0,158 \\
+\SetCell[c=4]{r}\textit{Média de H.265/HEVC-to-AV1} &&&& \textit{3,91} & \textit{35,68} \\
+\SetCell[c=4]{r}\textit{Desvio Padrão de H.265/HEVC-to-AV1} &&&& \textit{2,11} & \textit{1,56} \\
+
+\citet{bib:jin_2011} & AVS & H.264/AVC & predição intraquadro e predição interquadros & 0,58 & 78,15 & 0,007 \\
+\citet{bib:tang_2015} & H.265/HEVC & H.264/AVC & particionamento de blocos, predição intraquadro e predição interquadros & 2,68 & 60,62 & 0,044 \\
+\citet{bib:torre_2015} & H.265/HEVC & VP9 & predição interquadros & 3,51 & 36,24 & 0,097 \\
+\citet{bib:li_2017} & VP9 & H.265/HEVC & particionamento de blocos & 3,70 & 43,50 & 0,085 \\
+\citet{bib:lucas_2020} & H.265/HEVC & H.266/VVC & particionamento de blocos & 0,32 & 13,38 & 0,024 \\
+\citet{bib:borges_2021} & VP9 & AV1 & particionamento de blocos & 4,34 & 28,16 & 0,154 \\
+\SetCell[c=4]{r}\textbf{Média Geral} &&&& \textbf{4,11} & \textbf{50,74} \\
+\SetCell[c=4]{r}\textbf{Desvio Padrão Geral} &&&& \textbf{2,46} & \textbf{19,23} \\
+\hline
+\end{longtblr}
+}
+\end{landscape}
+}

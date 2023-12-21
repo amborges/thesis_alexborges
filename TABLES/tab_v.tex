@@ -1,0 +1,31 @@
+\begin{center}
+{\footnotesize
+\begin{longtblr}[
+    caption = {Estruturas de particionamento de bloco permitidas em diferentes padrões e formatos de codificação de vídeo.},
+    label = {tab:V},
+    note{1} = {nesta tabela foi considerada a versão livre de royalties do padrão MPEG-5 EVC.},
+]{
+    colspec = {p{2.5cm}|p{6cm}p{6cm}},
+    hlines,
+    row{even} = {gray9}
+}
+\hline
+\textbf{Formato} & \textbf{Tamanho de Blocos Disponíveis} & \textbf{Particionamento de Blocos Permitidos} \\
+ AV1 & 128$\times$128, 128$\times$64, 64$\times$128, 64$\times$64, 64$\times$32, 32$\times$64, 64$\times$16, 16$\times$64, 32$\times$32, 32$\times$16, 16$\times$32, 32$\times$8, 8$\times$32, 16$\times$16, 16$\times$8, 8$\times$16, 16$\times$4, 4$\times$16, 8$\times$8, 8$\times$4, 4$\times$8, and 4$\times$4 & um bloco quadrático; dois blocos retangulares de proporção 1:2 ou 2:1 (combinação binária); quatro blocos retangulares de proporção 1:4 ou 4:1 (combinação quaternária); combinações ternárias com um bloco retangular de proporção 1:2 ou 2:1 e dois blocos quadráticos. \\
+ 
+ AVS3 & 128$\times$128, 128$\times$64, 64$\times$128, 128$\times$32, 32$\times$128, 64$\times$64, 64$\times$32, 32$\times$64, 64$\times$16, 16$\times$64, 32$\times$32, 32$\times$16, 16$\times$32, 32$\times$8, 8$\times$32, 16$\times$16, 16$\times$8, 8$\times$16, 16$\times$4, 4$\times$16, 8$\times$8, 8$\times$4, 4$\times$8, and 4$\times$4 & um bloco quadrático; combinações binárias; dois blocos retangulares assimétricos de proporção 1:4 e 3:4 ou 4:1 e 4:3. \\
+ 
+ MPEG-5 EVC-Baseline\TblrNote{1} & 64$\times$64, 32$\times$32, 16$\times$16, 8$\times$8, and 4$\times$4 & um bloco quadrático. \\
+ 
+ H.264/AVC & 16$\times$16, 16$\times$8, 8$\times$16, 8$\times$8, 8$\times$4, 4$\times$8 e 4$\times$4 & um bloco quadrático; quatro blocos quadráticos; combinações binárias. \\
+
+ H.265/HEVC & 64$\times$64, 64$\times$32, 32$\times$64, 64$\times$16, 16$\times$64, 64$\times$48, 48$\times$64, 32$\times$32, 32$\times$16, 16$\times$32, 32$\times$8, 8$\times$32, 32$\times$24, 24$\times$32, 16$\times$16, 16$\times$8, 8$\times$16, 16$\times$4, 4$\times$16, 16$\times$12, 12$\times$16, 8$\times$8, 8$\times$4, 4$\times$8, 8$\times$2, 2$\times$8, 8$\times$6, 6$\times$8, and 4$\times$4 &  um bloco quadrático; quatro blocos quadráticos; combinações binárias; dois blocos retangulares assimétricos de proporção 1:4 e 3:4 ou 4:1 e 4:3. \\
+
+ VP9 & 64$\times$64, 64$\times$32, 32$\times$64, 32$\times$32, 32$\times$16, 16$\times$32, 16$\times$16, 16$\times$8, 8$\times$16, and 8$\times$8 & um bloco quadrático; combinações binárias. \\
+
+ H.266/VVC & 128$\times$128, 128$\times$64, 64$\times$128, 64$\times$64, 128$\times$32, 32$\times$128, 64$\times$32, 32$\times$64, 64$\times$16, 16$\times$64, 32$\times$32, 32$\times$16, 16$\times$32, 32$\times$8, 8$\times$32, 16$\times$16, 16$\times$8, 8$\times$16, 16$\times$4, 4$\times$16, 8$\times$8, 8$\times$4, 4$\times$8, and 4$\times$4 & um bloco quadrático; combinações binárias; combinações ternárias com dois blocos retangulares de proporção 1:4 e um bloco retangular de proporção 1:2 ou dois 4:1 e um 2:1. \\
+ 
+\hline
+\end{longtblr}
+}
+\end{center}

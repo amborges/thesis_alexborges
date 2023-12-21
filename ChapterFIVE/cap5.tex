@@ -1,0 +1,32 @@
+\chapter{Análise de Complexidade do Particionamento de Blocos do AV1}
+\label{cap:5}
+
+Durante a revisão sistemática da literatura, ficou claro que o uso de particionamento de blocos para reaproveitamento de informações é uma das principais formas para acelerar a transcodificação de vídeo. Para demonstrar o impacto que as estruturas de particionamento ocasionam na codificação do vídeo, neste capítulo analisamos a complexidade do codificador AV1, principalmente em relação ao custo computacional e o impacto na eficiência de codificação relacionado ao processo de particionamento.
+
+Anteriormente, na seção \ref{cap:3.3}, apresentamos, na Tabela \ref{tab:V}, os tamanhos de blocos e os particionamentos permitidos em alguns formatos de codificação de vídeo. A estrutura de particionamento de blocos do AV1 é representada por uma árvore de particionamentos, cujos nós intermediários possuem quatro filhos. O nó raiz, denominado Superbloco (SB), possui dois tamanhos válidos: o principal, de 128$\times$128 amostras, e o segundo, de 64$\times$64 amostras, sendo este último utilizado principalmente em vídeos de baixa resolução. Já o menor bloco permitido no AV1 também depende da resolução do vídeo, sendo que o principal tamanho é de 4$\times$4, exceto caso a resolução seja igual ou superior a UHD4K. Neste caso, o menor tamanho de bloco permitido é de 8$\times$8 amostras. Por fim, existem 21 possibilidades de nós folhas no AV1, como mostramos na Tabela \ref{tab:V}, variando entre blocos quadráticos e blocos retangulares de proporção 1:2, 2:1, 4:1 e 1:4. É importante observar que as predições intraquadro ou interquadros são permitidas apenas nos nós folhas. Logo, durante a codificação são avaliadas diferentes configurações de árvores, cada uma com diferentes conjuntos de nós folhas.
+
+Como qualquer estrutura de dados do tipo árvore, a árvore de particionamentos do AV1 possui profundidades bem definidas, mais especificamente seis, que podem ser facilmente associadas ao tamanho de bloco quadrático principal daquela profundidade, sendo: 0 para 128$\times$128, 1 para 64$\times$64, 2 para 32$\times$32, 3 para 16$\times$16, 4 para 8$\times$8 e 5 para 4$\times$4. Assim como em outros formatos de codificação de vídeo, existem uma série de arranjos de blocos permitidos em cada profundidade. A Figura \ref{fig:14} sumariza esses arranjos no AV1, de onde podemos observar a existência de dez possibilidades, sendo elas:
+
+\begin{itemize}
+    \item \textit{NONE}, que permite a predição em blocos quadráticos de tamanho N$\times$N;
+    
+    \item \textit{RECT}, que permite a predição binária, ou seja, em blocos retangulares de proporção 1:2 (vertical) ou 2:1 (horizontal). Esse tipo de particionamento não é permitido para o nó de profundidade 5;
+
+    \item \textit{AB}, que permite a predição ternária, ou seja, em blocos de organização mista entre dois quadráticos e um retangular de proporção 1:2 ou 2:1. Esse tipo de particionamento não é permitido para o nó de profundidade 5;
+
+    \item \textit{1TO4}, que permite a predição quaternária, ou seja, em blocos retangulares de proporção 1:4 (vertical) ou 4:1 (horizontal). Esse tipo de particionamento não é permitido para os nós de profundidades 0, 4 e 5.
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{FIGURES/fig_14.png}
+    \caption{Tipos de particionamentos permitidos no formato AV1. Fonte: Elaborada pelo autor.}
+    \label{fig:14}
+\end{figure}
+
+Dessa forma, é possível calcular o número total de arranjos de árvores existentes para cada superbloco do AV1, que é de 2.555 combinações. Detalhamos o cálculo desse número no Apêndice \ref{apx:B}. Considerando o rol de ferramentas disponíveis para realizar as predições intraquadro ou interquadros no AV1, para todas essas 2.555 combinações, em uma implementação de busca exaustiva, é possível afirmar que a aplicabilidade desse processo de codificação de vídeo seria inviável sem o uso de algum acelerador de hardware dedicado para esse fim. Por essa razão, o software referência do AV1, mesmo em suas versões iniciais, não utiliza algoritmos de busca exaustiva em seus fluxos de execução, optando por condicionais de paradas antecipadas (podas) que permitem a interrupção dos testes. Até a publicação da versão 2.0 do software de referência do AV1 (\textit{libaom}), as podas eram realizadas por técnicas baseadas em análises estatísticas. Desde então, as novas versões do software de referência utilizam modelos de aprendizado de máquina para predizer as podas, conforme descrito em \citet{bib:av1_ml_partitioning}.
+
+Dessa forma, duas análises distintas precisam ser feitas sobre o AV1. A primeira sobre o custo computacional da execução do codificador de referência do AV1 sob diferentes estruturas de particionamento (seção \ref{cap:5.1}) e a segunda sobre a distribuição de ocorrências da subdivisão dos blocos em quatro novos ramos (modo SPLIT) na árvore de particionamentos (seção \ref{cap:5.2}).
+
+\input{ChapterFIVE/cap5.1.tex}
+\input{ChapterFIVE/cap5.2.tex}

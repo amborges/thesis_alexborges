@@ -1,0 +1,161 @@
+%O comando abaixo cria um texto com bordas redondas contendo o ano
+\newcommand{\textoano}[3]{ \fill[black] (#1, #2) node [yearblock] {#3}; }
+%O comando abaixo cria um texto simples que está ligado à linha principal através de uma linha vertical
+\newcommand{\textoref}[3]{ 
+\fill[black] (#1, #2) circle(0.1cm);
+    \draw (#1, #2) -- (#1, #2 - 0.7); 
+    \node at (#1, #2 - 1) [nameblock] {#3};
+}
+%O comando abaixo é igual ao de cima, mas a distância da linha e do texto é 0.3cm menor
+\newcommand{\textorefup}[3]{ 
+\fill[black] (#1, #2) circle(0.1cm);
+    \draw (#1, #2) -- (#1, #2 - 0.5); 
+    \node at (#1, #2 - 0.7) [nameblock] {#3};
+}
+
+%o comando abaixo adiciona reticências no final do desenho
+\newcommand{\tobecontinue}[2]{ 
+\fill[black] (#1 + 0.1, #2) circle(0.05cm);
+\fill[black] (#1 + 0.3, #2) circle(0.05cm);
+\fill[black] (#1 + 0.5, #2) circle(0.05cm);
+}
+
+%DISTANCIA ENTRE UM NODO E OUTRO = 0.8
+%ALTURA ENTRE AS LINHAS: 2.5
+
+\begin{figure}[!t]
+\centering
+\scriptsize
+\begin{tikzpicture}
+\draw (0,10) -- (14.3,10) -- (14.3, 7.5) -- (-0.8, 7.5) -- (-0.8, 5) -- (14.3, 5) -- (14.3, 2.5) -- (-0.8, 2.5) -- (-0.8,0) -- (13.5,0);
+
+\textoano{0}{10}{1984}
+
+    \textoref{0.8}{10}{H.120}% \cite{bib:5to9google}}
+
+\textoano{1.6}{10}{1985}
+\textoano{3.2}{10}{1986}
+\textoano{4.8}{10}{1987}
+\textoano{6.4}{10}{1988}
+
+    \textoref{7.2}{10}{H.261}% \cite{bib:h261}}
+
+\textoano{8}{10}{1989}
+\textoano{9.6}{10}{1990}
+
+    \textorefup{10.4}{10}{TrueMotion S}% \cite{bib:TrueMotion}}
+
+\textoano{11.2}{10}{1991}
+
+    \textoref{12}{10}{Cinepak}% \cite{bib:cinepak}}
+
+\textoano{12.8}{10}{1992}
+\textoano{13.6}{7.5}{1993}
+
+    \textorefup{12.8}{7.5}{Indeo Video 3}% \cite{bib:indeo3}}
+
+\textoano{12}{7.5}{1994}
+\textoano{10.4}{7.5}{1995}
+
+    \textoref{9.6}{7.5}{H.262/MPEG-2}% \cite{bib:mpeg2}}
+    \textorefup{8.8}{7.5}{DV}% \cite{bib:dv_format}}
+
+\textoano{8}{7.5}{1996}
+
+    \textorefup{7.2}{7.5}{H.263}% \cite{bib:h263}}
+    \textoref{6.4}{7.5}{TrueMotion RT}% \cite{bib:TrueMotion}}
+
+\textoano{5.6}{7.5}{1997}
+
+    \textorefup{4.8}{7.5}{MJPEG}% \cite{bib:mjpeg}}
+    \textoref{4}{7.5}{TrueMotion 2}% \cite{bib:TrueMotion}}
+
+\textoano{3.2}{7.5}{1998}
+
+    \textorefup{2.4}{7.5}{Sorenson Video}% \cite{bib:sorenson}}
+
+\textoano{1.6}{7.5}{1999}
+
+    \textoref{0.8}{7.5}{WMV-7}% \cite{bib:wmv9}}
+
+\textoano{0}{5}{2000}
+
+    \textorefup{0.8}{5}{VP3}% \cite{bib:vp3}}
+    \textoref{1.6}{5}{Indeo Video 5}% \cite{bib:indeo5}}
+
+\textoano{2.4}{5}{2001}
+
+    \textorefup{3.2}{5}{VP4}% \cite{bib:vp4}}
+    \textoref{4}{5}{Sorenson Video 3}% \cite{bib:sorenson3}}
+    
+
+\textoano{4.8}{5}{2002}
+
+    \textorefup{5.6}{5}{VP5}% \cite{bib:vp5}}
+
+\textoano{6.4}{5}{2003}
+
+    \textoref{7.2}{5}{H.264/AVC}% \cite{bib:h264overview2}}
+    \textorefup{8}{5}{HDV}% \cite{bib:hdv_format}}
+    \textoref{8.8}{5}{VP6}% \cite{bib:vp6}}
+    \textorefup{9.6}{5}{WMV-9}% \cite{bib:wmv9}}
+
+\textoano{10.4}{5}{2004}
+
+    \textoref{11.2}{5}{Theora}% \cite{bib:theora}}
+
+\textoano{12}{5}{2005}
+
+    \textoref{12.8}{5}{AVS}% \cite{bib:AVS}}
+    \textorefup{13.6}{5}{VP7}% \cite{bib:vp7}}
+
+\textoano{13.6}{2.5}{2006}
+
+    \textoref{12.8}{2.5}{VC-1}% \cite{bib:vc-1}}
+
+\textoano{12}{2.5}{2007}
+\textoano{10.4}{2.5}{2008}
+
+    \textoref{9.6}{2.5}{VP8}% \cite{bib:vp8}}
+
+\textoano{8.8}{2.5}{2009}
+
+    \textoref{8}{2.5}{VC-2}% \cite{bib:vc-2}}
+
+\textoano{7.2}{2.5}{2010}
+\textoano{5.6}{2.5}{2011}
+\textoano{4}{2.5}{2012}
+
+    \textoref{3.2}{2.5}{AVS+}% \cite{bib:avs_plus}}
+    \textorefup{2.4}{2.5}{VP9}% \cite{bib:vp9overview}}
+
+\textoano{1.6}{2.5}{2013}
+
+    \textorefup{0.8}{2.5}{Daala}% \cite{bib:daala}}
+    \textoref{0}{2.5}{H.265/HEVC}% \cite{bib:hevc}}
+
+\textoano{0}{0}{2014}
+\textoano{1.6}{0}{2015}
+
+    \textorefup{2.4}{0}{AVS2}% \cite{bib:avs2}}
+    \textoref{3.2}{0}{Thor}% \cite{bib:thor}}
+
+\textoano{4}{0}{2016}
+\textoano{5.6}{0}{2017}
+\textoano{7.2}{0}{2018}
+
+    \textoref{8}{0}{AV1}% \cite{bib:av1_overview_2021}}
+
+\textoano{8.8}{0}{2019}
+\textoano{10.4}{0}{2020}
+
+    \textorefup{11.2}{0}{H.266/VVC}% \cite{bib:vvc}}
+    \textoref{12}{0}{MPEG-5 EVC}% \cite{bib:evc}}
+    \textorefup{12.8}{0}{AVS3}% \cite{bib:avs3}}
+
+\tobecontinue{14}{0}
+
+\end{tikzpicture}
+\caption{Alguns formatos de codificação de vídeo publicados nas últimas décadas. Fonte: Elaborada pelo autor.}
+\label{fig:1}
+\end{figure}

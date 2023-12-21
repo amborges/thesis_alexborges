@@ -1,0 +1,29 @@
+\begin{table}
+\begin{center}
+\caption{Quantidade de amostras de treinamento e teste de modelos preditivos para a transcodificação VP9-AV1 após o balanceamento.}
+\label{tab:XX}
+\footnotesize
+
+\begin{tblr}{
+    colspec = {l|l|r|r|r},
+    hlines,
+    row{even} = {gray9},
+    cell{5}{1} = {gray9},
+    cell{9}{1} = {gray9}
+}
+\hline
+\SetCell[c=2]{c} && \SetCell[c=3]{c}\textbf{Profundidade}    \\
+\textbf{CQ}                  & \textbf{Conjunto de} & \textbf{0 (128$\times$128)} & \textbf{1 (64$\times$64)} & \textbf{2 (32$\times$32)} \\
+\SetCell[r=2]{c}20 & treinamento & 38.537 & 133.935 & 251.863   \\
+                   & teste       & 30.941 & 89.017 & 145.783   \\
+\SetCell[r=2]{c}32 & treinamento & 42.191 & 132.475 & 232.079   \\
+                   & teste       & 37.055 & 87.115 & 171.525   \\
+\SetCell[r=2]{c}43 & treinamento & 42.293 & 125.575 & 184.545   \\
+                   & teste       & 37.201 & 758.95 & 121.567   \\
+\SetCell[r=2]{c}55 & treinamento & 42.443 & 107.471 & 120.343   \\
+                   & teste       & 37.337 & 66.111 & 62.661   \\
+
+\hline
+\end{tblr}
+\end{center}
+\end{table}

@@ -1,0 +1,55 @@
+\afterpage{
+\clearpage
+
+\begin{landscape}
+{\footnotesize
+\begin{longtblr}[
+    caption = {Resultados da transcodificação rápida de VP9 para AV1 baseada em análise estatística.},
+    label = {tab:XVI}
+]{
+    colspec = {l|l|r|r|r},
+    rowhead = 1,
+    hlines,
+    row{even} = {gray9}
+}
+\hline
+
+\textbf{Classe} & \textbf{Sequência} & \textbf{BD-rate (\%)} & \textbf{TS (\%)} & \textbf{Razão} \\
+\SetCell[r=4]{l}CIF & bqfree\_240p\_120f & 4,7555 & 24,18 & 0,197 \\
+ & bqzoom\_240p\_120f & 4,4228 & 23,37 & 0,189 \\
+ & chairlift\_240p\_120f & 4,0765 & 26,89 & 0,152 \\
+ & mozzoom\_240p\_120f & 2,7979 & 26,15 & 0,107 \\
+\SetCell[c=2]{r}Média – CIF && 4,0132 & 25,15 & \\
+\SetCell[c=2]{r}Desvio Padrão – CIF && 0,8563 & 1,64 & \\
+\SetCell[r=4]{l}SD & rain2\_hdr\_amazon\_360p & 2,9938 & 32,73 & 0,091 \\
+ & red\_kayak\_360p\_120f & 1,9096 & 31,62 & 0,060 \\
+ & snow\_mnt\_640x360\_120f & 1,6583 & 33,61 & 0,049 \\
+ & tacomanarrows360p\_120f & 3,5571 & 18,65 & 0,191 \\
+\SetCell[c=2]{r}Média – SD && 2,5297 & 29,15 & \\
+\SetCell[c=2]{r}{Desvio Padrão – SD} && 0,8972 & 7,05 & \\
+\SetCell[r=4]{l}{HD720} & dark720p\_120f & 4,1424 & 23,02 & 0,180 \\
+ & Johnny\_1280x720\_60\_120f & 6,0483 & 24,74 & 0,245 \\
+ & Netflix\_DrivingPOV\_1280x720\_60fps\_8bit\_420\_120f & 6,3701 & 31,58 & 0,202 \\
+ & Netflix\_RollerCoaster\_1280x720\_60fps\_8bit\_420\_120f & 6,6917 & 41,73 & 0,160 \\
+\SetCell[c=2]{r}Média – HD720 && 5,8131 & 30,27 & \\
+\SetCell[c=2]{r}Desvio Padrão – HD720 && 1,1444 & 8,49 & \\
+\SetCell[r=2]{l}HD1080 & crowd\_run\_1080p50\_60f & 3,5322 & 34,25 & 0,103 \\
+ & Netflix\_Crosswalk\_1920x1080\_60fps\_8bit\_420\_60f & 4,0039 & 18,01 & 0,222 \\
+\SetCell[r=2]{l}HD1080& park\_joy\_1080p50\_60f & 5,8649 & 42,67 & 0,137 \\
+ & seaplane\_hdr\_amazon\_1080p & 4,9808 & 24,53 & 0,203 \\
+\SetCell[c=2]{r}Média – HD1080 && 4,5955 & 29,86 & \\
+\SetCell[c=2]{r}Desvio Padrão – HD1080 && 1,0393 & 10,83 & \\
+\SetCell[r=4]{l}HD1080+SCC & DOTA2\_60f\_420 & 3,3484 & 25,49 & 0,131 \\
+ & MINECRAFT\_60f\_420 & 4,8084 & 47,58 & 0,101 \\
+ & STARCRAFT\_60f\_420 & 2,8454 & 21,22 & 0,134 \\
+ & wikipedia\_420 & 8,0104 & 11,26 & 0,711 \\
+\SetCell[c=2]{r}Média – HD1080+SCC && 4,7532 & 26,39 & \\
+\SetCell[c=2]{r}Desvio Padrão – HD1080+SCC && 2,3256 & 15,33 & \\
+\SetCell[c=2]{r}\textbf{Média Geral} && \textbf{4,3409} &\textbf{ 28,16} & \\
+\SetCell[c=2]{r}\textbf{Desvio Padrão Geral} && \textbf{1,6411} & \textbf{8,92} & \\
+
+\hline
+\end{longtblr}
+}
+\end{landscape}
+}

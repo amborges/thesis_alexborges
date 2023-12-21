@@ -1,0 +1,55 @@
+\babel@toc {brazilian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introdução}{21}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Conceitos Básicos}{27}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Transcodificação de Vídeo}{31}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Aprendizado de Máquina}{35}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Aprendizado de Máquina Supervisionado}{38}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Confiabilidade dos Modelos de Aprendizado de Máquina}{40}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Comparando Codificações}{43}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Revisão Sistemática da Literatura em Transcodificação de Vídeo}{46}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Visão Geral da Transcodificação Rápida de Vídeo}{50}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Transcodificação Assistida por Aprendizado de Máquina}{56}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Transcodificação Rápida por Herança de Particionamento de Blocos}{65}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Considerações Finais Sobre o Estado da Arte}{68}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Metodologia e Ferramental Utilizado}{71}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sequências de Vídeo}{71}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Softwares, Configurações e Linguagens de Programação}{72}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Análise de Complexidade do Particionamento de Blocos do AV1}{77}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Complexidade das Estruturas de Particionamento}{79}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Distribuição de Profundidades e do Modo \textit {SPLIT}}{82}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Transcodificação de Vídeo Baseado em Heurísticas}{86}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Transcodificador H.265/HEVC para AV1}{86}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Metodologia}{89}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Resultados}{91}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Ajuste de Complexidade Experimental}{94}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Transcodificador VP9 para AV1}{95}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Metodologia}{96}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Resultados}{101}{subsection.6.2.2}%
+\contentsline {chapter}{\numberline {7}Transcodificação de Vídeo Baseado em Aprendizado de Máquina}{108}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Metodologia e Ferramental Utilizado}{110}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Algoritmos de Aprendizado de Máquina}{111}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Mensuração de Resultados}{112}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Visão Geral do \textit {Pipeline} de Processamento}{114}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Fase 1: Captura de Dados Brutos}{115}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Fase 2: Processamento de Dados Brutos}{115}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Fase 3: Geração de Lista de Modelos Preditivos}{117}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Fase 4: Geração de Dados Comparativos}{118}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.3}Seleção dos Modelos de Aprendizado de Máquina}{118}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Transcodificação Rápida para o AV1}{127}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Proposta de Algoritmo de Transcodificação Rápida}{127}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Informações Extraídas dos Softwares Decodificadores}{131}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.5}Resultados}{133}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Transcodificação Rápida de VP9-para-AV1}{137}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Transcodificação Rápida de H.264/AVC-para-AV1}{141}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Transcodificação Rápida de VP8-para-AV1}{144}{subsection.7.5.3}%
+\contentsline {subsection}{\numberline {7.5.4}Transcodificação Rápida de H.265/HEVC-para-AV1}{147}{subsection.7.5.4}%
+\contentsline {subsection}{\numberline {7.5.5}Transcodificação Rápida de H.266/VVC-para-AV1}{151}{subsection.7.5.5}%
+\contentsline {subsection}{\numberline {7.5.6}Considerações Gerais e Análise do \textit {Pipeline} de Processamento}{152}{subsection.7.5.6}%
+\contentsline {chapter}{\numberline {8}Conclusão}{160}{chapter.8}%
+\contentsline {chapter}{Refer{\^e}ncias}{164}{chapter.8}%
+\settowidth {\ei@chapnumindent }{{\sffamily \textbf {\MakeUppercase []{Ap{\^e}ndice} }}}\addtolength {\ei@chapnumindent }{1.8em}
+\contentsline {chapter}{\numberline {\MakeUppercase []{Ap{\^e}ndice} A}Relação das Sequências de Vídeos Utilizadas Na Tese}{180}{chapter.1}%
+\contentsline {chapter}{\numberline {\MakeUppercase []{Ap{\^e}ndice} B}Cálculo das combinações de árvores do AV1}{188}{chapter.2}%
+\contentsline {chapter}{\numberline {\MakeUppercase []{Ap{\^e}ndice} C}Publicações e Apresentações Realizadas Durante o Doutorado}{192}{chapter.3}%

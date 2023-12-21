@@ -1,0 +1,31 @@
+\afterpage{
+\clearpage
+
+\begin{landscape}
+{\footnotesize
+\begin{longtblr}[
+    caption = {Relação dos hiperparâmetros disponíveis no algoritmo CART.},
+    label = {tab:XVIII}
+]{
+    colspec = {l|p{14cm}|p{4.2cm}|r},
+    rowhead = 1,
+    hlines,
+    row{even} = {gray9}
+}
+\hline
+\textbf{Hiperparâmetro} & \textbf{Descrição} & \textbf{Valores Utilizados} & \textbf{Quantidade} \\
+\textit{Criterion} & Define a função para medir a qualidade do subparticionamento árvore de decisão. Podem ser utilizados ganho de impureza gini ou ganho de informação por entropia de Shannon, conforme descritos em \citet{bib:CART_matematica}. & 'gini', 'entropy' & 2 \\
+\textit{Splitter} & Define a estratégia utilizada para escolher o subparticionamento em cada nó da árvore de decisão. É possível optar pela melhor divisão ou divisão aleatória. & 'best', 'random' & 2 \\
+\textit{Max Depth} & Define a profundidade máxima da árvore de decisão. O valor ‘None’ indica que não há um limite definido. & 'None', 3, 5, 7, 11, 13, 17, 19, 25 & 9 \\
+\textit{Min Samples Split} & Define o número mínimo de amostras necessárias para subparticionar um nó interno (no mínimo duas amostras). & 2, 3, 5, 7, 11, 13, 17, 19, 25 & 9 \\
+\textit{Min Samples Leaf} & Define o número mínimo de amostras necessárias para tornar um nó como folha. Ou seja, o subparticionamento em qualquer profundidade só será considerado se, pelo menos este número de amostras, estiver tanto no ramo do lado esquerdo como no lado direito.  & 1, 3, 5, 7, 11, 13, 17, 19, 25 & 9 \\
+\textit{Max Features} & Define o número de atributos a serem considerados ao procurar o melhor subparticionamento do nó. Pode ser a raiz quadrada, ou o logaritmo de base dois da quantidade de atributos disponíveis, ou nenhum, indicando que todos os atributos devem ser utilizados. & 'sqrt', 'log2', 'None' & 3 \\
+\textit{Max Leaf Nodes} & Define o número máximo de nós folhas. Em caso de ‘None’, não há limite máximo. A escolha pelos melhores nós é definida pelo próximo atributo. & 'None', 3, 5, 7, 11, 13, 17, 19, 25 & 9 \\
+\textit{Min Impurity Decrease} & Define se um nó deve ser subparticionamento ou não, caso esta divisão induza a uma diminuição na impureza maior ou igual ao valor definido. & 0,0, 0,1, 0,2, 0,3, 0,4, 0,5, 0,6, 0,7, 0,8, 0,9, 1,0 & 11 \\
+\textit{CPP Alpha} & Define o valor a ser usado para poda antecipada considerando a mínima taxa entre custo e complexidade (\textit{Minimal Cost-Complexity Pruning}, conforme \citet{bib:CART_cppalpha}). A subárvore com uma taxa inferior ao definido será escolhida. Se 0.0, nenhuma poda é executada. & 0,0, 0,1, 0,2, 0,3, 0,4, 0,5, 0,6, 0,7, 0,8, 0,9, 1,0 & 11 \\
+\SetCell[c=3]{r}Quantidade Total de Modelos &&& 9.526.572 \\
+\hline
+\end{longtblr}
+}
+\end{landscape}
+}

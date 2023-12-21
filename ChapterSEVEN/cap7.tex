@@ -1,0 +1,41 @@
+\chapter{Transcodificação de Vídeo Baseado em Aprendizado de Máquina}
+\label{cap:7}
+
+Ao longo do texto, apresentamos o uso de aprendizado de máquina como uma importante estratégia para tornar as propostas de aceleração da transcodificação mais eficientes. Como foi ressaltado no capítulo \ref{cap:3}, trabalhos envolvendo aprendizado de máquina tendem a apresentar resultados mais satisfatórios de TS e BD-rate do que aqueles baseados em análises estatísticas. Apesar dos resultados de propostas baseadas em aprendizado de máquina serem positivos, a adaptação das estratégias em outros transcodificadores rápidos é algo incomum, principalmente em transcodificações heterogêneas, já que pode ser difícil, ou mesmo impossível, compatibilizar as complexas ferramentas de diferentes formatos de codificação de vídeo. Portanto, um dos objetivos apresentados neste capítulo é desenvolver um \textit{pipeline} de processamento que possibilite a adaptação da metodologia de desenvolvimento de transcodificadores rápidos para diversas combinações de formatos utilizando aprendizado de máquina. Embora abordemos especificamente o algoritmo de aprendizado de máquina CART (veja seção \ref{cap:7.1}), a alteração de algoritmos e/ou de seus hiperparâmetros, dentro do \textit{pipeline}, é simples e intuitiva.
+
+Para fins de viabilidade e prova de conceito do \textit{pipeline} de processamento proposto, este capítulo apresenta soluções geradas para transcodificadores de diversos formatos para o formato AV1, adaptando um trabalho original desenvolvido de VP9 para AV1. Contudo, ao invés de apresentar múltiplas soluções distintas, ou seja, um transcodificador rápido para cada combinação de formatos (como os apresentados no capítulo \ref{cap:6}), este capítulo propõe a aplicação do \textit{pipeline} proposto, a fim de permitir a geração de soluções para os vários transcodificadores rápidos de forma simplificada.
+
+Como descrito no capítulo \ref{cap:3}, o reaproveitamento de estruturas de particionamento de blocos é uma das principais abordagens em trabalhos de transcodificador rápido observados na literatura científica. Uma das principais razões dessa relevância está no fato de que o número de tamanhos de blocos avaliados está diretamente relacionados com a alta complexidade das predições intraquadro e interquadros, inclusive das transformadas, já que a busca pelos melhores modos preditivos se dá pela busca (por vezes exaustiva) dos diversos tamanhos de blocos disponíveis. Logo, reduzir a quantidade de tamanhos de bloco a serem considerados na recodificação do vídeo reduz consideravelmente a complexidade do codificador. No capítulo \ref{cap:5}, abordamos o impacto na eficiência da codificação do AV1 ao manipular a sua árvore de particionamentos. Portanto, as soluções desenvolvidas para transcodificação rápida usando modelos preditivos gerados por algoritmos de aprendizado de máquina, descritas neste capítulo da tese, possuem como base o treinamento de modelos com o objetivo de predizer o particionamento do bloco em quatro novos ramos.
+
+Assim, apresentamos dois desafios neste capítulo: (1) verificar a possibilidade de implementar um \textit{pipeline} de processamento que permita a adaptação de soluções para transcodificadores rápidos de forma simplificada e escalonável, ou seja, se é possível utilizar os mesmos passos empregados no desenvolvimento de um transcodificador rápido ao desenvolver um outro transcodificador rápido para outra combinação de formatos; e (2) averiguar se o \textit{pipeline} permite atingir resultados compatíveis com o observado na literatura, independentemente da combinação de formatos utilizados como fonte e destino. 
+
+As soluções para aceleração de transcodificadores geradas a partir do \textit{pipeline} proposto baseiam-se nos formatos mais comuns na indústria de \textit{streaming} da atualidade, conforme \citet{bib:bitmovin_report_2021} e \citet{bib:bitmovin_report_2022}: H.264/AVC, H.265/HEVC, VP9, VP8, VVC e AV1. Como deve ter ficado evidente até este momento, optamos por utilizar  o AV1 como formato de destino.
+
+Além do nosso trabalho apresentado na seção \ref{cap:5.2}, não existem outros trabalhos conhecidos com foco na aceleração da transcodificação de VP9 para AV1. Há na literatura alguns trabalhos de transcodificação rápida de H.265/HEVC para AV1, vide \citet{bib:borges_2019}, \citet{bib:borges2_2019}, \citet{bib:borges2_2021} e \citet{bib:chen_2019}. Inclusive, os autores deste último desenvolveram uma solução envolvendo aprendizado de máquina (trabalho já abordado nas seções \ref{cap:3.1} e \ref{cap:6.1}). As demais soluções transcodificação que adaptamos por meio do uso de nosso \textit{pipeline} são de transcodificações rápidas inéditas, até o presente momento, na literatura: VP8-para-AV1, H.264/AVC-para-AV1 e H.266/VVC-para-AV1.
+
+Conforme discutido no capítulo \ref{cap:1} com base no relatório publicado por \citet{bib:bitmovin_report_2021} e \citet{bib:bitmovin_report_2022}, os formatos listados (H.264/AVC, H.265/HEVC, VP9 e VP8) são os mais utilizados na indústria de \textit{streaming} de vídeos. Portanto, apresentamos soluções para aceleração de transcodificação para o formato de codificação de vídeo AV1 a partir de praticamente 100\% dos formatos utilizados no mercado internacional de streaming de vídeo, com exceção da China, que utiliza formatos próprios \cite{bib:china_codecs}.
+
+Assim exposto, este capítulo apresenta as seguintes contribuições nas próximas seções:
+
+\begin{enumerate}[1.]
+    \item Um \textit{pipeline} de processamento para geração de soluções de transcodificadores rápidos de vídeo com uso de modelos preditivos treinados através de aprendizado de máquina;
+
+    \item Um transcodificador VP9-para-AV1, acelerado através do uso de árvores de decisão;
+
+    \item Um transcodificador H.264/AVC-para-AV1, acelerado através do uso de árvores de decisão;
+
+    \item Um transcodificador H.265/HEVC-para-AV1, acelerado através do uso de árvores de decisão;
+
+    \item Um transcodificador VP8-para-AV1, acelerado através do uso de árvores de decisão;
+
+    \item Um transcodificador H.266/VVC-para-AV1, acelerado através do uso de árvores de decisão.
+    
+\end{enumerate}
+
+Para permitir o desenvolvimento e a prova de conceito do \textit{pipeline} de processamento proposto, algumas decisões precisaram ser tomadas, descritas na seção \ref{cap:7.1}. A seção \ref{cap:7.2} se dedica a abordar o funcionamento do \textit{pipeline} proposto e suas fases de execução automatizadas. Os detalhes mais importantes desse \textit{pipeline} de processamento são aprofundados nas seções \ref{cap:7.3} (seleção dos modelos de aprendizado de máquina) e \ref{cap:7.4} (algoritmo de transcodificação a ser adaptado pelas propostas).
+
+\input{ChapterSEVEN/cap7.1.tex}
+\input{ChapterSEVEN/cap7.2.tex}
+\input{ChapterSEVEN/cap7.3.tex}
+\input{ChapterSEVEN/cap7.4.tex}
+\input{ChapterSEVEN/cap7.5.tex}

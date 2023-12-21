@@ -1,0 +1,54 @@
+\babel@toc {brazilian}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\babel@toc {brazilian}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\ 1}{\ignorespaces Alguns formatos de codificação de vídeo publicados nas últimas décadas. Fonte: Elaborada pelo autor.\relax }}{23}{figure.caption.1}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\ 2}{\ignorespaces Representação em alto nível de um codificador de vídeo híbrido. Fonte: Elaborada pelo autor.\relax }}{28}{figure.caption.2}%
+\contentsline {figure}{\numberline {Figura\ 3}{\ignorespaces Visão em alto nível de um transcodificador de vídeo original. Fonte: Elaborada pelo autor.\relax }}{32}{figure.caption.4}%
+\contentsline {figure}{\numberline {Figura\ 4}{\ignorespaces Classificação de transcodificadores de vídeo. Fonte: Elaborada pelo autor com base em \citet {bib:modosTranscodificacao}.\relax }}{32}{figure.caption.5}%
+\contentsline {figure}{\numberline {Figura\ 5}{\ignorespaces Representação em alto nível de uma transcodificação rápida de vídeo. Fonte: Elaborada pelo autor.\relax }}{34}{figure.caption.6}%
+\contentsline {figure}{\numberline {Figura\ 6}{\ignorespaces Fases da vida de um modelo de aprendizado de máquina supervisionado. Fonte: Elaborada pelo autor com base em \citet {bib:livroRaschka}.\relax }}{36}{figure.caption.7}%
+\contentsline {figure}{\numberline {Figura\ 7}{\ignorespaces Exemplo da curva ROC e AUC (destacada em amarelo). Fonte: Elaborada pelo autor.\relax }}{43}{figure.caption.9}%
+\contentsline {figure}{\numberline {Figura\ 8}{\ignorespaces Exemplificando duas curvas de BD-rate. Fonte: Elaborada pelo autor.\relax }}{45}{figure.caption.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\ 9}{\ignorespaces Distribuição da presença dos formatos de codificação de vídeo observados na revisão sistemática da literatura, conforme o tipo de transcodificação. Fonte: Elaborada pelo autor.\relax }}{49}{figure.caption.11}%
+\contentsline {figure}{\numberline {Figura\ 10}{\ignorespaces Distribuição do campo ``estágios envolvidos na transcodificação'', observados durante a revisão sistemática da literatura. Fonte: Elaborada pelo autor.\relax }}{50}{figure.caption.12}%
+\contentsline {figure}{\numberline {Figura\ 11}{\ignorespaces Valores de redução do tempo e do impacto na eficiência de codificação dos trabalhos selecionados pela revisão sistemática da literatura. Fonte: Elaborada pelo autor.\relax }}{57}{figure.caption.13}%
+\contentsline {figure}{\numberline {Figura\ 12}{\ignorespaces Distribuição de algoritmos de aprendizado de máquina nos artigos revisados sobre aceleração de transcodificação de vídeo. Fonte: Elaborada pelo autor.\relax }}{59}{figure.caption.14}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\ 13}{\ignorespaces Tipos de particionamentos permitidos no formato AV1. Fonte: Elaborada pelo autor.\relax }}{78}{figure.caption.17}%
+\contentsline {figure}{\numberline {Figura\ 14}{\ignorespaces Média de distribuição das profundidades da árvore de particionamento do AV1. Fonte: Elaborada pelo autor.\relax }}{84}{figure.caption.18}%
+\contentsline {figure}{\numberline {Figura\ 15}{\ignorespaces Probabilidade do subparticionamento em modo \textit {SPLIT} para cada nível da árvore de particionamento do AV1, em CQs (a) 20, (b) 32, (c) 43 e (d) 55. Fonte: Elaborada pelo autor.\relax }}{85}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\ 16}{\ignorespaces Exemplo de particionamento de uma CTU do H.265/HEVC. Fonte: Elaborada pelo autor.\relax }}{87}{figure.caption.20}%
+\contentsline {figure}{\numberline {Figura\ 17}{\ignorespaces Correlação entre a profundidade observada na decodificação H.265/HEVC (sob QP 22) e na recodificação do mesmo vídeo para o formato AV1 (sob CQ 20). Fonte: Elaborada pelo autor.\relax }}{88}{figure.caption.21}%
+\contentsline {figure}{\numberline {Figura\ 18}{\ignorespaces Fluxograma da proposta de transcodificador rápido de vídeo de H.265/HEVC para AV1 baseado em heurísticas. Fonte: Elaborada pelo autor.\relax }}{91}{figure.caption.23}%
+\contentsline {figure}{\numberline {Figura\ 19}{\ignorespaces Relação do tempo de transcodificação quadro a quadro, comparando a transcodificação original com a transcodificação com troca dinâmica de $La:Lb$. Fonte: Elaborada pelo autor.\relax }}{95}{figure.caption.25}%
+\contentsline {figure}{\numberline {Figura\ 20}{\ignorespaces Pseudocódigo implementado no AV1 para escolha de orientação de particionamentos, baseado na Tabela \ref {tab:XV}. Fonte: Elaborada pelo autor.\relax }}{102}{figure.caption.26}%
+\contentsline {figure}{\numberline {Figura\ 21}{\ignorespaces Proposta de transcodificação rápida do formato VP9 para AV1 baseada em análises estatísticas. Fonte: Elaborada pelo autor.\relax }}{103}{figure.caption.27}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\ 22}{\ignorespaces Representação em alto nível do fluxo de execução do \textit {pipeline} de processamento. Fonte: Elaborada pelo autor.\relax }}{114}{figure.caption.29}%
+\contentsline {figure}{\numberline {Figura\ 23}{\ignorespaces Representação da transcodificação realizada na Fase 1. Fonte: Elaborada pelo autor.\relax }}{115}{figure.caption.30}%
+\contentsline {figure}{\numberline {Figura\ 24}{\ignorespaces Fluxo geral de execução da técnica de avaliação de hiperparâmetros \textit {Halving Random Search with Cross Validation}. Fonte: Elaborada pelo autor.\relax }}{124}{figure.caption.36}%
+\contentsline {figure}{\numberline {Figura\ 25}{\ignorespaces Diagrama de execução da busca da melhor estrutura de particionamentos no \textit {libaom} 3.5.0. Fonte: Elaborada pelo autor.\relax }}{128}{figure.caption.38}%
+\contentsline {figure}{\numberline {Figura\ 26}{\ignorespaces Diagrama de execução da busca da melhor estrutura de particionamentos no transcodificador rápido (\textit {libaom} 3.5.0). Fonte: Elaborada pelo autor.\relax }}{128}{figure.caption.39}%
+\contentsline {figure}{\numberline {Figura\ 27}{\ignorespaces Representação em alto nível das regiões onde atributos são selecionados para alimentar o modelo preditivo. Fonte: Elaborada pelo autor.\relax }}{131}{figure.caption.40}%
+\contentsline {figure}{\numberline {Figura\ 28}{\ignorespaces Representação do tamanho das matrizes utilizadas pelas estruturas de dados implementadas. Fonte: Elaborada pelo autor.\relax }}{131}{figure.caption.41}%
+\contentsline {figure}{\numberline {Figura\ 29}{\ignorespaces Uma árvore de decisão gerada pelos modelos propostos. Fonte: Elaborada pelo autor.\relax }}{135}{figure.caption.43}%
+\contentsline {figure}{\numberline {Figura\ 30}{\ignorespaces Destaque do último quadro do vídeo \textit {aspen\_1080p\_60f} para as sequências (a) original, (b) decodificada pelo VP8, (c) transcodificada original para o AV1 e (d) transcodificada acelerada para o AV1. Fonte: Elaborada pelo autor.\relax }}{148}{figure.caption.46}%
+\contentsline {figure}{\numberline {Figura\ 31}{\ignorespaces Primeiro quadro das sequências HD1080 de maior destaque positivo em todos os experimentos, acima \textit {crowd\_run\_1080p50\_60f}, no meio \textit {rush\_field\_cuts\_1080p\_60f} e abaixo \textit {Netflix\_Boat\_1920x1080\_60fps\_8bit\_420\_60f}. Fonte: Elaborada pelo autor.\relax }}{157}{figure.caption.48}%
+\contentsline {figure}{\numberline {Figura\ 32}{\ignorespaces Primeiro quadro das sequências HD1080 de maior destaque negativo em todos os experimentos, acima \textit {aspen\_1080p\_60f}, no meio \textit {Netflix\_Crosswalk\_1920x1080\_60fps\_8bit\_420\_60f} e abaixo \textit {Netflix\_FoodMarket\_1920x1080\_60fps\_8bit\_420\_60f}. Fonte: Elaborada pelo autor.\relax }}{159}{figure.caption.49}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

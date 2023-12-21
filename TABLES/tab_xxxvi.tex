@@ -1,0 +1,54 @@
+\afterpage{
+\clearpage
+
+\begin{landscape}
+\begin{center}
+{\footnotesize
+\begin{longtblr}[
+ caption = {Resumo dos resultados das propostas de transcodificadores rápidos para o formato AV1.},
+ label = {tab:XXXVI}
+]{ 
+ colspec = {lp{5.5cm}|rrrrrrrrrr},
+ rowhead = 2,
+ hlines,
+ row{even} = {gray9},
+ cell{3}{1} = {gray9},
+ cell{17}{1} = {gray9}
+}
+\hline
+\SetCell[r=2]{c} & \SetCell[r=2]{c}\textbf{Sequência} & \SetCell[c=2]{c}\textbf{VP9} && \SetCell[c=2]{c}\textbf{H.264/AVC} && \SetCell[c=2]{c}\textbf{VP8} && \SetCell[c=2]{c}\textbf{H.265/HEVC} && \SetCell[c=2]{c}\textbf{H.266/VVC} \\
+& & BD-rate (\%) & TS (\%) & BD-rate (\%) & TS (\%) & BD-rate (\%) & TS (\%) & BD-rate (\%) & TS (\%) & BD-rate (\%) & TS (\%) \\
+\SetCell[r=9]{c}\rotatebox[origin=c]{90}{1280$\times$720} & dark720p\_120f & 5,40 & 19,44 & 9,16 & 42,26 & 23,12 & 76,25 & 15,33 & 21,91 & 6,13 & 28,20 \\
+& FourPeople\_1280x720\_60 & 2,40 & 7,98 & 2,63 & 32,32 & 6,41 & 71,03 & 3,40 & 16,54 & 1,11 & 7,08 \\
+& Johnny\_1280x720\_60 & 4,07 & 14,33 & 7,74 & 48,34 & 16,25 & 79,12 & 9,71 & 55,15 & 1,97 & 10,66 \\
+& Johnny\_1280x720\_60\_120f & 3,82 & 15,76 & 8,02 & 49,13 & 16,25 & 79,70 & 9,04 & 52,35 & 1,59 & 33,49 \\
+& KristenAndSara\_1280x720\_60 & 3,03 & 16,69 & 6,06 & 47,96 & 13,42 & 80,78 & 7,62 & 52,93 & 1,01 & 9,65 \\
+& Netflix\_DinnerScene\_1280x720\_ 60fps\_8bit\_420\_120f & 6,38 & 27,47 & 13,09 & 37,94 & 25,67 & 62,58 & 14,35 & 47,47 & 2,74 & 2,38 \\
+& Netflix\_RollerCoaster\_1280x720\_ 60fps\_8bit\_420\_120f & 5,75 & 25,11 & 6,79 & 43,18 & 15,33 & 66,61 & 11,35 & 55,26 & 1,84 & 14,84 \\
+& Netflix\_Tango\_1280x720\_60fps\_8bit \_420\_120f & 4,36 & 8,07 & 4,37 & 9,20 & 7,52 & 21,39 & 5,58 & 10,46 & 1,77 & 10,73 \\
+& Vidyo4\_1280x720\_60 & 2,94 & 13,09 & 9,14 & 48,11 & 16,25 & 76,42 & 8,80 & 48,99 & 1,30 & 11,59 \\
+\SetCell[c=2]{c}\textbf{Média HD720} && \textbf{4,24} & \textbf{16,44} & \textbf{7,45} & \textbf{39,83} & \textbf{15,58} & \textbf{68,21} & \textbf{9,47} & \textbf{40,12} & \textbf{2,16} & \textbf{14,29} \\
+\SetCell[r=5]{c}\rotatebox[origin=c]{90}{1920$\times$1080} & aspen\_1080p\_60f & 5,76 & 9,11 & 15,15 & 33,99 & 24,20 & 29,86 & 19,49 & 52,30 & 4,03 & 18,02 \\
+& crowd\_run\_1080p50\_60f & 2,74 & 36,81 & 0,89 & 15,65 & 1,55 & 30,57 & 1,27 & 25,93 & 0,48 & 6,63 \\
+& ducks\_take\_off\_1080p50\_60f & 4,44 & 37,35 & 3,36 & 25,83 & 4,49 & 49,62 & 4,11 & 41,64 & 1,91 & 22,52 \\
+& Netflix\_Boat\_1920x1080\_60fps\_8bit \_420\_60f & 1,77 & 18,42 & 1,88 & 20,37 & 2,83 & 31,87 & 1,96 & 23,41 & 0,48 & 8,62 \\
+& Netflix\_Crosswalk\_1920x1080\_60fps \_8bit\_420\_60f & 3,74 & 24,88 & 10,34 & 12,52 & 23,16 & 32,74 & 9,48 & 20,96 & 2,08 & 6,65 \\
+\SetCell[r=8]{c}\rotatebox[origin=c]{90}{1920$\times$1080}& Netflix\_FoodMarket\_1920x1080\_ 60fps\_8bit\_420\_60f & 4,86 & 12,47 & 9,51 & 19,58 & 16,08 & 32,88 & 12,53 & 25,21 & 2,75 & 8,51 \\
+& Netflix\_PierSeaside\_1920x1080\_ 60fps\_8bit\_420\_60f & 3,93 & 9,41 & 11,05 & 41,32 & 14,27 & 76,93 & 6,95 & 45,00 & 1,62 & 12,73 \\
+& Netflix\_SquareAndTimelapse\_1920x 1080\_60fps\_8bit\_420\_60f & 3,79 & 8,64 & 3,05 & 12,59 & 4,92 & 26,52 & 3,80 & 17,14 & 0,83 & 7,96 \\
+& Netflix\_TunnelFlag\_1920x1080\_ 60fps\_8bit\_420\_60f & 7,63 & 28,33 & 6,77 & 17,90 & 11,58 & 33,64 & 12,46 & 56,71 & 2,18 & 20,67 \\
+& park\_joy\_1080p50\_60f & 2,01 & 9,30 & 1,02 & 12,37 & 2,22 & 54,74 & 1,10 & 18,89 & 0,40 & 13,85 \\
+& pedestrian\_area\_1080p25\_60f & 4,23 & 9,42 & 8,18 & 14,23 & 22,98 & 72,67 & 9,28 & 20,36 & 2,44 & 7,35 \\
+& rush\_field\_cuts\_1080p\_60f & 2,43 & 14,08 & 1,06 & 13,72 & 1,92 & 30,92 & 1,57 & 26,62 & 0,64 & 16,46 \\
+& rush\_hour\_1080p25\_60f & 4,57 & 11,41 & 8,48 & 14,01 & 22,39 & 75,96 & 9,09 & 23,93 & 3,41 & 25,63 \\
+\SetCell[c=2]{c}\textbf{Média HD1080} && \textbf{3,99} & \textbf{17,66} & \textbf{6,21} & \textbf{19,54} & \textbf{11,74} & \textbf{44,53} & \textbf{7,16} & \textbf{30,62} & \textbf{1,79} & \textbf{13,51} \\
+\SetCell[c=2]{c}\textbf{Média Geral} && \textbf{4,09} & \textbf{17,16} & \textbf{6,72} & \textbf{27,84} & \textbf{13,31} & \textbf{54,22} & \textbf{8,10} & \textbf{34,51} & \textbf{1,94} & \textbf{13,83} \\
+\SetCell[c=2]{c}\textbf{Desvio Padrão Geral} && \textbf{1,48} & \textbf{9,08} & \textbf{4,03} & \textbf{14,61} & \textbf{8,20} & \textbf{22,03} & \textbf{4,97} & \textbf{15,90} & \textbf{1,34} & \textbf{7,97}\\
+\SetCell[c=2]{c}\textbf{Razão Geral das Médias} && \SetCell[c=2]{c}\textbf{0,238} && \SetCell[c=2]{c}\textbf{0,241} && \SetCell[c=2]{c}\textbf{0,245} && \SetCell[c=2]{c}\textbf{0,235} && \SetCell[c=2]{c}\textbf{0,140} &\\
+\hline
+\end{longtblr}
+}
+\end{center}
+\end{landscape}
+}
+

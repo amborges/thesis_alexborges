@@ -1,0 +1,58 @@
+\begin{figure}
+    \centering
+    \footnotesize
+    %\includegraphics[width=0.75\textwidth,trim=4 4 4 4,clip]{ChapterSIX/figs/fig23.png}
+    \begin{Verbatim}[frame=single,commandchars=\\\{\}]
+        orientacaoAV1 <- \textcolor{red}{Quad.}
+	\textcolor{blue}{se} profundidadeAV1 \textcolor{blue}{for} 1 \textcolor{blue}{faça}:
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 1 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Horz. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 20 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Horz.}
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 2 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Vert. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 43 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Vert.}
+	\textcolor{blue}{se} profundidadeAV1 \textcolor{blue}{for} 2 \textcolor{blue}{faça}:
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 2 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Horz. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 20 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Horz.}
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 2 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Horz. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 32 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Horz.}
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 3 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Quad. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 20 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Horz.}
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 3 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Horz. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 20 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Horz.}
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 3 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Vert. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 20 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Vert.}
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 3 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Vert. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 32 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Vert.}
+	\textcolor{blue}{se} profundidadeAV1 \textcolor{blue}{for} 3 \textcolor{blue}{faça}:
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 3 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Horz. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 20 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Horz.}
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 3 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Horz. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 32 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Horz.}
+		\textcolor{blue}{se} profundidadeVP9 \textcolor{blue}{for} 3 
+			\textcolor{blue}{e} orientacaoVP9 \textcolor{blue}{for} Horz. 
+			\textcolor{blue}{e} quantização \textcolor{blue}{for} 43 \textcolor{blue}{faça}:
+				orientacaoAV1 <- \textcolor{red}{Horz.}
+	\textcolor{blue}{retorna} orientacaoAV1
+    \end{Verbatim}
+    \caption{Pseudocódigo implementado no AV1 para escolha de orientação de particionamentos, baseado na Tabela \ref{tab:XV}. Fonte: Elaborada pelo autor.}
+    \label{fig:23}
+\end{figure}

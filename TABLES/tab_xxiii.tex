@@ -1,0 +1,29 @@
+\begin{table}
+\begin{center}
+\caption{Quantidade de amostras de treinamento e teste de modelos preditivos para a transcodificação H.266/VVC-AV1 após o balanceamento.}
+\label{tab:XXIII}
+\footnotesize
+
+\begin{tblr}{
+    colspec = {l|l|r|r|r},
+    hlines,
+    row{even} = {gray9},
+    cell{5}{1} = {gray9},
+    cell{9}{1} = {gray9}
+}
+\hline
+\SetCell[c=2]{c} && \SetCell[c=3]{c}\textbf{Profundidade}    \\
+\textbf{CQ}                  & \textbf{Conjunto de} & \textbf{0 (128$\times$128)} & \textbf{1 (64$\times$64)} & \textbf{2 (32$\times$32)} \\
+\SetCell[r=2]{c}20 & treinamento & 35.405 & 125.719 & 147.691\\
+                   & teste       & 36.579 & 123.265 & 86.685\\
+\SetCell[r=2]{c}32 & treinamento & 36.935 & 116.395 & 206.447\\
+                   & teste       & 37.031 & 97.013 & 141.231\\
+\SetCell[r=2]{c}43 & treinamento & 36.981 & 106.637 & 172.987\\
+                   & teste       & 37.181 & 78.023 & 102.277\\
+\SetCell[r=2]{c}55 & treinamento & 37.099 & 95.047 & 112.299\\
+                   & teste       & 37.313 & 68.183 & 54.689\\
+
+\hline
+\end{tblr}
+\end{center}
+\end{table}

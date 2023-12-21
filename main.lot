@@ -1,0 +1,56 @@
+\babel@toc {brazilian}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\babel@toc {brazilian}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {Tabela\ 1}{\ignorespaces Proporção (em porcentagem) de representação de informação de blocos de diferentes tamanhos em diferentes resoluções de vídeo.\relax }}{31}{table.caption.3}%
+\contentsline {table}{\numberline {Tabela\ 2}{\ignorespaces Matriz de confusão das respostas de um modelo de aprendizado de máquina.\relax }}{41}{table.caption.8}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3}{Resumo dos artigos presentes na revisão sistemática da literatura sobre transcodificação rápida de vídeo, publicados entre os anos de 2011 e 2022.}}{52}{table.3.3}%
+\contentsline {table}{\numberline {4}{Resumo das abordagens baseadas em aprendizado de máquina encontradas na literatura para aceleração de transcodificadores de vídeo.}}{61}{table.3.4}%
+\contentsline {table}{\numberline {5}{Estruturas de particionamento de bloco permitidas em diferentes padrões e formatos de codificação de vídeo.}}{66}{table.3.5}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6}{Parâmetros de configuração dos softwares de referência utilizados nesta tese.}}{73}{table.4.6}%
+\contentsline {table}{\numberline {Tabela\ 7}{\ignorespaces Relação dos softwares codificadores utilizados nesta tese.\relax }}{75}{table.caption.15}%
+\contentsline {table}{\numberline {Tabela\ 8}{\ignorespaces Relação dos servidores utilizados nesta tese para a realização dos experimentos.\relax }}{76}{table.caption.16}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {9}{Experimentos de \textit {tool-on/off analysis} das árvores de particionamento do \textit {libaom}.}}{80}{table.5.9}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {Tabela\ 10}{\ignorespaces Correlação (em porcentagem) estimada com diferentes combinações de $La$ e $Lb$.\relax }}{90}{table.caption.22}%
+\contentsline {table}{\numberline {Tabela\ 11}{\ignorespaces Resultados das transcodificações H,265/HEVC para AV1 sob diferentes combinações de $La:Lb$.\relax }}{93}{table.caption.24}%
+\contentsline {table}{\numberline {12}{Correlação (em porcentagem) de orientação de particionamentos entre AV1 (linhas) e VP9 (colunas) por nível de profundidade (valores para o CQ 20).}}{97}{table.6.12}%
+\contentsline {table}{\numberline {13}{Correlação (em porcentagem) de orientação de particionamentos entre AV1 (linhas) e VP9 (colunas) por nível de profundidade (valores para o CQ 32).}}{98}{table.6.13}%
+\contentsline {table}{\numberline {14}{Correlação (em porcentagem) de orientação de particionamentos entre AV1 (linhas) e VP9 (colunas) por nível de profundidade (valores para o CQ 43).}}{99}{table.6.14}%
+\contentsline {table}{\numberline {15}{Correlação (em porcentagem) de orientação de particionamentos entre AV1 (linhas) e VP9 (colunas) por nível de profundidade (valores para o CQ 55).}}{100}{table.6.15}%
+\contentsline {table}{\numberline {16}{Resumo de particionamentos permitidos ao codificador AV1, de acordo com as Tabelas \ref {tab:XI}, \ref {tab:XII}, \ref {tab:XIII} e \ref {tab:XIV}. Destacou-se as células que não são Quad.}}{104}{table.6.16}%
+\contentsline {table}{\numberline {17}{Resultados da transcodificação rápida de VP9 para AV1 baseada em análise estatística.}}{106}{table.6.17}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {Tabela\ 18}{\ignorespaces Sequências de vídeo selecionadas para compor os conjuntos dos experimentos.\relax }}{111}{table.caption.28}%
+\contentsline {table}{\numberline {19}{Relação dos hiperparâmetros disponíveis no algoritmo CART.}}{113}{table.7.19}%
+\contentsline {table}{\numberline {Tabela\ 20}{\ignorespaces Quantidade de amostras de treinamento e teste de modelos preditivos para a transcodificação VP8-AV1 após o balanceamento.\relax }}{121}{table.caption.31}%
+\contentsline {table}{\numberline {Tabela\ 21}{\ignorespaces Quantidade de amostras de treinamento e teste de modelos preditivos para a transcodificação VP9-AV1 após o balanceamento.\relax }}{121}{table.caption.32}%
+\contentsline {table}{\numberline {Tabela\ 22}{\ignorespaces Quantidade de amostras de treinamento e teste de modelos preditivos para a transcodificação H.264/AVC-AV1 após o balanceamento.\relax }}{121}{table.caption.33}%
+\contentsline {table}{\numberline {Tabela\ 23}{\ignorespaces Quantidade de amostras de treinamento e teste de modelos preditivos para a transcodificação H.265/HEVC-AV1 após o balanceamento.\relax }}{122}{table.caption.34}%
+\contentsline {table}{\numberline {Tabela\ 24}{\ignorespaces Quantidade de amostras de treinamento e teste de modelos preditivos para a transcodificação H.266/VVC-AV1 após o balanceamento.\relax }}{122}{table.caption.35}%
+\contentsline {table}{\numberline {Tabela\ 25}{\ignorespaces Número de candidatos e amostras necessárias para execução de cada ciclo da técnica HRSCV, conforme condições definidas nesta tese.\relax }}{126}{table.caption.37}%
+\contentsline {table}{\numberline {Tabela\ 26}{\ignorespaces Configuração dos candidatos vencedores a serem usados nas transcodificações aceleradas para o formato AV1.\relax }}{134}{table.caption.42}%
+\contentsline {table}{\numberline {Tabela\ 27}{\ignorespaces Resultados da métrica \textit {F1-Score} obtidos com os modelos preditivos treinados sob os candidatos vencedores de cada proposta de transcodificação acelerado implementado.\relax }}{136}{table.caption.44}%
+\contentsline {table}{\numberline {28}{Resultados da transcodificação rápida de VP9 para AV1 baseado em modelos preditivos.}}{137}{table.7.28}%
+\contentsline {table}{\numberline {Tabela\ 29}{\ignorespaces Relação direta entre as propostas de transcodificador rápido do formato VP9 para o AV1.\relax }}{140}{table.caption.45}%
+\contentsline {table}{\numberline {30}{Resultados da transcodificação rápida de H.264/AVC para AV1 baseada em modelos preditivos.}}{142}{table.7.30}%
+\contentsline {table}{\numberline {31}{Resultados obtidos com a transcodificação acelerada de VP8-para-AV1.}}{145}{table.7.31}%
+\contentsline {table}{\numberline {32}{Resultados da transcodificação rápida de H.265/HEVC para AV1 baseado em modelos preditivos.}}{149}{table.7.32}%
+\contentsline {table}{\numberline {Tabela\ 33}{\ignorespaces Resultados HD1080 da transcodificação rápida de H.266/VVC para AV1 baseado em modelos preditivos.\relax }}{153}{table.caption.47}%
+\contentsline {table}{\numberline {34}{Resumo dos resultados das propostas de transcodificadores rápidos para o formato AV1.}}{155}{table.7.34}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

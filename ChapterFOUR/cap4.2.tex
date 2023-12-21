@@ -1,0 +1,19 @@
+\section{Softwares, Configurações e Linguagens de Programação}
+\label{cap:4.2}
+
+Todos os trabalhos de transcodificação de vídeo existentes na literatura científica iniciam com a decodificação do \textit{bitstream} do vídeo, seja parcial ou completa. Dessa forma, é preciso que os vídeos originais e sem compressão, apresentados na seção \ref{cap:4.1}, sejam codificados aos formatos de codificação de vídeo utilizados nesta tese. Ao longo do desenvolvimento iremos abordar diversos formatos, como será visto nos capítulos \ref{cap:6} e \ref{cap:7}, portanto, é necessário descrever as configurações utilizadas para a compressão original dos vídeos. 
+
+\input{TABLES/tab_vi.tex}
+
+Cada um dos formatos de codificação de vídeo possui regras próprias de configuração do software codificador. Dessa forma, faz-se uso dos documentos que determinam as condições comuns de teste para possibilitar uma configuração padrão para uso na academia. Nesta tese, consideramos as configurações para compressão de sequências de vídeos naturais, como definida para o formato H.265/HEVC \cite{bib:hevcctc}. Neste documento, a regra é denominada como ``Random Access''; em outros documentos, como \citet{bib:vvcctc}, \cite{bib:av2_avm} e \citet{bib:ietfnetvct}, a nomenclatura é igual ou equivalente. Utilizaremos esse mesmo padrão de configuração nas sequências HD1080+SCC. A Tabela \ref{tab:VI} apresenta os parâmetros de codificação aplicados nos softwares de referência dos formatos AV1, H.264/AVC, H.265/HEVC, H.266/VVC, VP8 e VP9. Onde as variáveis $W$, $H$, $Q$, $F$, $V$ que estão na Tabela \ref{tab:VI} são, respectivamente, as informações sobre: largura do vídeo, altura do vídeo, níveis de quantização utilizados (valores expressos na coluna ``Valores Recomendados de $Q$''), valor da taxa de quadros por segundo do vídeo e nome do arquivo de vídeo codificado. Caso a profundidade de bits seja diferente de 8, a última coluna da Tabela \ref{tab:VI} apresenta as alterações necessárias para a codificação correta do vídeo. A única exceção é para o formato VP8, que é incapaz de processar vídeos com 10 bits de profundidade. Observe que os diferentes formatos de codificação atribuem um nome próprio para o nível de quantização, sendo \textit{Quantization Parameter} (QP) nos formatos H.264/AVC, H.265/HEVC e H.266/VVC, enquanto que nos formatos VP8, VP9 e AV1 o nível de quantização é chamado de \textit{Constrained Quality (CQ)}.
+
+
+Nesta tese, iremos utilizar os softwares de referência dos formatos de codificação de vídeo selecionados, comumente utilizados pela comunidade científica. Na Tabela \ref{tab:VII} apresentamos o nome do software, sua versão e como obter o software, para cada um dos seis formatos utilizados. Todos os softwares de referência foram desenvolvidos em linguagem C/C++, os quais também foram as linguagens utilizadas para o desenvolvimento das soluções de transcodificação rápida propostas nesta tese. No capítulo \ref{cap:7} iremos abordar soluções com uso de modelos preditivos gerados por algoritmos de aprendizado de máquina, logo, também utilizaremos uma linguagem de programação versátil para esse fim. Na comunidade científica essa linguagem é Python versão 3. 
+
+\input{TABLES/tab_vii.tex}
+
+Para finalizar esse capítulo, destaca-se que todos os experimentos foram aplicados em diversos servidores ao longo do desenvolvimento desta tese. Todavia, tanto a transcodificação original como a transcodificação rápida foram executadas no mesmo servidor, de forma a garantir a confiabilidade dos resultados de tempo. Na Tabela \ref{tab:VII_computadores} está descrita a configuração de todos os servidores utilizados, e independente das variações de hardware entre os servidores, todos possuem ambiente Unix, mais precisamente Ubuntu 18.04 ou 20.04.
+
+\input{TABLES/tab_vii_computadores.tex}
+
+

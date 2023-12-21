@@ -1,0 +1,26 @@
+\begin{table}
+\begin{center}
+\caption{Configuração dos candidatos vencedores a serem usados nas transcodificações aceleradas para o formato AV1.}
+\label{tab:XXV}
+\footnotesize
+
+\begin{tblr}{
+    colspec = {c|c|c|c|c|c},
+    hlines,
+    row{even} = {gray9}
+}
+\hline
+\textbf{Hiperparâmetro} & \textbf{VP9} & \textbf{H.264/AVC} & \textbf{VP8} & \textbf{H.265/HEVC} & \textbf{H.266/VVC}\\
+Criterion & entropy & entropy & entropy & entropy & entropy\\
+Splitter & best & best & best & best & best\\
+Max Depth & 11 & 11 & 11 & 11 & 11\\
+Min Samples Split & 11 & 17 & 17 & 17 & 11\\
+Min Samples Leaf & 11 & 13 & 13 & 13 & 11\\
+Max Features & sqrt & None & None & None & sqrt\\
+Max Leaf Nodes & 7 & 19 & 19 & 19 & 7\\
+Min Impurity Decrease & 0,6 & 0,6 & 0,6 & 0,6 & 0,6\\
+CPP Alpha & 0,5 & 0,4 & 0,4 & 0,4 & 0,5\\
+\hline
+\end{tblr}
+\end{center}
+\end{table}

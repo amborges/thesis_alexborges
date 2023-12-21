@@ -1,0 +1,867 @@
+\begin{thebibliography}{\hspace{\parindent}}
+
+\bibitem[Agostini(2007)AGOSTINI]{bib:tese_agostini_2007} AGOSTINI, L.~V\@.
+  \textbf{Desenvolvimento de Arquiteturas de Alto Desempenho dedicadas \`a
+  compress\~ao de v\'ideo segundo o Padr\~ao H.264/AVC}. 2007. Tese (Doutorado
+  em Ci{\^e}ncia da Computa{\c{c}}{\~a}o) --- Universidade Federal do Rio
+  Grande do Sul. Instituto de Inform\'atica. Programa de P\'os-Gradua\c{c}\~ao
+  em Computa\c{c}\~ao, https://lume.ufrgs.br/handle/10183/12425.
+
+\bibitem[{Ahmad} \MakeLowercase{et~al.}(2005){Ahmad}; {Xiaohui Wei}; {Yu Sun};
+  {Ya-Qin Zhang}]{bib:modosTranscodificacao} {Ahmad}, I.; {Xiaohui Wei}; {Yu
+  Sun}; {Ya-Qin Zhang}. Video transcoding: an overview of various techniques
+  and research issues. \textbf{IEEE Transactions on Multimedia}, [S.l.], v.7,
+  n.5, p.793--804, 2005. doi: 10.1109/TMM.2005.854472.
+
+\bibitem[{Alliance for Open Media}(2015){Alliance for Open Media}]{bib:libaom}
+  {Alliance for Open Media}. \textbf{AV1 Codec Library}. Dispon{\'\i}vel em:
+  <https://aomedia.googlesource.com/aom/>. Acesso em: 2022-12-26.
+
+\bibitem[{Alliance for Open Media}(2020){Alliance for Open Media}]{bib:av2_avm}
+  {Alliance for Open Media}. \textbf{AVM Codec Library}. Dispon{\'\i}vel em:
+  <https://gitlab.com/AOMediaCodec/avm>. Acesso em: 2022-09-29.
+
+\bibitem[Aminlou \MakeLowercase{et~al.}(2016)AMINLOU; HASHEMI; GABBOUJ; ZENG;
+  FATEMI]{bib:aminlou_2016} AMINLOU, A. \MakeLowercase{et~al.} New R-D
+  Optimization Criterion for Fast Mode Decision Algorithms in Video Coding and
+  Transrating. \textbf{IEEE Transactions on Circuits and Systems for Video
+  Technology}, [S.l.], v.26, n.4, p.696--710, 2016. doi:
+  10.1109/TCSVT.2015.2412811.
+
+\bibitem[Bankoski; Wilkins; Xu(2011)BANKOSKI; WILKINS; XU]{bib:vp8} BANKOSKI,
+  J.; WILKINS, P.; XU, Y\@. Technical overview of VP8, an open source video
+  codec for the web. In: IEEE INTERNATIONAL CONFERENCE ON MULTIMEDIA AND EXPO,
+  2011., 2011. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2011. p.1--6. doi:
+  10.1109/ICME.2011.6012227.
+
+\bibitem[Bergstra; Bengio(2012)BERGSTRA; BENGIO]{bib:randomsearch} BERGSTRA,
+  J.; BENGIO, Y\@. Random search for hyper-parameter optimization.
+  \textbf{Journal of machine learning research}, [S.l.], v.13, n.2, p.281--305,
+  2012.
+
+\bibitem[Bitmovin(2022b)BITMOVIN]{bib:bitmovin_twitter} BITMOVIN. \textbf{That
+  said, we see 1920x1080 as the most common resolution watched by viewers}.
+  Twitter: $@$bitmovin. Dispon{\'\i}vel em:
+  <https://twitter.com/bitmovin/status/1575839031552016384>. Acesso em:
+  2022-07-30.
+
+\bibitem[Bitmovin(2020)BITMOVIN]{bib:bitmovin_report_2020} BITMOVIN, I\@.
+  \textbf{Bitmovin's 4th Annual Video Developer Report 2020}. [S.l.]: Bitmovin,
+  2020. Dispon{\'\i}vel em:
+  <https://go.bitmovin.com/video-developer-report-2020>. Acesso em: 2021-03-19.
+
+\bibitem[Bitmovin(2021a)BITMOVIN]{bib:bitmovin_report_2021} BITMOVIN, I\@.
+  \textbf{Bitmovin's 5th Annual Video Developer Report 2021}. [S.l.]: Bitmovin,
+  2021. Dispon{\'\i}vel em:
+  <https://go.bitmovin.com/video-developer-report-2021>. Acesso em: 2022-01-14.
+
+\bibitem[Bitmovin(2021b)BITMOVIN]{bib:bitmovin_ott_report_2020} BITMOVIN, I\@.
+  \textbf{The Definitive Guide to Video Codecs}. [S.l.]: Bitmovin, 2021.
+  Dispon{\'\i}vel em: <https://go.bitmovin.com/video-codec-guide>. Acesso em:
+  2021-06-04.
+
+\bibitem[Bitmovin(2022a)BITMOVIN]{bib:bitmovin_report_2022} BITMOVIN, I\@.
+  \textbf{Bitmovin's 6th Annual Video Developer Report 2022}. [S.l.]: Bitmovin,
+  2022. Dispon{\'\i}vel em: <https://go.bitmovin.com/video-developer-report>.
+  Acesso em: 2022-12-14.
+
+\bibitem[Bj{\o}ntegaard(2001)BJ{\O}NTEGAARD]{bib:bdrate} BJ{\O}NTEGAARD, G\@.
+  \textbf{Calculation of average PSNR differences between RD-curves}.
+  Dispon{\'\i}vel em:
+  <http://wftp3.itu.int/av-arch/video-site/0104\_Aus/VCEG-M33.doc>. Acesso em:
+  2020-09-13.
+
+\bibitem[Borges(2022)BORGES]{bib:prototipotese} BORGES, A\@. \textbf{HDR -
+  Heterotranscodificador Dinâmico e Rápido}. Dispon{\'\i}vel em:
+  <https://github.com/amborges/HDR>. Acesso em: 2022-12-16.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2019)BORGES; ZATT; PORTO; AGOSTINI;
+  CORREA]{bib:borges2_2019} BORGES, A. \MakeLowercase{et~al.} Complexity
+  Scalable HEVC-to-AV1 Transcoding Based on Coding Tree Depth Inheritance. In:
+  EUROPEAN SIGNAL PROCESSING CONFERENCE (EUSIPCO), 2019., 2019.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2019. p.1--5. doi:
+  10.23919/EUSIPCO.2019.8902565.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2020)BORGES; BENDER; ZATT; PORTO;
+  CORREA]{bib:enpos_2020} BORGES, A. \MakeLowercase{et~al.} Análise do
+  Particionamento de Superblocos do Formato de Vídeo AV1. \textbf{Encontro de
+  Pós-Graduação (ENPOS)}, [S.l.], v.XXII, 2020. Disponível em
+  https://cti.ufpel.edu.br/siepe/arquivos/2020/CE\_01178.pdf.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2021)BORGES; PALOMINO; ZATT; PORTO;
+  CORREA]{bib:borges_2021} BORGES, A. \MakeLowercase{et~al.} Fast VP9-to-AV1
+  Transcoding based on Block Partitioning Inheritance. In: EUROPEAN SIGNAL
+  PROCESSING CONFERENCE (EUSIPCO), 2020., 2021. \textbf{Anais{\ldots}}
+  [S.l.:~s.n.], 2021. p.555--559. doi: f10.23919/Eusipco47968.2020.9287453.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2019)BORGES; ZATT; PORTO;
+  CORREA]{bib:borges_2019} BORGES, A.; ZATT, B.; PORTO, M.; CORREA, G\@. Fast
+  HEVC-to-AV1 Transcoding Based On Coding Unit Depth Inheritance. In: IEEE
+  INTERNATIONAL CONFERENCE ON IMAGE PROCESSING (ICIP), 2019., 2019.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2019. p.3571--3575. doi:
+  10.1109/ICIP.2019.8803482.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2020)BORGES; ZATT; PORTO;
+  CORREA]{bib:dpvsa_2020} BORGES, A.; ZATT, B.; PORTO, M.; CORREA, G\@.
+  \textbf{Complexity-Scalable HEVC-to-AV1 Video Transcoding Based on Partition
+  Inheritance}. n.4th. Dispon{\'\i}vel em:
+  <https://www.youtube.com/watch?v=rj03irQzp1Q>. Acesso em: 2023-01-13.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2021a)BORGES; ZATT; PORTO;
+  CORREA]{bib:borges2_2021} BORGES, A.; ZATT, B.; PORTO, M.; CORREA, G\@.
+  Complexity-scalable HEVC-to-AV1 video transcoding based on partition
+  inheritance. \textbf{Journal of Real-Time Image Processing}, [S.l.],
+  Apr.~2021. doi: 10.1007/s11554-021-01101-2.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2021b)BORGES; ZATT; PORTO;
+  CORREA]{bib:enpos_2021} BORGES, A.; ZATT, B.; PORTO, M.; CORREA, G\@.
+  Análise de Complexidade Escalável para a Transcodificação de Vídeo de
+  HEVC para AV1. \textbf{Encontro de Pós-Graduação (ENPOS)}, [S.l.],
+  v.XXIII, 2021. Disponível em
+  https://cti.ufpel.edu.br/siepe/arquivos/2021/CE\_01141.pdf.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2021c)BORGES; ZATT; PORTO;
+  CORREA]{bib:enpos_2022} BORGES, A.; ZATT, B.; PORTO, M.; CORREA, G\@.
+  Transcodificação de Vídeo Acelerada de VP9 para AV1 Usando Árvore de
+  Decisão e Estruturas de Particionamento. \textbf{Encontro de
+  Pós-Graduação (ENPOS)}, [S.l.], v.XXIV, 2021. Disponível em
+  https://cti.ufpel.edu.br/siepe/arquivos/2022/CE\_03781.pdf.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2021d)BORGES; ZATT; PORTO;
+  CORREA]{bib:dpvsa_2021} BORGES, A.; ZATT, B.; PORTO, M.; CORREA, G\@.
+  \textbf{Fast VP9-to-AV1 Transcoding Based on Block Partitioning Inheritance}.
+  n.5th. Dispon{\'\i}vel em: <https://www.youtube.com/watch?v=X0U0GKK2jMw>.
+  Acesso em: 2023-01-13.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2022)BORGES; ZATT; PORTO;
+  CORREA]{bib:dpvsa_2022} BORGES, A.; ZATT, B.; PORTO, M.; CORREA, G\@.
+  \textbf{Decision Trees for Accelerating H.264/AVC-to-AV1 Video Transcoding}.
+  n.6th. Dispon{\'\i}vel em: <https://www.youtube.com/watch?v=0ddz8nqbeKI>.
+  Acesso em: 2023-01-13.
+
+\bibitem[Borges \MakeLowercase{et~al.}(2023)BORGES; ZATT; PORTO;
+  CORREA]{bib:borges_iscas_2023} BORGES, A.; ZATT, B.; PORTO, M.; CORREA, G\@.
+  \textbf{H.264-to-AV1 Video Transcoding Acceleration Based on Lightweight
+  Machine Learning}. 2023 IEEE International Symposium on Circuits \& Systems
+  (ISCAS) (no prelo).
+
+\bibitem[Bossen(2013)BOSSEN]{bib:hevcctc} BOSSEN, F\@. \textbf{Common test
+  conditions and software reference configurations}. v.12. Dispon{\'\i}vel em:
+  <http://phenix.it-sudparis.eu/jct/doc\_end\_user/current\_document.php?id=7281>.
+  Acesso em: 2021-07-22.
+
+\bibitem[Bossen \MakeLowercase{et~al.}(2012)BOSSEN; BROSS; SUHRING;
+  FLYNN]{bib:hevc_complexity} BOSSEN, F.; BROSS, B.; SUHRING, K.; FLYNN, D\@.
+  HEVC Complexity and Implementation Analysis. \textbf{IEEE Transactions on
+  Circuits and Systems for Video Technology}, [S.l.], v.22, n.12, p.1685--1696,
+  2012. doi: 10.1109/TCSVT.2012.2221255.
+
+\bibitem[Bossen \MakeLowercase{et~al.}(2020)BOSSEN; BOYCE; LI; SEREGIN;
+  SüHRING]{bib:vvcctc} BOSSEN, F. \MakeLowercase{et~al.} \textbf{VTM common
+  test conditions and software reference configurations for SDR video}. v.21.
+  Dispon{\'\i}vel em:
+  <https://jvet-experts.org/doc\_end\_user/current\_document.php?id=10545>.
+  Acesso em: 2021-07-22.
+
+\bibitem[Bossen \MakeLowercase{et~al.}(2021)BOSSEN; SüHRING; WIECKOWSKI;
+  LIU]{bib:vvc_complexity} BOSSEN, F.; SüHRING, K.; WIECKOWSKI, A.; LIU, S\@.
+  VVC Complexity and Software Implementation Analysis. \textbf{IEEE
+  Transactions on Circuits and Systems for Video Technology}, [S.l.], v.31,
+  n.10, p.3765--3778, 2021. doi: 10.1109/TCSVT.2021.3072204.
+
+\bibitem[B\"{o}ttger; Ibrahim; Vallis(2020)B\"{o}TTGER; IBRAHIM;
+  VALLIS]{bib:bottger_2020} B\"{o}TTGER, T.; IBRAHIM, G.; VALLIS, B\@. How the
+  Internet Reacted to Covid-19: A Perspective from Facebook's Edge Network. In:
+  ACM INTERNET MEASUREMENT CONFERENCE, 2020, New York, NY, USA.
+  \textbf{Proceedings{\ldots}} Association for Computing Machinery, 2020.
+  p.34–41. (IMC '20). doi: 10.1145/3419394.3423621.
+
+\bibitem[Breiman(2001)BREIMAN]{bib:breiman_2001} BREIMAN, L\@. Random Forests.
+  \textbf{Machine Learning}, [S.l.], v.45, n.1, p.5--32, Oct~2001. doi:
+  10.1023/A:1010933404324.
+
+\bibitem[Breiman \MakeLowercase{et~al.}(1984)BREIMAN; FRIEDMAN; OLSHEN;
+  STONE]{bib:livroCART} BREIMAN, L.; FRIEDMAN, J.~H.; OLSHEN, R.~A.; STONE,
+  C.~J\@. \textbf{Classification and Regression Trees}: The Wadsworth and
+  Brooks-Cole statistics and probability series. [S.l.]: Taylor \& Francis,
+  1984. 358p. ISBN: 978-0-41204-841-8.
+
+\bibitem[Bross \MakeLowercase{et~al.}(2019)BROSS; CHEN; LIU; WANG]{bib:vvc}
+  BROSS, B.; CHEN, J.; LIU, S.; WANG, Y\@. \textbf{Versatile Video Coding
+  (Draft 7)}. [S.l.]: JVET 16th Meeting JVET-P2001, 2019.
+
+\bibitem[Bross \MakeLowercase{et~al.}(2013)BROSS; HAN; OHM; SULLIVAN; WANG;
+  WIEGAND]{bib:hevc} BROSS, B. \MakeLowercase{et~al.} \textbf{High Efficiency
+  Video Coding (HEVC)}: text specification draft 10 (for FDIS and Consent).
+  Geneva: 12th JCT-VC Meeting, 2013. JCTVC-L1003.
+
+\bibitem[Camargo; Borges; Correa(2022a)CAMARGO; BORGES;
+  CORREA]{bib:camargo_2022} CAMARGO, C.~S.; BORGES, A.; CORREA, G\@.
+  \textbf{Identifying Energy-Saving Opportunities for AV1 Video Coding in
+  Streaming Services}. [S.l.]: 2022 Microelectronics Students Forum (SForum),
+  2022. Dispon{\'\i}vel em:
+  <https://sbmicro.org.br/sforum-eventos/sforum2022/Identifying\%20Energy-Saving\%20Opportunities\%20for\%20AV1\%20Video\%20Coding\%20in\%20Streaming
+  \%20Services.pdf>. Acesso em: 2023-01-12.
+
+\bibitem[Camargo; Borges; Correa(2022b)CAMARGO; BORGES;
+  CORREA]{bib:dpvsa_2022_carol} CAMARGO, C.~S.; BORGES, A.; CORREA, G\@.
+  \textbf{Energy-Saving Opportunities for AV1 Video Coding in Streaming
+  Services}. n.6th. Dispon{\'\i}vel em:
+  <https://www.youtube.com/watch?v=rhniIxLUaFo>. Acesso em: 2023-01-13.
+
+\bibitem[Chen \MakeLowercase{et~al.}(2019)CHEN; GUO; TANG; HAN;
+  WEN]{bib:chen_2019} CHEN, X. \MakeLowercase{et~al.} A Conditional Bayesian
+  Block Structure Inference Model for Optimized AV1 Encoding. In: IEEE
+  INTERNATIONAL CONFERENCE ON MULTIMEDIA AND EXPO (ICME), 2019., 2019.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2019. p.1270--1275. doi:
+  10.1109/ICME.2019.00221.
+
+\bibitem[{Choi} \MakeLowercase{et~al.}(2020){Choi}; {Chen}; {Rusanovskyy};
+  {Choi}; {Jang}]{bib:evc} {Choi}, K. \MakeLowercase{et~al.} An Overview of the
+  MPEG-5 Essential Video Coding Standard [Standards in a Nutshell].
+  \textbf{IEEE Signal Processing Magazine}, [S.l.], v.37, n.3, p.160--167,
+  2020. doi: 10.1109/MSP.2020.2971765.
+
+\bibitem[Cisco(2020)CISCO]{bib:cisco_2020} CISCO. \textbf{Cisco Annual Internet
+  Report (2018–2023) White Paper}. Dispon{\'\i}vel em:
+  <https://www.cisco.com/c/en/us/solutions/collateral/executive-perspectives/annual-internet-report/white-paper-c11-741490.html>.
+  Acesso em: 2020-08-12.
+
+\bibitem[Clapp(2021)CLAPP]{bib:clapp_2021} CLAPP, R\@. \textbf{COVID-19 causes
+  digital consumption to rise by over 30\%, forming new and lasting consumer
+  habits}. Dispon{\'\i}vel em:
+  <https://www.warc.com/newsandopinion/opinion/covid-19-causes-digital-consumption-to-rise-by-over-30\\-forming-new-and-lasting-consumer-habits/en-gb/4209>.
+  Acesso em: 2022-14-03.
+
+\bibitem[Clement(2019)CLEMENT]{bib:statistaVideoTraffic} CLEMENT, J\@.
+  \textbf{Distribution of global downstream internet traffic as of October
+  2018, by category}. [S.l.]: statista, 2019. Dispon{\'\i}vel em:
+  <https://www.statista.com/statistics/271735/internet-traffic-share-by-category-worldwide/>.
+  Acesso em: 2020-08-12.
+
+\bibitem[Correa; Agostini; Silva~cruz(2016)CORREA; AGOSTINI;
+  SILVA~CRUZ]{bib:correa_2016} CORREA, G.; AGOSTINI, L.; SILVA~CRUZ, L.~A.~da.
+  Fast H.264/AVC to HEVC transcoder based on data mining and decision trees.
+  In: IEEE INTERNATIONAL SYMPOSIUM ON CIRCUITS AND SYSTEMS (ISCAS), 2016.,
+  2016. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2016. p.2539--2542. doi:
+  10.1109/ISCAS.2016.7539110.
+
+\bibitem[Daede; Norkin; Brailovskiy(2020)DAEDE; NORKIN;
+  BRAILOVSKIY]{bib:ietfnetvct} DAEDE, T.; NORKIN, A.; BRAILOVSKIY, I\@.
+  \textbf{Video Codec Testing and Quality Measurement}. Dispon{\'\i}vel em:
+  <https://tools.ietf.org/html/draft-ietf-netvc-testing-09>. Acesso em:
+  2020-10-10.
+
+\bibitem[Dermeval; M.~coelho; Bittencourt(2018)DERMEVAL; M.~COELHO;
+  BITTENCOURT]{bib:msl} DERMEVAL, D.; M.~COELHO, J. A.~P.~de; BITTENCOURT,
+  I.~I\@. \textbf{Mapeamento Sistem\'atico e Revis\~ao Sistem\'atica da
+  Literatura em Inform\'atica na Educa\c{c}\~ao}. Porto Alegre: JAQUES,
+  Patr\'icia Augustin; PIMENTEL, Mariano; SIQUEIRA; Sean; BITTENCOURT, Ig.
+  (Org.), 2018. v.2. S\'erie Metodologia de Pesquisa em Inform\'atica na
+  Educa\c{c}\~ao.
+
+\bibitem[D\'iaz-honrubia \MakeLowercase{et~al.}(2014)D\'IAZ-HONRUBIA;
+  MART\'INEZ; PUERTA; G\'AMEZ; COCK; CUENCA]{bib:honrubia_2014}
+  D\'IAZ-HONRUBIA, A.~J. \MakeLowercase{et~al.} Fast quadtree level decision
+  algorithm for H.264/HEVC transcoder. In: IEEE INTERNATIONAL CONFERENCE ON
+  IMAGE PROCESSING (ICIP), 2014., 2014. \textbf{Anais{\ldots}} [S.l.:~s.n.],
+  2014. p.2497--2501. doi: 10.1109/ICIP.2014.7025505.
+
+\bibitem[D\'iaz-honrubia \MakeLowercase{et~al.}(2015)D\'IAZ-HONRUBIA;
+  MART\'INEZ; CUENCA; G\'AMEZ; PUERTA]{bib:honrubia_2015} D\'IAZ-HONRUBIA,
+  A.~J. \MakeLowercase{et~al.} A Data-Driven Probabilistic CTU Splitting
+  Algorithm for Fast H.264/HEVC Video Transcoding. In: DATA COMPRESSION
+  CONFERENCE, 2015., 2015. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2015.
+  p.449--449. doi: 10.1109/DCC.2015.46.
+
+\bibitem[D\'iaz-honrubia \MakeLowercase{et~al.}(2016)D\'IAZ-HONRUBIA;
+  MART\'INEZ; CUENCA; KALVA]{bib:honrubia_2016} D\'IAZ-HONRUBIA, A.~J.;
+  MART\'INEZ, J.~L.; CUENCA, P.; KALVA, H\@. A Fast Splitting Algorithm for an
+  H.264/AVC to HEVC Intra Video Transcoder. In: DATA COMPRESSION CONFERENCE
+  (DCC), 2016., 2016. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2016. p.588--588.
+  doi: 10.1109/DCC.2016.120.
+
+\bibitem[Edwardson(1967)EDWARDSON]{bib:transcoding67} EDWARDSON, S\@.
+  Translating and transcoding between colour-television systems with common
+  scanning standards. In: INSTITUTION OF ELECTRICAL ENGINEERS, 1967.
+  \textbf{Proceedings{\ldots}} [S.l.:~s.n.], 1967. v.114, p.23--29. doi:
+  10.1049/piee.1967.0003.
+
+\bibitem[Escribano \MakeLowercase{et~al.}(2008)ESCRIBANO; JILLANI; HOLDER;
+  KALVA; MARTINEZ; CUENCA]{bib:escribano3_2008} ESCRIBANO, G.~F.
+  \MakeLowercase{et~al.} Video Encoding and Transcoding Using Machine Learning.
+  In: INTERNATIONAL WORKSHOP ON MULTIMEDIA DATA MINING: HELD IN CONJUNCTION
+  WITH THE ACM SIGKDD 2008, 9., 2008, New York, NY, USA.
+  \textbf{Proceedings{\ldots}} Association for Computing Machinery, 2008.
+  p.53–62. (MDM '08).
+
+\bibitem[Fernandez-escribano \MakeLowercase{et~al.}(2008)FERNANDEZ-ESCRIBANO;
+  BIALKOWSKI; GAMEZ; KALVA; CUENCA; OROZCO-BARBOSA; KAUP]{bib:escribano_2008}
+  FERNANDEZ-ESCRIBANO, G. \MakeLowercase{et~al.} Low-Complexity Heterogeneous
+  Video Transcoding Using Data Mining. \textbf{IEEE Transactions on
+  Multimedia}, [S.l.], v.10, n.2, p.286--299, Jan.~2008. doi:
+  10.1109/TMM.2007.911838.
+
+\bibitem[Fernandez-escribano \MakeLowercase{et~al.}(2008)FERNANDEZ-ESCRIBANO;
+  KALVA; CUENCA; OROZCO-BARBOSA; GARRIDO]{bib:escribano2_2008}
+  FERNANDEZ-ESCRIBANO, G. \MakeLowercase{et~al.} A Fast MB Mode Decision
+  Algorithm for MPEG-2 to H.264 P-Frame Transcoding. \textbf{IEEE Transactions
+  on Circuits and Systems for Video Technology}, [S.l.], v.18, n.2, p.172--185,
+  Mar.~2008. doi: 10.1109/TCSVT.2008.918115.
+
+\bibitem[Fern\'{a}ndez \MakeLowercase{et~al.}(2006)FERN\'{a}NDEZ; CUENCA;
+  BARBOSA; KALVA]{bib:fernandez2_2006} FERN\'{a}NDEZ, G.; CUENCA, P.; BARBOSA,
+  L.~O.; KALVA, H\@. Very Low Complexity MPEG-2 to H.264 Transcoding Using
+  Machine Learning. In: ACM INTERNATIONAL CONFERENCE ON MULTIMEDIA, 14., 2006,
+  New York, NY, USA. \textbf{Proceedings{\ldots}} Association for Computing
+  Machinery, 2006. p.931–940. (MM '06). doi: 10.1145/1180639.1180844.
+
+\bibitem[Fernández \MakeLowercase{et~al.}(2018)FERNáNDEZ; GARCíA; GALAR;
+  PRATI; KRAWCZYK; HERRERA]{bib:livroimbalanced} FERNáNDEZ, A.
+  \MakeLowercase{et~al.} \textbf{Learning from Imbalanced Data Sets}. [S.l.]:
+  Springer Nature, 2018. ISBN 978-3-319-98073-7, DOI:
+  10.1007/978-3-319-98074-4.
+
+\bibitem[Franche; Coulombe(2015)FRANCHE; COULOMBE]{bib:franche_2015} FRANCHE,
+  J.; COULOMBE, S\@. Fast H.264 to HEVC transcoder based on post-order
+  traversal of quadtree structure. In: IEEE INTERNATIONAL CONFERENCE ON IMAGE
+  PROCESSING (ICIP), 2015., 2015. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2015.
+  p.477--481. doi: 10.1109/ICIP.2015.7350844.
+
+\bibitem[Franche; Coulombe(2018)FRANCHE; COULOMBE]{bib:franche_2017} FRANCHE,
+  J.; COULOMBE, S\@. Efficient H.264-to-HEVC Transcoding Based on Motion
+  Propagation and Post-Order Traversal of Coding Tree Units. \textbf{IEEE
+  Transactions on Circuits and Systems for Video Technology}, [S.l.], v.28,
+  n.12, p.3452--3466, Sep.~2018. doi: 10.1109/TCSVT.2017.2754491.
+
+\bibitem[{Fraunhofer Institute for Telecommunications}(2021){Fraunhofer
+  Institute for Telecommunications}]{bib:vtm_software} {Fraunhofer Institute
+  for Telecommunications}. \textbf{VTM reference software for VVC}.
+  Dispon{\'\i}vel em: <https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware\_VTM>.
+  Acesso em: 2021-07-31.
+
+\bibitem[Gao; Ma(2015)GAO; MA]{bib:avs2} GAO, W.; MA, S\@. \textbf{Advanced
+  Video Coding Systems}. [S.l.]: Springer, Cham, 2015. doi:
+  10.1007/978-3-319-14243-2\_3.
+
+\bibitem[Garc\'ia-lucas \MakeLowercase{et~al.}(2020)GARC\'IA-LUCAS;
+  CEBRI\'AN-M\'ARQUEZ; D\'IAZ-HONRUBIA; MALLIKARACHCHI; CUENCA]{bib:lucas_2020}
+  GARC\'IA-LUCAS, D. \MakeLowercase{et~al.} Efficient HEVC-to-VVC Transcoder
+  Based On A Bayesian Classifier For The First Quadtree Depth Level. In: IEEE
+  INTERNATIONAL CONFERENCE ON IMAGE PROCESSING (ICIP), 2020., 2020.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2020. p.628--632. doi:
+  10.1109/ICIP40778.2020.9190640.
+
+\bibitem[Google(2021)GOOGLE]{bib:libvpx} GOOGLE. \textbf{WebM VP8/VP9 Codec
+  SDK!} Dispon{\'\i}vel em: <https://chromium.googlesource.com/webm/libvpx>.
+  Acesso em: 2021-03-26.
+
+\bibitem[Graves(2012)GRAVES]{bib:graves_2012} GRAVES, A\@. \textbf{Long
+  Short-Term Memory}. Berlin, Heidelberg: Springer Berlin Heidelberg, 2012.
+  37--45p. doi: 10.1007/978-3-642-24797-2\_4.
+
+\bibitem[Grellert \MakeLowercase{et~al.}(2018)GRELLERT; OLIVEIRA; DUARTE;
+  SILVA~CRUZ]{bib:grellert_2018} GRELLERT, M.; OLIVEIRA, T.; DUARTE, C.~R.;
+  SILVA~CRUZ, L.~A.~da. Fast HEVC Transrating using Random Forests. In: IEEE
+  VISUAL COMMUNICATIONS AND IMAGE PROCESSING (VCIP), 2018., 2018.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2018. p.1--4. doi:
+  10.1109/VCIP.2018.8698675.
+
+\bibitem[Guo; Han; Wen(2018)GUO; HAN; WEN]{bib:guo_2018} GUO, B.; HAN, Y.; WEN,
+  J\@. Fast Block Structure Determination in Av1-Based Multiple Resolutions
+  Video Encoding. In: IEEE INTERNATIONAL CONFERENCE ON MULTIMEDIA AND EXPO
+  (ICME), 2018., 2018. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2018. p.1--6. doi:
+  10.1109/ICME.2018.8486492.
+
+\bibitem[Guo \MakeLowercase{et~al.}(2018)GUO; CHEN; GU; HAN;
+  WEN]{bib:guo2_2018} GUO, B. \MakeLowercase{et~al.} A Bayesian Approach to
+  Block Structure Inference in AV1-Based Multi-Rate Video Encoding. In: DATA
+  COMPRESSION CONFERENCE, 2018., 2018. \textbf{Anais{\ldots}} [S.l.:~s.n.],
+  2018. p.383--392. doi: 10.1109/DCC.2018.00047.
+
+\bibitem[Han \MakeLowercase{et~al.}(2021)HAN; LI; MUKHERJEE; CHIANG; GRANGE;
+  CHEN; SU; PARKER; DENG; JOSHI; CHEN; WANG; WILKINS; XU;
+  BANKOSKI]{bib:av1_overview_2021} HAN, J. \MakeLowercase{et~al.} A Technical
+  Overview of AV1. \textbf{Proceedings of the IEEE}, [S.l.], p.1--28, 2021.
+  doi: 10.1109/JPROC.2021.3058584.
+
+\bibitem[Hearst \MakeLowercase{et~al.}(1998)HEARST; DUMAIS; OSUNA; PLATT;
+  SCHOLKOPF]{bib:hearst_1998} HEARST, M. \MakeLowercase{et~al.} Support vector
+  machines. \textbf{IEEE Intelligent Systems and their Applications}, [S.l.],
+  v.13, n.4, p.18--28, 1998. doi: 10.1109/5254.708428.
+
+\bibitem[Hinton; Salakhutdinov(2006)HINTON; SALAKHUTDINOV]{bib:autoencoder}
+  HINTON, G.~E.; SALAKHUTDINOV, R.~R\@. Reducing the Dimensionality of Data
+  with Neural Networks. \textbf{Science}, [S.l.], v.313, n.5786, p.504--507,
+  2006. doi: 10.1126/science.1127647.
+
+\bibitem[Holder; Pin; Kalva(2009)HOLDER; PIN; KALVA]{bib:holder_2009} HOLDER,
+  C.; PIN, T.; KALVA, H\@. Improved machine learning techniques for low
+  complexity MPEG-2 to H.264 transcoding using optimized codecs. In: DIGEST OF
+  TECHNICAL PAPERS INTERNATIONAL CONFERENCE ON CONSUMER ELECTRONICS, 2009.,
+  2009. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2009. p.1--2. doi:
+  10.1109/ICCE.2009.5012345.
+
+\bibitem[Huang \MakeLowercase{et~al.}(2021)HUANG; AN; HUANG; LI; HSIANG; ZHANG;
+  GAO; MA; CHUBACH]{bib:vvc_partitioningStructure} HUANG, Y.-W.
+  \MakeLowercase{et~al.} Block Partitioning Structure in the VVC Standard.
+  \textbf{IEEE Transactions on Circuits and Systems for Video Technology},
+  [S.l.], v.31, n.10, p.3818--3833, 2021. doi: 10.1109/TCSVT.2021.3088134.
+
+\bibitem[Huangyuan \MakeLowercase{et~al.}(2015)HUANGYUAN; SONG; MA; XIE;
+  LUO]{bib:huangyuan_2015} HUANGYUAN, Q. \MakeLowercase{et~al.} Learning based
+  fast H.264 to H.265 transcoding. In: ASIA-PACIFIC SIGNAL AND INFORMATION
+  PROCESSING ASSOCIATION ANNUAL SUMMIT AND CONFERENCE (APSIPA), 2015., 2015.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2015. p.563--570. doi:
+  10.1109/APSIPA.2015.7415333.
+
+\bibitem[{Huynh-Thu}; {Ghanbari}(2008){Huynh-Thu}; {Ghanbari}]{bib:psnr}
+  {Huynh-Thu}, Q.; {Ghanbari}, M\@. Scope of validity of PSNR in image/video
+  quality assessment. \textbf{Electronics Letters}, [S.l.], v.44, n.13,
+  p.800--801, 2008. doi: 10.1049/el:20080522.
+
+\bibitem[{International Telecommunication Union}(1984){International
+  Telecommunication Union}]{bib:h120} {International Telecommunication Union}.
+  \textbf{H.120}: Codecs for videoconferencing using primary digital group
+  transmission. Dispon{\'\i}vel em: <http://www.itu.int/rec/T-REC-H.120/en>.
+  Acesso em: 2020-08-12.
+
+\bibitem[{International Telecommunication Union}(1995){International
+  Telecommunication Union}]{bib:mpeg2} {International Telecommunication Union}.
+  \textbf{Recommendation H.262}: Generic Coding of Moving Pictures and
+  Associated Audio Information: Video. Dispon{\'\i}vel em:
+  <https://www.itu.int/rec/T-REC-H.262>. Acesso em: 2021-01-14.
+
+\bibitem[{International Telecommunication Union}(2013){International
+  Telecommunication Union}]{bib:h265} {International Telecommunication Union}.
+  \textbf{Recommendation H.265}: High Efficiency Video Coding. Dispon{\'\i}vel
+  em: <https://www.itu.int/rec/T-REC-H.265-201911-I>. Acesso em: 2021-07-06.
+
+\bibitem[Jiang; Chen(2013)JIANG; CHEN]{bib:jiang_2013} JIANG, W.; CHEN, Y\@.
+  Low‐complexity transcoding from H.264 to HEVC based on motion vector
+  clustering. In: IMAGE AND VISION PROCESSING AND DISPLAY TECHNOLOGY, 2013.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2013. p.1224--1226. doi:
+  10.1049/el.2013.0329.
+
+\bibitem[Jin \MakeLowercase{et~al.}(2011)JIN; SUN; ZHOU; WANG]{bib:jin_2011}
+  JIN, X.; SUN, J.; ZHOU, J.; WANG, Z\@. Fast video transcoding from AVS TO
+  H.264/AVC with reduced resolution. In: IEEE INTERNATIONAL CONFERENCE ON
+  SIGNAL PROCESSING, COMMUNICATIONS AND COMPUTING (ICSPCC), 2011., 2011.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2011. p.1--6. doi:
+  10.1109/ICSPCC.2011.6061577.
+
+\bibitem[Kass; Steffey(1989)KASS; STEFFEY]{bib:bayesian_ref} KASS, R.~E.;
+  STEFFEY, D\@. Approximate Bayesian Inference in Conditionally Independent
+  Hierarchical Models (Parametric Empirical Bayes Models). \textbf{Journal of
+  the American Statistical Association}, [S.l.], v.84, n.407, p.717--726, 1989.
+  doi: 10.1080/01621459.1989.10478825.
+
+\bibitem[Koushik(2016)KOUSHIK]{bib:koushik_2016} KOUSHIK, J\@.
+  \textbf{Understanding Convolutional Neural Networks}. Dispon{\'\i}vel em:
+  <arXiv: 1605.09081>. Acesso em: 2021-07-29.
+
+\bibitem[Kubat(2017)KUBAT]{bib:livroKubat} KUBAT, M\@. \textbf{An Introduction
+  to Machine Learning}. [S.l.]: Springer Nature, 2017. ISBN 978-3-319-63912-3,
+  DOI: 10.1007/978-3-319-63913-0.
+
+\bibitem[Leblanc(1880)LEBLANC]{bib:raster} LEBLANC, M\@. Etude sur la
+  transmission électrique des impressions lumineuses. In: LA LUMIèRE
+  éLECTRIQUE, 1880. \textbf{Anais{\ldots}} [S.l.:~s.n.], 1880. v.2, n.23,
+  p.477--481.
+
+\bibitem[Lesne(2014)LESNE]{bib:shannon_entropy} LESNE, A\@. Shannon entropy: a
+  rigorous notion at the crossroads between probability, information theory,
+  dynamical systems and statistical physics. \textbf{Mathematical Structures in
+  Computer Science}, [S.l.], v.24, n.3, 2014.
+
+\bibitem[Lewis(1998)LEWIS]{bib:lewis_1998} LEWIS, D.~D\@. Naive (Bayes) at
+  forty: The independence assumption in information retrieval. In: MACHINE
+  LEARNING: ECML-98, 1998, Berlin, Heidelberg. \textbf{Anais{\ldots}} Springer
+  Berlin Heidelberg, 1998. p.4--15. isbn: 978-3-540-69781-7.
+
+\bibitem[Li \MakeLowercase{et~al.}(2017)LI; XIE; SONG; ZHANG]{bib:li_2017} LI,
+  X.; XIE, R.; SONG, L.; ZHANG, L\@. Machine learning based VP9-to-HEVC video
+  transcoding. In: IEEE INTERNATIONAL SYMPOSIUM ON BROADBAND MULTIMEDIA SYSTEMS
+  AND BROADCASTING (BMSB), 2017., 2017. \textbf{Anais{\ldots}} [S.l.:~s.n.],
+  2017. p.1--6. doi: 10.1109/BMSB.2017.7986205.
+
+\bibitem[Lin \MakeLowercase{et~al.}(2016)LIN; ZHANG; CHEN; SUN;
+  GUO]{bib:lin_2016} LIN, Z. \MakeLowercase{et~al.} Efficient arbitrary ratio
+  downscale transcoding for HEVC. In: VISUAL COMMUNICATIONS AND IMAGE
+  PROCESSING (VCIP), 2016., 2016. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2016.
+  p.1--4. doi: 10.1109/VCIP.2016.7805465.
+
+\bibitem[Lindino \MakeLowercase{et~al.}(2021)LINDINO; BUBOLZ; ZATT; PALOMINO;
+  CORREA]{bib:lindino_2021} LINDINO, M. \MakeLowercase{et~al.} Low-Complexity
+  HEVC Transrating Based on Prediction Unit Mode Inheritance. In: EUROPEAN
+  SIGNAL PROCESSING CONFERENCE (EUSIPCO), 2020., 2021. \textbf{Anais{\ldots}}
+  [S.l.:~s.n.], 2021. p.550--554. doi: 10.23919/Eusipco47968.2020.9287789.
+
+\bibitem[Liu \MakeLowercase{et~al.}(2018)LIU; LI; DAI; LI; YANG]{bib:liu_2018}
+  LIU, X. \MakeLowercase{et~al.} An Efficient H.264/AVC to HEVC Transcoder for
+  Real-Time Video Communication in Internet of Vehicles. \textbf{IEEE Internet
+  of Things Journal}, [S.l.], v.5, n.4, p.3186--3197, May~2018. doi:
+  10.1109/JIOT.2018.2837034.
+
+\bibitem[Mashable(2015)MASHABLE]{bib:videocodechistory} MASHABLE. \textbf{The
+  evolution of video, from technicolor to streaming to 4K}. Dispon{\'\i}vel em:
+  <available on: https://mashable.com/2015/01/09/ces-tech-video/>. Acesso em:
+  2021-07-07.
+
+\bibitem[Mollon(1982)MOLLON]{bib:sistema_cores} MOLLON, J.~D\@. Color Vision.
+  \textbf{Annual Review of Psychology}, [S.l.], v.33, n.1, p.41--85, 1982. doi:
+  10.1146/annurev.ps.33.020182.000353.
+
+\bibitem[Mukherjee \MakeLowercase{et~al.}(2015)MUKHERJEE; HAN; BANKOSKI;
+  BULTJE; GRANGE; KOLESZAR; WILKINS; XU]{bib:vp9overview} MUKHERJEE, D.
+  \MakeLowercase{et~al.} A Technical Overview of VP9—The Latest Open-Source
+  Video Codec. \textbf{SMPTE Motion Imaging Journal}, [S.l.], v.124, n.1,
+  p.44--54, 2015. doi: 10.5594/j18499.
+
+\bibitem[Muybridge(1878)MUYBRIDGE]{bib:sciam_firstmotion} MUYBRIDGE, E\@. A
+  Horse's Motion Scientifically Determined. \textbf{Scientific American},
+  [S.l.], v.39, n.16, oct~1878.
+
+\bibitem[Nagaraghatta \MakeLowercase{et~al.}(2015)NAGARAGHATTA; ZHAO; MAXWELL;
+  KANNANGARA]{bib:nagaraghatta_2015} NAGARAGHATTA, A.; ZHAO, Y.; MAXWELL, G.;
+  KANNANGARA, S\@. Fast H.264/AVC to HEVC transcoding using mode merging and
+  mode mapping. In: IEEE 5TH INTERNATIONAL CONFERENCE ON CONSUMER ELECTRONICS -
+  BERLIN (ICCE-BERLIN), 2015., 2015. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2015.
+  p.165--169. doi: 10.1109/ICCE-Berlin.2015.7391223.
+
+\bibitem[Nam \MakeLowercase{et~al.}(2006)NAM; DAN; KIM; JEONG;
+  KO]{bib:nam_2006} NAM, H.-M. \MakeLowercase{et~al.} Low Complexity H.264
+  Transcoder for Bitrate Reduction. In: INTERNATIONAL SYMPOSIUM ON
+  COMMUNICATIONS AND INFORMATION TECHNOLOGIES, 2006., 2006.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2006. p.679--682. doi:
+  10.1109/ISCIT.2006.340020.
+
+\bibitem[Netflix(2015a)NETFLIX]{bib:netflix_pipeline} NETFLIX. \textbf{High
+  Quality Video Encoding at Scale}. [S.l.]: Netflix Technology Blog, 2015.
+  Dispon{\'\i}vel em:
+  <https://netflixtechblog.com/high-quality-video-encoding-at-scale-d159db052746>.
+  Acesso em: 2022-03-14.
+
+\bibitem[Netflix(2015b)NETFLIX]{bib:vmaf} NETFLIX. \textbf{VMAF - Video
+  Multi-Method Assessment Fusion}. Dispon{\'\i}vel em:
+  <https://github.com/Netflix/vmaf>. Acesso em: 2020-10-27.
+
+\bibitem[Nguyen; Do(2015)NGUYEN; DO]{bib:nguyen_2015} NGUYEN, V.~A.; DO,
+  M.~N\@. Efficient coding unit size selection for HEVC downsizing transcoding.
+  In: IEEE INTERNATIONAL SYMPOSIUM ON CIRCUITS AND SYSTEMS (ISCAS), 2015.,
+  2015. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2015. p.1286--1289. doi:
+  10.1109/ISCAS.2015.7168876.
+
+\bibitem[Noorkami; Mersereau(2005)NOORKAMI; MERSEREAU]{bib:watermark} NOORKAMI,
+  M.; MERSEREAU, R\@. Compressed-domain video watermarking for H.264. In: IEEE
+  INTERNATIONAL CONFERENCE ON IMAGE PROCESSING 2005, 2005.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2005. v.2, p.II--890. doi:
+  10.1109/ICIP.2005.1530199.
+
+\bibitem[Ohm; Sullivan(2014)OHM; SULLIVAN]{bib:HM-HEVC} OHM, J.-R.; SULLIVAN,
+  G.~J\@. \textbf{HEVC Test Model (HM)}. Dispon{\'\i}vel em:
+  <https://hevc.hhi.fraunhofer.de/svn/svn\_HEVCSoftware>. Acesso em:
+  2021-07-30.
+
+\bibitem[O'rourke; Stevenson(1995)O'ROURKE;
+  STEVENSON]{bib:quantization_artifacts} O'ROURKE, T.; STEVENSON, R\@. Improved
+  image decompression for reduced transform coding artifacts. \textbf{IEEE
+  Transactions on Circuits and Systems for Video Technology}, [S.l.], v.5, n.6,
+  p.490--499, 1995.
+
+\bibitem[Peixoto; Izquierdo(2012)PEIXOTO; IZQUIERDO]{bib:peixoto_2012} PEIXOTO,
+  E.; IZQUIERDO, E\@. A complexity-scalable transcoder from H.264/AVC to the
+  new HEVC codec. In: IEEE INTERNATIONAL CONFERENCE ON IMAGE PROCESSING, 2012.,
+  2012. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2012. p.737--740. doi:
+  10.1109/ICIP.2012.6466965.
+
+\bibitem[Peixoto \MakeLowercase{et~al.}(2014)PEIXOTO; MACCHIAVELLO; HUNG;
+  QUEIROZ]{bib:peixoto3_2014} PEIXOTO, E.; MACCHIAVELLO, B.; HUNG, E.~M.;
+  QUEIROZ, R.~L.~de. A fast HEVC transcoder based on content modeling and early
+  termination. In: IEEE INTERNATIONAL CONFERENCE ON IMAGE PROCESSING (ICIP),
+  2014., 2014. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2014. p.2532--2536.
+
+\bibitem[Peixoto \MakeLowercase{et~al.}(2014)PEIXOTO; MACCHIAVELLO; QUEIROZ;
+  HUNG]{bib:peixoto2_2014} PEIXOTO, E.; MACCHIAVELLO, B.; QUEIROZ, R.~L.~de;
+  HUNG, E.~M\@. Fast H.264/AVC to HEVC transcoding based on machine learning.
+  In: INTERNATIONAL TELECOMMUNICATIONS SYMPOSIUM (ITS), 2014., 2014.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2014. p.1--4. doi:
+  10.1109/ITS.2014.6947999.
+
+\bibitem[Peixoto; Shanableh; Izquierdo(2014)PEIXOTO; SHANABLEH;
+  IZQUIERDO]{bib:peixoto_2014} PEIXOTO, E.; SHANABLEH, T.; IZQUIERDO, E\@.
+  H.264/AVC to HEVC Video Transcoder Based on Dynamic Thresholding and Content
+  Modeling. \textbf{IEEE Transactions on Circuits and Systems for Video
+  Technology}, [S.l.], v.24, n.1, p.99--112, Jan.~2014. doi:
+  10.1109/TCSVT.2013.2273651.
+
+\bibitem[Pfaff \MakeLowercase{et~al.}(2021)PFAFF; FILIPPOV; LIU; ZHAO; CHEN;
+  DE-LUXáN-HERNáNDEZ; WIEGAND; RUFITSKIY; RAMASUBRAMONIAN;
+  AUWERA]{bib:vvc_intra_modes} PFAFF, J. \MakeLowercase{et~al.} Intra
+  Prediction and Mode Coding in VVC. \textbf{IEEE Transactions on Circuits and
+  Systems for Video Technology}, [S.l.], v.31, n.10, p.3834--3847, 2021. doi:
+  10.1109/TCSVT.2021.3072430.
+
+\bibitem[Quinlan(2014)QUINLAN]{bib:quinlan_2014} QUINLAN, J.~R\@.
+  \textbf{C4.5}: Programs for Machine Learning. [S.l.]: Elsevier, 2014. ISBN:
+  1-55860-238-0.
+
+\bibitem[Quinlan(2020)QUINLAN]{bib:quinlan_2020} QUINLAN, J.~R\@. \textbf{Data
+  Mining Tools See5 and C5.0}. [S.l.]: RuleQuest, 2020. Dispon{\'\i}vel em:
+  <https://www.rulequest.com/see5-info.html>. Acesso em: 2021-07-29.
+
+\bibitem[Ram{\'\i}rez; Travesedo~rojas; Mart{\'\i}nez(2020)RAM{\'I}REZ;
+  TRAVESEDO~ROJAS; MART{\'I}NEZ]{bib:ramirez_2020} RAM{\'I}REZ, M.~G.;
+  TRAVESEDO~ROJAS, R.~G.~de; MART{\'I}NEZ, A.~A\@. YouTube and coronavirus:
+  analysis of video consumption on the COVID-19 pandemic. \textbf{Revista
+  Latina de Comunicaci{\'o}n Social}, [S.l.], v.78, p.121--153, 2020. doi:
+  10.4185/RLCS-2020-1471.
+
+\bibitem[Raschka(2014)RASCHKA]{bib:naivebayesref} RASCHKA, S\@. Naive Bayes and
+  Text Classification {I} - Introduction and Theory. \textbf{CoRR}, [S.l.],
+  v.abs/1410.5329, 2014.
+
+\bibitem[Raschka(2015)RASCHKA]{bib:livroRaschka} RASCHKA, S\@. \textbf{Python
+  Machine Learning.} [S.l.]: Packt Publishing, 2015. (Community Experience
+  Distilled).
+
+\bibitem[Raschka; Mir-jalili(2019)RASCHKA; MIR-JALILI]{bib:livroML} RASCHKA,
+  S.; MIR-JALILI, V\@. \textbf{Python machine learning}: Machine learning and
+  deep learning with Python, scikit-learn, and TensorFlow 2. [S.l.]: Packt
+  Publishing Ltd, 2019. ISBN: 978-1-78995-575-0.
+
+\bibitem[Richardson(2002)RICHARDSON]{bib:richardson_2002} RICHARDSON, I.~E\@.
+  \textbf{Video codec design}: developing image and video compression systems.
+  [S.l.]: John Wiley \& Sons, 2002.
+
+\bibitem[Rodrigues(2008)RODRIGUES]{bib:dissertacao_rodrigues_2008} RODRIGUES,
+  P. D.~F\@. \textbf{A TV Digital no Brasil}: Do SBTVD ao ISDTV-T - A
+  Pol\'itica a Reboque da Tecnologia. 2008. 121p. Disserta\c{c}\~ao (Mestre em
+  Comunica\c{c}\~ao) --- Programa de P\'os-Gradua\c{c}\~ao da Faculdade de
+  Comunica\c{c}\~ao da Universidade de Bras\'ilia (UnB), Brasilia.
+
+\bibitem[Schoon(2021)SCHOON]{bib:5to9google} SCHOON, B\@. \textbf{YouTube and
+  Netflix may require AV1 hardware decoding in the future}. [S.l.]: 5 to 9
+  Google, 2021. Dispon{\'\i}vel em:
+  <https://9to5google.com/2021/01/27/youtube-av1-netflix-requirement/>. Acesso
+  em: 2021-06-04.
+
+\bibitem[{Science and Media Museum}(2009){Science and Media
+  Museum}]{bib:lumiere} {Science and Media Museum}. \textbf{The Lumière
+  Brothers}: Pioneers of Cinema and Colour Photography. Dispon{\'\i}vel em:
+  <https://blog.scienceandmediamuseum.org.uk/the-lumiere-brothers-pioneers-of-cinema-and-colour-photography/>.
+  Acesso em: 2020-10-27.
+
+\bibitem[{scikit-learn}(2021a){scikit-learn}]{bib:scikitlearn-site}
+  {scikit-learn}. \textbf{scikit-learn}: Machine Learning in Python.
+  Dispon{\'\i}vel em: <https://scikit-learn.org/stable/>. Acesso em:
+  2021-07-30.
+
+\bibitem[{scikit-learn}(2021b){scikit-learn}]{bib:scikitlearn_cart}
+  {scikit-learn}. \textbf{sklearn.tree.DecisionTreeClassifier}. Dispon{\'\i}vel
+  em:
+  <https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.h
+  tml\#sklearn.tree.DecisionTreeClassifier/>. Acesso em: 2021-07-30.
+
+\bibitem[{scikit-learn}(2021c){scikit-learn}]{bib:CART_matematica}
+  {scikit-learn}. \textbf{Decision Tree}: mathematical formulation.
+  Dispon{\'\i}vel em:
+  <https://scikit-learn.org/stable/modules/tree.html\#tree-mathematical-formulation>.
+  Acesso em: 2022-09-29.
+
+\bibitem[{scikit-learn}(2021d){scikit-learn}]{bib:CART_cppalpha}
+  {scikit-learn}. \textbf{Decision Tree}: minimal cost-complexity pruning.
+  Dispon{\'\i}vel em:
+  <https://scikit-learn.org/stable/modules/tree.html\#minimal-cost-complexity-pruning>.
+  Acesso em: 2022-09-29.
+
+\bibitem[{scikit-learn}(2022a){scikit-learn}]{bib:scikitlearn_f1}
+  {scikit-learn}. \textbf{sklearn.metrics.f1\_score}. Dispon{\'\i}vel em:
+  <https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1
+  \_score.html\#sklearn.metrics.f1\_score/>. Acesso em: 2022-12-30.
+
+\bibitem[{scikit-learn}(2022b){scikit-learn}]{bib:scikitlearn_auc}
+  {scikit-learn}. \textbf{sklearn.metrics.roc\_auc\_score}. Dispon{\'\i}vel em:
+  <https://scikit-learn.org/stable/modules/generated/sklearn.
+  metrics.roc\_auc\_score.html\#sklearn.metrics.roc\_auc\_score/>. Acesso em:
+  2022-12-30.
+
+\bibitem[{Scikit-Learn}(2022){Scikit-Learn}]{bib:halvingrandomsearch}
+  {Scikit-Learn}. \textbf{Searching for optimal parameters with successive
+  halving}. Dispon{\'\i}vel em:
+  <https://scikit-learn.org/stable/modules/grid\_search.html\#successive-halving-user-guide>.
+  Acesso em: 2022-12-19.
+
+\bibitem[Shen; Sethi; Bhaskaran(1997)SHEN; SETHI; BHASKARAN]{bib:shen_1997}
+  SHEN, D.; SETHI, I.; BHASKARAN, V\@. Adaptive motion vector resampling for
+  compressed video down-scaling. In: INTERNATIONAL CONFERENCE ON IMAGE
+  PROCESSING, 1997. \textbf{Proceedings{\ldots}} [S.l.:~s.n.], 1997. v.1,
+  p.771--774. doi: 10.1109/ICIP.1997.648076.
+
+\bibitem[Shu \MakeLowercase{et~al.}(2020)SHU; HUANG; BROSIUS;
+  DENG]{bib:covid19} SHU, C.; HUANG, X.; BROSIUS, J.; DENG, C\@.
+  \textbf{Exploring Potential Super Infection in SARS-CoV2 by Genome-Wide
+  Analysis and Receptor–Ligand Docking}. [S.l.]: Preprints, 2020.
+  Dispon{\'\i}vel em: <https://www.preprints.org/manuscript/202003.0310/v1>.
+  Acesso em: 2021-03-19.
+
+\bibitem[Shumway; Unger(1974)SHUMWAY; UNGER]{bib:shumway_1974} SHUMWAY, R.~H.;
+  UNGER, A.~N\@. Linear Discriminant Functions for Stationary Time Series.
+  \textbf{Journal of the American Statistical Association}, [S.l.], v.69,
+  n.348, p.948--956, Dec.~1974. doi: 10.2307/2286169.
+
+\bibitem[Siglin(2016)SIGLIN]{bib:china_codecs} SIGLIN, T\@. \textbf{The China
+  Problem}: Government-Sponsored Formats Are Incompatible. [S.l.]:
+  streamingmedia, 2016. Dispon{\'\i}vel em:
+  <https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/The-China-Problem-Government-Sponsored-Formats-Are-Incompatible-115128.aspx>.
+  Acesso em: 2022-08-12.
+
+\bibitem[{Siqueira}; {Correa}; {Grellert}(2020){Siqueira}; {Correa};
+  {Grellert}]{bib:siqueira_2020} {Siqueira}, I.; {Correa}, G.; {Grellert}, M\@.
+  Rate-Distortion and Complexity Comparison of HEVC and VVC Video Encoders. In:
+  IEEE 11TH LATIN AMERICAN SYMPOSIUM ON CIRCUITS SYSTEMS (LASCAS), 2020., 2020.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2020. p.1--4. doi:
+  10.1109/LASCAS45839.2020.9069036.
+
+\bibitem[Soares; Corrêa; Agostini(2019)SOARES; CORRêA;
+  AGOSTINI]{bib:soares_2019} SOARES, Y.; CORRêA, G.; AGOSTINI, L\@. Fast
+  Partitioning Decision Making for Prediction Units on H.264-to-HEVC
+  Transcoding Using Machine Learning. In: BRAZILLIAN SYMPOSIUM ON MULTIMEDIA
+  AND THE WEB, 25., 2019, New York, NY, USA. \textbf{Proceedings{\ldots}}
+  Association for Computing Machinery, 2019. p.161–168. (WebMedia '19). doi:
+  10.1145/3323503.3349553.
+
+\bibitem[{Statista Research Department}(2021){Statista Research
+  Department}]{bib:statista_2021} {Statista Research Department}. \textbf{Share
+  of global internet users who have performed selected online activities in the
+  past month via mobile as of 1st quarter 2019}. [S.l.]: statista, 2021.
+  Dispon{\'\i}vel em:
+  <https://www.statista.com/statistics/783357/leading-mobile-first-activities/>.
+  Acesso em: 2021-09-03.
+
+\bibitem[Su \MakeLowercase{et~al.}(2019)SU; TSAI; WANG;
+  XU]{bib:av1_ml_partitioning} SU, H.; TSAI, C.-Y.; WANG, Y.; XU, Y\@. Machine
+  Learning Accelerated Partition Search for Video Encoding. In: IEEE
+  INTERNATIONAL CONFERENCE ON IMAGE PROCESSING (ICIP), 2019., 2019.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2019. p.2661--2665. doi:
+  10.1109/ICIP.2019.8803311.
+
+\bibitem[Suehring(2015)SUEHRING]{bib:jm_software} SUEHRING, K\@.
+  \textbf{H.264/AVC Software}. Dispon{\'\i}vel em:
+  <http://iphome.hhi.de/suehring/tml/download/>. Acesso em: 2021-07-31.
+
+\bibitem[Sullivan; Wiegand(1998)SULLIVAN; WIEGAND]{bib:rdo_sullivan} SULLIVAN,
+  G.; WIEGAND, T\@. Rate-distortion optimization for video compression.
+  \textbf{IEEE Signal Processing Magazine}, [S.l.], v.15, n.6, p.74--90, 1998.
+  doi: 10.1109/79.733497.
+
+\bibitem[Sung \MakeLowercase{et~al.}(2014)SUNG; KIM; KIM; RO]{bib:sung_2014}
+  SUNG, M.; KIM, M.; KIM, M.; RO, W.~W\@. Accelerating HEVC transcoder by
+  exploiting decoded quadtree. In: THE 18TH IEEE INTERNATIONAL SYMPOSIUM ON
+  CONSUMER ELECTRONICS (ISCE 2014), 2014. \textbf{Anais{\ldots}} [S.l.:~s.n.],
+  2014. p.1--2. doi: 10.1109/ISCE.2014.6884329.
+
+\bibitem[Swann; Kingsbury(1996)SWANN; KINGSBURY]{bib:swann_1996} SWANN, R.;
+  KINGSBURY, N\@. Transcoding of MPEG-II for enhanced resilience to
+  transmission errors. In: IEEE INTERNATIONAL CONFERENCE ON IMAGE PROCESSING,
+  3., 1996. \textbf{Proceedings{\ldots}} [S.l.:~s.n.], 1996. v.2, p.813--816.
+  doi: 10.1109/ICIP.1996.561029.
+
+\bibitem[Tang; Wen(2015)TANG; WEN]{bib:tang_2015} TANG, M.; WEN, J\@. An
+  efficient HEVC to H.264/AVC transcoding system. In: IEEE INTERNATIONAL
+  SYMPOSIUM ON CIRCUITS AND SYSTEMS (ISCAS), 2015., 2015.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2015. p.2748--2751. doi:
+  10.1109/ISCAS.2015.7169255.
+
+\bibitem[Tao; Caixia; Xin(2016)TAO; CAIXIA; XIN]{bib:AVS} TAO, Z.; CAIXIA, Z.;
+  XIN, Z\@. Review of AVS Audio Coding Standard. \textbf{ZTE Communications},
+  [S.l.], v.14, n.2, p.322--325, Apr~2016. DOI:
+  10.3969/j.issn.1673-5188.2016.02.007.
+
+\bibitem[Torre; Rodr\'iguez-s\'anchez; Mart\'inez(2015)TORRE;
+  RODR\'IGUEZ-S\'ANCHEZ; MART\'INEZ]{bib:torre_2015} TORRE, E.~de~la;
+  RODR\'IGUEZ-S\'ANCHEZ, R.; MART\'INEZ, J.~L\@. HEVC to VP9 transcoder. In:
+  VISUAL COMMUNICATIONS AND IMAGE PROCESSING (VCIP), 2015., 2015.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2015. p.1--4. doi:
+  10.1109/VCIP.2015.7457896.
+
+\bibitem[Van~leuven \MakeLowercase{et~al.}(2011)VAN~LEUVEN; DE~COCK;
+  VAN~WALLENDAEL; WALLE; GARRIDO-CANTOS; MART\'INEZ; CUENCA]{bib:leuven_2011}
+  VAN~LEUVEN, S. \MakeLowercase{et~al.} Combining open — And closed-loop
+  architectures for H.264/AVC-TO-SVC transcoding. In: IEEE INTERNATIONAL
+  CONFERENCE ON IMAGE PROCESSING, 2011., 2011. \textbf{Anais{\ldots}}
+  [S.l.:~s.n.], 2011. p.1661--1664. doi: 10.1109/ICIP.2011.6115773.
+
+\bibitem[Verizon(2021)VERIZON]{bib:verizon_2021} VERIZON. \textbf{Verizon’s
+  Network COVID-19 Reliability Report}. Dispon{\'\i}vel em:
+  <https://www.verizon.com/about/news/how-americans-are-spending-their-time-temporary-new-normal>.
+  Acesso em: 2021-07-26.
+
+\bibitem[Wang \MakeLowercase{et~al.}(2012)WANG; FAN; LIU; LIU; ZHAO;
+  GAO]{bib:wang_2012} WANG, B. \MakeLowercase{et~al.} A fast multiview video
+  transcoder for bitrate reduction. In: VISUAL COMMUNICATIONS AND IMAGE
+  PROCESSING, 2012., 2012. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2012. p.1--5.
+  doi: 10.1109/VCIP.2012.6410847.
+
+\bibitem[{Wang}; {Yang}; {Yu}(2007){Wang}; {Yang}; {Yu}]{bib:wang2_2007}
+  {Wang}, J.; {Yang}, E.; {Yu}, X\@. An Efficient Motion Estimation Method for
+  H.264-Based Video Transcoding with Spatial Resolution Conversion. In: IEEE
+  INTERNATIONAL CONFERENCE ON MULTIMEDIA AND EXPO, 2007., 2007.
+  \textbf{Anais{\ldots}} [S.l.:~s.n.], 2007. p.444--447. doi:
+  10.1109/ICME.2007.4284682.
+
+\bibitem[Wang; Bovik(2009)WANG; BOVIK]{bib:mse_wrong} WANG, Z.; BOVIK, A.~C\@.
+  Mean squared error: Love it or leave it? A new look at Signal Fidelity
+  Measures. \textbf{IEEE Signal Processing Magazine}, [S.l.], v.26, n.1,
+  p.98--117, 2009. doi: 10.1109/MSP.2008.930649.
+
+\bibitem[Wei \MakeLowercase{et~al.}(2017)WEI; WANG; XU; QIAO]{bib:wei_2017}
+  WEI, Y.; WANG, Z.; XU, M.; QIAO, S\@. An LSTM method for predicting CU
+  splitting in H.264 to HEVC transcoding. In: IEEE VISUAL COMMUNICATIONS AND
+  IMAGE PROCESSING (VCIP), 2017., 2017. \textbf{Anais{\ldots}} [S.l.:~s.n.],
+  2017. p.1--4. doi: 10.1109/VCIP.2017.8305079.
+
+\bibitem[Wiegand \MakeLowercase{et~al.}(2003)WIEGAND; SULLIVAN; BJONTEGAARD;
+  LUTHRA]{bib:h264overview2} WIEGAND, T.; SULLIVAN, G.; BJONTEGAARD, G.;
+  LUTHRA, A\@. Overview of the H.264/AVC video coding standard. \textbf{IEEE
+  Transactions on Circuits and Systems for Video Technology}, [S.l.], v.13,
+  n.7, p.560--576, 2003. doi: 10.1109/TCSVT.2003.815165.
+
+\bibitem[{Worldometers.info}(2022){Worldometers.info}]{bib:world_population}
+  {Worldometers.info}. \textbf{Current World Population}. Dispon{\'\i}vel em:
+  <https://www.worldometers.info/world-population/>. Acesso em: 2022-01-21.
+
+\bibitem[Xin; Zhang(2022)XIN; ZHANG]{bib:xin_2022} XIN, L.; ZHANG, Y\@. An
+  efficient video transcoding algorithm from h.264 to hevc. \textbf{Journal of
+  Physics: Conference Series}, [S.l.], v.2253, p.1--8, 2022. doi:
+  10.1088/1742-6596/2253/1/012029.
+
+\bibitem[Xu \MakeLowercase{et~al.}(2019)XU; XU; WEI; WANG; GUAN]{bib:xu_2019}
+  XU, J. \MakeLowercase{et~al.} Fast H.264 to HEVC Transcoding: A Deep Learning
+  Method. \textbf{IEEE Transactions on Multimedia}, [S.l.], v.21, n.7,
+  p.1633--1645, Jul.~2019. doi: 10.1109/TMM.2018.2885921.
+
+\bibitem[Zhang \MakeLowercase{et~al.}(2012)ZHANG; LI; XU; LI]{bib:zhang_2012}
+  ZHANG, D.; LI, B.; XU, J.; LI, H\@. Fast Transcoding from H.264 AVC to High
+  Efficiency Video Coding. In: IEEE INTERNATIONAL CONFERENCE ON MULTIMEDIA AND
+  EXPO, 2012., 2012. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2012. p.651--656.
+  doi: 10.1109/ICME.2012.112.
+
+\bibitem[{Zhang} \MakeLowercase{et~al.}(2019){Zhang}; {Jia}; {Lei}; {Wang};
+  {Ma}; {Gao}]{bib:avs3} {Zhang}, J. \MakeLowercase{et~al.} Recent Development
+  of AVS Video Coding Standard: AVS3. In: PICTURE CODING SYMPOSIUM (PCS),
+  2019., 2019. \textbf{Anais{\ldots}} [S.l.:~s.n.], 2019. p.1--5. doi:
+  10.1109/PCS48520.2019.8954503.
+
+\bibitem[Zhao \MakeLowercase{et~al.}(2021)ZHAO; LEI; NORKIN; DAEDE;
+  TOURAPIS]{bib:av2ctc} ZHAO, X. \MakeLowercase{et~al.} \textbf{AOM Common Test
+  Conditions v2.0}. Dispon{\'\i}vel em:
+  <https://aomedia.org/docs/CWG-B075o\_AV2\_CTC\_v2.pdf>. Acesso em:
+  2022-09-29.
+
+\bibitem[Zrida \MakeLowercase{et~al.}(2011)ZRIDA; AMMARI; ABID;
+  JEMAI]{bib:zrida_2011} ZRIDA, H.~K.; AMMARI, A.~C.; ABID, M.; JEMAI, A\@.
+  Complexity/performance analysis of a h. 264/avc video encoder. \textbf{Recent
+  Advances on Video Coding}, [S.l.], p.27, 2011.
+
+\end{thebibliography}

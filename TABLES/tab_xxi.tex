@@ -1,0 +1,29 @@
+\begin{table}
+\begin{center}
+\caption{Quantidade de amostras de treinamento e teste de modelos preditivos para a transcodificação H.264/AVC-AV1 após o balanceamento.}
+\label{tab:XXI}
+\footnotesize
+
+\begin{tblr}{
+    colspec = {l|l|r|r|r},
+    hlines,
+    row{even} = {gray9},
+    cell{5}{1} = {gray9},
+    cell{9}{1} = {gray9}
+}
+\hline
+\SetCell[c=2]{c} && \SetCell[c=3]{c}\textbf{Profundidade}    \\
+\textbf{CQ}                  & \textbf{Conjunto de} & \textbf{0 (128$\times$128)} & \textbf{1 (64$\times$64)} & \textbf{2 (32$\times$32)} \\
+\SetCell[r=2]{c}20 & treinamento & 30.233 & 113.225 & 226.393   \\
+                   & teste       & 32.107 & 120.487 & 190.105   \\
+\SetCell[r=2]{c}32 & treinamento & 35.949 & 112.485 & 215.039   \\
+                   & teste       & 36.943 & 110.657 & 171.583   \\
+\SetCell[r=2]{c}43 & treinamento & 37.015 & 103.269 & 172.291   \\
+                   & teste       & 37.157 & 78.757 & 118.595   \\
+\SetCell[r=2]{c}55 & treinamento & 37.127 & 91.473 & 112.135   \\
+                   & teste       & 37.321 & 65.807 & 56.141   \\
+
+\hline
+\end{tblr}
+\end{center}
+\end{table}

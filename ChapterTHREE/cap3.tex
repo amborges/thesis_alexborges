@@ -1,0 +1,71 @@
+\chapter{Revisão Sistemática da Literatura em Transcodificação de Vídeo}
+\label{cap:3}
+
+O objetivo principal deste capítulo é apresentar ao leitor o estado da arte da literatura científica acerca de transcodificadores rápidos de vídeo. De forma a garantir uma maior acurácia da metodologia de pesquisa da literatura científica, utilizamos o processo de Metodologia Sistemática da Literatura (MSL) \cite{bib:msl}. Segundo essa metodologia, deve-se definir bem o escopo da busca pela literatura, a fim de possibilitar a replicação desse processo o mais fielmente possível, haja vista que é esperado que ocorra alguma mudança, pois a literatura é constantemente atualizada.
+
+Assim sendo, nesta tese, utilizamos três ferramentas de busca como fonte dos artigos acadêmicos: a IEEE Xplore, a \textit{Association for Computing Machinery} (ACM) \textit{Library} e o \textit{Google Scholar}. Em cada uma delas, realizamos as mesmas buscas, procurando a presença das palavras ``\textit{transcoding}'' e ``\textit{transcoder}'', seja no título ou no \textit{abstract}. Selecionamos para estudo os primeiros 500 artigos que cada uma das ferramentas de busca considerou mais relevantes, totalizando 1500 artigos a serem revisados.
+
+Após a obtenção dos artigos, aplicamos filtros para remover trabalhos com as características descritas abaixo: 
+
+\begin{enumerate}[i.]
+    \item Artigos duplicados;
+
+    \item Artigos que focam na transcodificação de dados que não vídeo – por exemplo, transcodificação de áudio;
+
+    \item Artigos que empregam o termo ``transcodificação'' como sinônimo para outra palavra, como ``codificação'';
+
+    \item Artigos que apresentam a transcodificação sem foco em acelerar o processo, ou seja, não possuem redução do tempo (TS) ou qualquer forma de mensurar esse valor;
+
+    \item Artigos que não apresentam a métrica BD-rate.
+\end{enumerate}
+
+Após os quatro primeiros filtros, dos 1500 artigos capturados sobraram 140; no entanto, somente 34 deles é que passaram pelo quinto filtro. Observe que o BD-rate começou a ser utilizado na literatura científica após o ano de 2010. Portanto, existe esse recorte dos trabalhos: consideramos apenas a última década (2011-2022) de artigos publicados com foco em acelerar a transcodificação de vídeo. Isso porque a ausência do BD-rate inviabiliza qualquer discussão comparativa entre os trabalhos. De cada um dos artigos selecionados, os seguintes dados foram capturados e armazenados em uma tabela:
+
+\begin{enumerate}[1.]
+    \item Título do artigo;
+    
+    \item Nome dos autores;
+    
+    \item Código do \textit{Digital Object Identifier} (DOI);
+    
+    \item Nome do formato utilizado na decodificação;
+    
+    \item Nome do formato utilizado na recodificação;
+    
+    \item Estágios envolvidos na transcodificação. Os possíveis estágios a serem selecionados neste campo são: ``predição intraquadro'', ``predição interquadros'', ``transformada'', ``quantização'', ``codificação de entropia'', ``filtros'', ``particionamento de blocos'' e ``outros'';
+    
+    \item Nome do algoritmo de aprendizado de máquina utilizado, quando existente;
+    
+    \item Breve descrição da proposta apresentada no trabalho.
+\end{enumerate}
+
+Com os artigos devidamente catalogados, torna-se possível apresentar o estado da arte da transcodificação de vídeo com foco na redução do custo computacional. Para facilitar essa apresentação, categorizamos os trabalhos em três tópicos: visão geral da transcodificação de vídeo (seção \ref{cap:3.1}); transcodificação assistida por aprendizado de máquina (seção \ref{cap:3.2}) e transcodificação acelerada por herança de particionamento de blocos (seção \ref{cap:3.3}).
+
+Entre os trabalhos selecionados, é possível observar uma prevalência de soluções para transcodificação de ``origem'' ou para ``destino'' o formato H.265/HEVC. Aproximadamente 85\% de todos os trabalhos selecionados incluem soluções que visam adaptar vídeos codificados no padrão H.265/HEVC para tecnologias mais antigas (como H.264/AVC) ou para tecnologias mais recentes (como H.266/VVC). Tendo em vista que o escopo do estudo do estado da arte apresentado está entre os anos de 2011 e 2022, torna-se compreensível que o H.265/HEVC tenha sido o formato de vídeo mais estudado na literatura, pois o H.265/HEVC foi o padrão de codificação de vídeo estado-da-arte desde seu lançamento em 2013 até 2020, quando o H.266/VVC foi lançado. O segundo formato de vídeo que mais aparece na literatura selecionada é o H.264/AVC, com presença de 63\% entre todos os artigos, seguido pelo AV1 (15\%). Esses dois codificadores de vídeo são amplamente utilizados para fins comerciais hoje em dia, principalmente para transmissões de vídeos pela internet. Portanto, já esperávamos que tivessem destaque especial na literatura.
+
+Considerando os tipos de transcodificações apresentados em \cite{bib:modosTranscodificacao} (vide Figura \ref{fig:4}), podemos encontrar, na literatura selecionada, dois tipos principais de trabalhos: transcodificações heterogêneas (78\%) e transcodificações homogêneas (22\%), sendo que esta última está subdividida em redução da taxa de bits (\textit{transrating}) e redução da resolução espacial (\textit{downscaling}). Dessa forma, essa diferença dos tipos de trabalho evidencia que a conversão entre formatos de vídeo é particularmente importante na literatura científica, assim como a adaptação da taxa de bits e o controle da resolução do vídeo, principalmente ao se considerar a relevância dos serviços de \textit{streaming} nos dias de hoje.
+
+Dentre todos os formatos e padrões de codificação de vídeos apresentados na Figura \ref{fig:1}, encontram-se presentes na revisão sistemática da literatura apenas os formatos H.264/AVC, H.265/HEVC, H.266/VVC, VP9, AV1 e AVS, distribuídos conforme a Figura \ref{fig:10}. Em relação à transcodificação homogênea (Figura \ref{fig:10}(a)), encontramos apenas trabalhos que propõem soluções para os formatos H.264/AVC ou H.265/HEVC, sendo que este último representa 57,14\% dos casos. Para trabalhos de transcodificação de vídeos heterogêneos, H.264/AVC também é o principal formato de origem, com presença de 61,54\% (Figura \ref{fig:10}(b)), enquanto o formato H.265/HEVC é o principal formato de destino, com 65,38\% (Figura \ref{fig:10}(c)). Portanto, é possível notar que os formatos de codificação de vídeo desenvolvidos pelo ITU-VCEG têm sido o foco principal dos pesquisadores que trabalham com transcodificação de vídeo.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{FIGURES/fig_10.png}
+    \caption{Distribuição da presença dos formatos de codificação de vídeo observados na revisão sistemática da literatura, conforme o tipo de transcodificação. Fonte: Elaborada pelo autor.}
+    \label{fig:10}
+\end{figure}
+
+Descrevemos os seis principais estágios de um codificador de vídeo híbrido no capítulo \ref{cap:2}, mas o particionamento de blocos também é um processo decisório importante durante a execução de um codificador. Portanto, precisa ser considerado quando se trata do estudo de complexidade daquele formato de codificação de vídeo. Ao observar a literatura selecionada, percebemos que a maioria das soluções concentram seus esforços em acelerar um transcodificador de vídeo através do processo de particionamento de blocos, como pode ser visto na Figura \ref{fig:11}. Nela, mostramos a distribuição do campo ``estágios envolvidos na transcodificação'', de acordo com os dados capturados durante a revisão da literatura. O círculo externo dessa figura representa todo o conjunto de 140 artigos revisados após os quatro primeiros processos de filtragem, ou seja, removidos os trabalhos duplicados e que não estão relacionados à transcodificação rápida de vídeo, enquanto o círculo interno representa o conjunto dos 34 artigos que, de fato, foram selecionados após o quinto processo de filtragem. Conforme mostrado no círculo interno, os estágios abordados no reaproveitamento de informações em soluções para transcodificação acelerada são: o particionamento de bloco (70,59\%), a predição interquadros (41,18\%) e a predição intraquadro (8,89\%). É notório nessa figura que os três principais tópicos de estudo são os mesmos nos dois círculos, mas com distribuições diferentes. Antes da aplicação dos dois últimos filtros, observamos outra ordem: predição interquadros (42,62\%), particionamento de blocos (18,58\%) e predição intraquadro (17,49\%).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{FIGURES/fig_11.png}
+    \caption{Distribuição do campo ``estágios envolvidos na transcodificação'', observados durante a revisão sistemática da literatura. Fonte: Elaborada pelo autor.}
+    \label{fig:11}
+\end{figure}
+
+Após essa visão geral dos trabalhos revisados, podemos apresentar, de forma mais especializada, cada um dos tópicos de interesse acerca do estado da arte em transcodificação rápida de vídeo.
+
+\input{ChapterTHREE/cap3.1.tex}
+\input{ChapterTHREE/cap3.2.tex}
+\input{ChapterTHREE/cap3.3.tex}
+\input{ChapterTHREE/cap3.4.tex}

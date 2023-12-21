@@ -1,0 +1,92 @@
+\afterpage{
+\clearpage
+
+\begin{landscape}
+{\footnotesize
+\begin{longtblr}[
+    caption = {Resumo das abordagens baseadas em aprendizado de máquina encontradas na literatura para aceleração de transcodificadores de vídeo.},
+    label = {tab:IV},
+    note{1} = {Este artigo não apresenta resultados de BD-rate.},
+    note{2} = {\citet{bib:huangyuan_2015} apresenta resultados de BD-PSNR ao invés de BD-rate.}
+]{
+    colspec = {p{2.8cm}|p{2cm}|p{3.3cm}|p{1.5cm}|p{13.4cm}},
+    rowhead = 1,
+    hlines,
+    row{even} = {gray9}
+}
+ \hline
+ \textbf{Autor} & \textbf{Algoritmo de ML} & \textbf{Estágios Envolvidos} & \textbf{Número de Atributos} & \textbf{Descrição dos Atributos Utilizados}\\
+ 
+ %2006
+ \citet{bib:fernandez2_2006}\TblrNote{1} & J48 & predição interquadros & 292 & Média ($\mu$) e variância ($\sigma^2$) dos blocos residuais de tamanho 4$\times$4; modo de predição no macrobloco (MB); modo de predição interquadros; modo do \textit{Coded Block Pattern} (CBP) do H.262/MPEG-2; modo equivalente ao CBP do H.264/AVC; MB residual quando o vetor de movimentos (VM) do H.262/MPEG-2 é considerado. \\
+ 
+ %2007
+ \citet{bib:wang2_2007}\TblrNote{1} & MLR & predição interquadros & 42 & vetores de movimento\\
+ 
+ %2008
+ \citet{bib:escribano3_2008}\TblrNote{1} & C4.5 & predição interquadros & 34 & $\mu$ e $\sigma^2$ do bloco residual de tamanho 4$\times$4; VM; modo de predição no MB; CBP. \\
+ 
+ %2008
+ \citet{bib:escribano3_2008}\TblrNote{1} & C4.5 & predição interquadros & 12 & $\mu$ e $\sigma^2$ do bloco residual de tamanho 8$\times$8 e 16$\times$16; CBP; erro absoluto quando VM=(0,0). \\
+ 
+ %2008
+ \citet{bib:escribano_2008}\TblrNote{1} & C4.5 & predição interquadros & 34 & $\mu$ e $\sigma^2$ do bloco residual de tamanho 4$\times$4; VM; modo de predição no MB; CBP. \\
+ 
+ %2008
+ \citet{bib:escribano2_2008}\TblrNote{1} & J48 & predição interquadros & 34 & $\mu$ e $\sigma^2$ do bloco residual de tamanho 4$\times$4; VM; modo de predição no MB; CBP. \\
+ 
+ %2009
+ \citet{bib:holder_2009}\TblrNote{1} & J48 & predição interquadros & 291 & $\mu$ e $\sigma^2$ do bloco residual de tamanho 4$\times$4; $\mu$ do bloco residual de tamanho 16$\times$16; CBP; coeficientes da transformada. \\
+ 
+  %2015
+ \citet{bib:huangyuan_2015}\TblrNote{2} & SVM & particionamento de blocos & 8 & soma e a $\sigma^2$ dos blocos residuais de tamanho 64$\times$64 e 32$\times$32; soma do bloco residual de tamanho 16$\times$16; modo de predição do MB; tipo de estrutura de particionamento; parâmetro de quantização. \\
+ 
+ %2017
+ \citet{bib:wei_2017}\TblrNote{1} & LSTM & particionamento de blocos & 3 & \textit{bitrate}, bloco residual; particionamento do MB. \\
+ 
+ %2014
+ \citet{bib:peixoto_2014} & LDF & predição interquadros & 15 & $\sigma^2$ da fase do VM; número de coeficientes da transformada; energia dos coeficientes da transformada; para cada tamanho de CU, sinais de uso do: modo SPLIT, modo SKIP da predição interquadros e do modo 2N$\times$2N da PU. \\
+ 
+ %2014
+ \citet{bib:peixoto2_2014} & LDF & particionamento de blocos & 10 & $\sigma^2$ da distância dos VM; $\sigma^2$ da fase do VM; número de coeficientes da transformada; distribuição dos modos de predição do H.264/AVC. \\
+ 
+ %2014
+ \citet{bib:honrubia_2014} & NB & particionamento de blocos & 25 & soma, $\mu$ e $\sigma^2$ dos elementos do VM; $\mu$ e $\sigma^2$ da CTU residual; $\mu$ e $\sigma^2$ da CU residual; soma horizontal e vertical dos filtros de Sobel; resolução do vídeo; nível de quantização; \textit{bitrate} da CTU; de cada quadro do vídeo, número de: modos de predição intraquadro, modos SKIP da predição interquadros, predições interquadros no bloco de tamanho 16$\times$16, predições interquadros no bloco de tamanho diferente de 16$\times$16, número de coeficientes da transformada diferente de zero de cada CTU. \\
+ 
+ %2014
+ \citet{bib:peixoto3_2014} & LDF & particionamento de blocos & 10 & $\sigma^2$ da distância e das fases do VM; número de coeficientes da transformada; distribuição dos modos de predição do H.264/AVC. \\
+ 
+ %2015
+ \citet{bib:honrubia_2015} & NB & particionamento de blocos & 27 & soma, $\mu$ e $\sigma^2$ dos elementos do VM; $\mu$ e $\sigma^2$ da CTU e da CU residual; soma horizontal e vertical dos filtros de Sobel; resolução do vídeo; nível de quantização; \textit{bitrate} da CTU; Lagrangiana do modo SKIP da predição interquadros e dos modos 2N$\times$2N da PU; de cada quadro do vídeo, número de: modos de predição intraquadro, modos SKIP da predição interquadros, predições interquadros no bloco de tamanho 16$\times$16, predições interquadros no bloco de tamanho diferente de 16$\times$16, número de coeficientes da transformada diferente de zero de cada CTU. \\
+ 
+ %2016
+ \citet{bib:honrubia_2016} & NB & particionamento de blocos predição intraquadro & 21 & $\mu$ e $\sigma^2$ of residual MB; $\mu$ e $\sigma^2$ of residual CU; number of intra predicted blocks with: horizontal, vertical, diagonal, DC e Planar modes; sum of intra predicted samples within a MB; number of non-zero transform coefficients; video resolution; QP; bitrate; sum of horizontal Sobel Filter; sum of vertical Sobel Filter. \\
+ 
+ %2016
+ \citet{bib:correa_2016} & C4.5 & particionamento de blocos & 33 & soma e $\mu$ dos blocos preditos; soma, $\mu$ e número de coeficientes da transformada; sinal de uso do modo SKIP da predição interquadros para os blocos 64$\times$64, 32$\times$32 e 16$\times$16; modo de predição intraquadro para os blocos 64$\times$64, 32$\times$32 e 16$\times$16; modo de predição no MB; CBP dos blocos de crominância. \\
+ 
+ %2017
+ \citet{bib:li_2017} & NB & particionamento de blocos & 74 & soma, $\mu$ e $\sigma^2$ dos elementos do VM; custo da taxa-distorção dos modos 2N$\times$2N da PU e dos modos SKIP da predição interquadros; número de blocos dentro de cada superbloco; mapa de profundidade da estrutura de particionamento. \\
+ 
+  %2018
+ \citet{bib:liu_2018} & SVM & particionamento de blocos & 3 & $\mu$ do \textit{bitrate}; $\mu$ absoluta dos blocos residuais; número de blocos dentro de cada CTU. \\
+ 
+  %2018
+ \citet{bib:grellert_2018} & RF & particionamento de blocos & 19 & modo de predição; modo da PU; profundidade da CU; coeficientes da transformada antes e depois da quantização; soma dos pixeis preditos; magnitude do VM. \\
+ 
+ %2019
+ \citet{bib:xu_2019} & LSTM & particionamento de blocos & 12 & VM; bloco residual; particionamento da MB; \textit{bitrate}. \\
+
+ %2019
+ \citet{bib:soares_2019} & J48 & particionamento de blocos & 13 & soma e $\mu$ dos coeficientes da transformada; soma e $\mu$ das amostras preditas nos blocos; tipo e posição do MB; CBP das camadas de crominância; sinal de uso do modo SKIP da predição interquadros; sinal de uso de algum modo de predição intraquadro; modo de predição intraquadro usado no bloco de tamanho 16$\times$16. \\
+ 
+  %2019
+ \citet{bib:chen_2019} & NB & particionamento de blocos & 3 & profundidade da CU; número de blocos em cada nível de profundidade em cada quadro; número de blocos em cada quadro. \\
+ 
+ %2020
+ \citet{bib:lucas_2020} & NB & particionamento de blocos & 16 & $\mu$ e $\sigma^2$ dos coeficientes assimétricos de Fisher e dos coeficientes de Kurtosis nos blocos residuais e reconstruídos para os blocos de tamanho 128$\times$128; $\mu$ das $\sigma^2$ e $\sigma^2$ das $\sigma^2$ dos blocos residuais e reconstruídos para os blocos de tamanho 64$\times$64; número de resíduos iguais a zero dentro do bloco de tamanho 128$\times$128; informação espacial dos blocos residuais de tamanho 128$\times$128; $\mu$ do desvio absoluto entre o bloco residual e o bloco reconstruído; \textit{bitrate}; produto da resolução do vídeo; função lambda entre o nível de quantização utilizado e o valor do grupo de quadros (\textit{group of pictures}, GoP).\\
+ \hline
+\end{longtblr}
+}
+\end{landscape}
+}

@@ -1,0 +1,33 @@
+\afterpage{
+\clearpage
+
+\begin{landscape}
+{\footnotesize
+\begin{longtblr}[
+    caption = {Parâmetros de configuração dos softwares de referência utilizados nesta tese.},
+    label = {tab:VI}
+]{
+    colspec = {p{2.5cm}|p{10.5cm}|p{3.5cm}|p{5cm}},
+    rowhead = 1,
+    hlines,
+    row{even} = {gray9}
+}
+\hline
+\textbf{Formato (Software)} & \textbf{Parâmetros Gerais} & \textbf{Valores Recomendados de $Q$} & \textbf{Caso profundidade de 10 bits} \\
+
+AV1 (\textit{libaom}) & -~-verbose -~-psnr -~-frame-parallel=0 -~-tile-columns=0 -~-passes=2 -~-cpu-used=0 -~-threads=1 -~-kf-min-dist=1000 -~-kf-max-dist=1000 -~-lag-in-frames=19 -~-limit=60 -~-width=\{$W$\} -~-height=\{$H$\} -~-i420 -~-bit-depth=8 -~-end-usage=q -~-cq-level=\{$Q$\} -~-fps=\{$F$\} -o enc\_\{$V$\}.av1 \{$V$\}.yuv & 20, 32, 43, 55 & -~-bit-depth=10 \\
+
+H.264/AVC (\textit{JM}) & -d encoder.cfg -p LevelIDC=50 SourceWidth=\{$W$\} -p SourceHeight=\{$H$\} -p SourceBitDepthLuma=8 -p SourceBitDepthChroma=8 -p OutputBitDepthLuma=8 -p OutputBitDepthChroma=8 -p FramesToBeEncoded=60 -p QPISlice=\{$Q$\} -p QPPSlice=\{$Q$\} -p FrameRate=\{$F$\} -p OutputFile=enc\_\{$V$\}.h264 -p InputFile=\{$V$\}.yuv & 22, 27, 32, 37 & -p SourceBitDepthLuma=10 -p SourceBitDepthChroma=10 -p OutputBitDepthLuma=10 -p OutputBitDepthChroma=10 \\
+
+H.265/HEVC (HM) & -c encoder\_randomaccess\_main.cfg -wdt \{$W$\} -hgt \{$H$\} -fr \{$F$\} -~-InputBitDepth=8 -~-OutputBitDepth=8 -~-InternalBitDepth=8 -~-QP=\{$Q$\} -f 60 -b enc\_\{$V$\}.h265 -i \{$V$\}.yuv & 22, 27, 32, 37 & -c encoder\_randomaccess\_main10.cfg -~-InputBitDepth=10 -~-OutputBitDepth=10 -~-InternalBitDepth=10 \\
+
+H.266/VVC (\textit{VTM}) & -c encoder\_randomaccess\_vtm.cfg -wdt \{$W$\} -hgt \{$H$\} -~-FrameRate=\{$F$\} -~-InputBitDepth=8 -~-OutputBitDepth=8 -~-InternalBitDepth=8 -~-QP=\{$Q$\} -~-BitstreamFile=enc\_\{$V$\}.h266 -~-InputFile=\{$V$\}.yuv & 22, 27, 32, 37 & -~-InputBitDepth=10 -~-OutputBitDepth=10 -~-InternalBitDepth=10 \\
+
+VP8 (\textit{libvpx}) & -~-codec=vp8 -~-passes=2 -~-cpu-used=0 -~-threads=1 -~-kf-min-dist=1000 -~-kf-max-dist=1000 -~-lag-in-frames=19 -~-verbose -~-psnr -~-width=\{$W$\} -~-height=\{$H$\} -~-fps=\{$F$\} -~-end-usage=q -~-cq-level=\{$Q$\} -~-min-q=\{\{$Q$\} - 4\} -~-max-q=\{\{$Q$\} + 4\} -~-limit=60 -o enc\_\{$V$\}.vp8 \{$V$\}.yuv & 20, 32, 43, 55 & -~- \\
+
+VP9 (\textit{libvpx}) & -~-verbose -~-psnr -~-frame-parallel=0 -~-tile-columns=0 -~-passes=2 -~-cpu-used=0 -~-threads=1 -~-kf-min-dist=1000 -~-kf-max-dist=1000 -~-lag-in-frames=19 -~-limit=60 -~-profile=0 -~-i420 -~-bit-depth=8 -~-width=1920 -~-height=1080 -~-end-usage=q -~-cq-level=\{$Q$\} -~-fps=\{$F$\} -o enc\_\{$V$\}.vp9 \{$V$\}.yuv & 20, 32, 43, 55 & -~-profile=2 -~-input-bit-depth=10 -~-bit-depth=10 \\
+\hline
+\end{longtblr}
+}
+\end{landscape}
+}
